@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 
 from cosmos77_ex02.agents.verdict import Verdict
-from cosmos77_ex02.orchestration.transcript import TranscriptWriter
+from cosmos77_ex02.orchestration.transcript import TranscriptWriter, latest_session
 from cosmos77_ex02.protocol.message import ProtocolMessage
 
 
@@ -41,3 +41,14 @@ def test_next_session_no_increments(tmp_path: Path) -> None:
 
 def test_first_session_is_one(tmp_path: Path) -> None:
     assert TranscriptWriter(tmp_path).session_no == 1
+
+
+def test_latest_session_ignores_cost_files(tmp_path: Path) -> None:
+    (tmp_path / "session_001.json").write_text("{}")
+    (tmp_path / "session_002.json").write_text("{}")
+    (tmp_path / "session_002_cost.json").write_text("{}")  # must be ignored
+    assert latest_session(tmp_path).name == "session_002.json"
+
+
+def test_latest_session_none_when_empty(tmp_path: Path) -> None:
+    assert latest_session(tmp_path) is None

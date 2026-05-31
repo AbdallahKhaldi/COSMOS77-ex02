@@ -16,6 +16,16 @@ if TYPE_CHECKING:
     from cosmos77_ex02.protocol.message import ProtocolMessage
 
 
+def latest_session(directory: str | Path) -> Path | None:
+    """Return the newest ``session_NNN.json`` (ignoring ``*_cost.json``), or None."""
+    sessions = [
+        path
+        for path in sorted(Path(directory).glob("session_*.json"))
+        if not path.stem.endswith("_cost")
+    ]
+    return sessions[-1] if sessions else None
+
+
 class TranscriptWriter:
     """Writes a single debate session to ``<directory>/session_NNN.json``."""
 

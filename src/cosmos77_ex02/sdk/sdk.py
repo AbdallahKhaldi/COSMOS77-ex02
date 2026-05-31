@@ -45,21 +45,35 @@ class SDK:
         self._config.set("debate.pings_per_side", int(pings_per_side))
         self._config.save()
 
+    def _latest_transcript(self) -> Any:
+        from cosmos77_ex02.orchestration.transcript import latest_session
+
+        directory = self._config.orchestration().get("transcript_dir", "transcripts")
+        session = latest_session(directory)
+        if session is None:
+            raise FileNotFoundError(f"no transcript found in {directory}; run a debate first")
+        return session
+
     def last_verdict(self) -> Any:
         """Return the verdict dict from the most recent transcript, or raise if none."""
         import json
-        from pathlib import Path
 
-        directory = Path(self._config.orchestration().get("transcript_dir", "transcripts"))
-        sessions = sorted(directory.glob("session_*.json"))
-        if not sessions:
-            raise FileNotFoundError(f"no transcript found in {directory}; run a debate first")
-        data = json.loads(sessions[-1].read_text(encoding="utf-8"))
+        data = json.loads(self._latest_transcript().read_text(encoding="utf-8"))
         return data.get("verdict")
 
     def cost_report(self) -> Any:
-        """Return the token/USD cost report for the latest run (Phase 9)."""
-        raise NotImplementedError("cost_report lands in Phase 9")
+        """Build (and persist) the cost report for the most recent debate."""
+        import json
+
+        from cosmos77_ex02.orchestration.cost import build_cost_report
+
+        session = self._latest_transcript()
+        data = json.loads(session.read_text(encoding="utf-8"))
+        pings = int(data.get("pings_per_side", self._config.get("debate.pings_per_side", 10)))
+        report = build_cost_report(data.get("messages", []), pings)
+        cost_path = session.with_name(f"{session.stem}_cost.json")
+        cost_path.write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")
+        return report
 
     def tail_logs(self, n: int = 50) -> list[str]:
         """Return the last ``n`` structured (JSON-lines) log lines across the FIFO files."""
