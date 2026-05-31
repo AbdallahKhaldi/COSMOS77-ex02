@@ -1,0 +1,25 @@
+sequenceDiagram
+    participant O as Orchestrator (parent)
+    participant P as Pro (process)
+    participant J as Judge (process)
+    participant C as Con (process)
+    participant CLI as claude -p (+WebSearch)
+
+    Note over O: one ping = Pro turn + Con turn, both routed through the Judge
+    O->>P: act(context = opponent_last + running summary)
+    P->>CLI: invoke(skill_pro, prompt) via Gatekeeper.guard
+    CLI-->>P: argument + web-source citations
+    P-->>O: ProtocolMessage (pro -> judge)
+    O->>J: relay(pro_msg, recipient = con)
+    J-->>O: ProtocolMessage (judge -> con)
+    O->>C: act(context = Pro's argument)
+    C->>CLI: invoke(skill_con, prompt) via Gatekeeper.guard
+    CLI-->>C: rebuttal + web-source citations
+    C-->>O: ProtocolMessage (con -> judge)
+    O->>J: relay(con_msg, recipient = pro)
+    J-->>O: ProtocolMessage (judge -> pro)
+    Note over O: repeat for pings_per_side rounds (default 10)
+    O->>J: verdict(transcript)
+    J->>CLI: invoke(skill_judge, transcript)
+    CLI-->>J: JSON verdict (winner + differential scores)
+    J-->>O: Verdict (no tie, justified)

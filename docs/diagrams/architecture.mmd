@@ -1,0 +1,66 @@
+classDiagram
+    class SDK {
+      +run_debate()
+      +set_topic()
+      +set_pings()
+      +last_verdict()
+      +cost_report()
+      +tail_logs()
+      +build_agent(role)
+    }
+    class Menu {
+      +run()
+    }
+    class Orchestrator {
+      +run()
+    }
+    class Watchdog {
+      +guarded_call()
+    }
+    class AgentProcess {
+      +start()
+      +call(method)
+      +restart()
+    }
+    class BaseAgent {
+      <<abstract>>
+      +act(context)
+    }
+    class DebaterAgent {
+      +position
+    }
+    class ProAgent
+    class ConAgent
+    class JudgeAgent {
+      +relay()
+      +enforce()
+      +score_turn()
+      +verdict()
+    }
+    class ClaudeCliRuntime {
+      +invoke()
+    }
+    class Gatekeeper {
+      +guard()
+      +account()
+      +check_budget()
+    }
+    class ProtocolMessage
+    class Verdict
+
+    BaseAgent <|-- DebaterAgent
+    DebaterAgent <|-- ProAgent
+    DebaterAgent <|-- ConAgent
+    BaseAgent <|-- JudgeAgent
+    Menu --> SDK
+    SDK --> Orchestrator
+    SDK --> BaseAgent : build_agent
+    Orchestrator --> AgentProcess : spawns 3
+    Orchestrator --> Watchdog
+    Orchestrator --> ProtocolMessage : owns transcript
+    Watchdog --> AgentProcess : restart on stall
+    AgentProcess --> BaseAgent : runs in child process
+    BaseAgent --> ClaudeCliRuntime
+    BaseAgent --> Gatekeeper : every call via guard
+    JudgeAgent --> Verdict : no tie
+    ClaudeCliRuntime --> Gatekeeper : cost metered
