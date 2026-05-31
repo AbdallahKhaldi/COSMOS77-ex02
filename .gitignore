@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables (secrets) — LLM auth is via the `claude` CLI login, never a key here
+.env
+
+# Testing & coverage
+.pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.cache/
+
+# Linters / formatters
+.ruff_cache/
+.mypy_cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Runtime logs (keep the directory, drop the rotating log files)
+logs/*.log
+logs/*.jsonl
+!logs/.gitkeep
+
+# Session transcripts (heavy / per-run) — but KEEP the graded session-1 transcript
+transcripts/*.json
+!transcripts/session_001.json
+!transcripts/session_001_cost.json
+!transcripts/.gitkeep
+
+# Cover PDF is generated OUTSIDE the repo (Phase 12); never commit PDFs or the docx template
+*.pdf
+uoh-rl07-ex01.docx
+*.filled.docx
+COSMOS77-ex02.pdf
+
+# uv cache (the lock file IS committed)
+.uv-cache/
