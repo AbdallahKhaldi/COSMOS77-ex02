@@ -22,16 +22,6 @@ dependencies = [
     "rich>=13.7",
 ]
 
-[project.optional-dependencies]
-dev = [
-    "pytest>=8.0",
-    "pytest-cov>=4.1",
-    "pytest-mock>=3.12",
-    "ruff>=0.4",
-    "hypothesis>=6.100",
-    "pre-commit>=3.7",
-]
-
 [project.scripts]
 cosmos77-debate = "cosmos77_ex02.cli.main:main"
 
@@ -88,6 +78,9 @@ markers = [
     "slow: long-running test (deselect with '-m \"not slow\"')",
 ]
 
+# Dev tooling — single source of truth (PEP 735). `uv sync` installs this group
+# by default; CI uses `uv sync --frozen`. Do not also list these under
+# [project.optional-dependencies] to avoid the two lists silently diverging.
 [dependency-groups]
 dev = [
     "pytest>=8.0",
