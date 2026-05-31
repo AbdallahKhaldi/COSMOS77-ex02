@@ -7,6 +7,12 @@ import pytest
 from cosmos77_ex02.cli.main import build_parser, main
 
 
+@pytest.fixture(autouse=True)
+def _no_real_logging(mocker) -> None:
+    """Stop main() from reconfiguring global logging during these tests."""
+    mocker.patch("cosmos77_ex02.cli.main.init_logging")
+
+
 def test_help_exits_zero() -> None:
     with pytest.raises(SystemExit) as exc:
         main(["--help"])

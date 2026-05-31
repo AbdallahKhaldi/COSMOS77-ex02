@@ -9,14 +9,18 @@ come from config. Handles can be injected (for tests); otherwise three real
 
 from __future__ import annotations
 
+import json
 from typing import Any
 
 from cosmos77_ex02.orchestration.loop import run_ping_loop
 from cosmos77_ex02.orchestration.process_agent import AgentProcess
 from cosmos77_ex02.orchestration.transcript import TranscriptWriter
 from cosmos77_ex02.orchestration.watchdog import Watchdog
+from cosmos77_ex02.protocol.serialize import to_json
+from cosmos77_ex02.shared.logging_setup import get_logger
 
 _ROLES = ("judge", "pro", "con")
+_LOG = get_logger("cosmos77_ex02.debate")
 
 
 class Orchestrator:
@@ -52,18 +56,25 @@ class Orchestrator:
         timeout = float(self._config.runtime().get("per_call_timeout_seconds", 120))
         transcript: list[Any] = []
         meta = self._meta()
+
+        def _on_message(message: Any) -> None:
+            _LOG.info(to_json(message))  # structured FIFO log line (no-op if logging unconfigured)
+            writer.write(meta, transcript)
+
         try:
+            _LOG.info(json.dumps({"event": "debate_start", "topic": meta.get("topic", "")}))
             run_ping_loop(
                 handles,
                 pings=pings,
                 per_call_timeout=timeout,
                 watchdog=self._watchdog,
                 transcript=transcript,
-                on_message=lambda _m: writer.write(meta, transcript),
+                on_message=_on_message,
             )
             verdict = self._watchdog.guarded_call(
                 handles["judge"], "verdict", timeout, transcript=transcript
             )
+            _LOG.info(json.dumps({"event": "verdict", "winner": verdict.winner}))
             path = writer.write(meta, transcript, verdict=verdict)
         finally:
             if self._handles is None:

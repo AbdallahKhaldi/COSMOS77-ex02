@@ -7,12 +7,14 @@
 from __future__ import annotations
 
 import argparse
+import contextlib
 import sys
 
 from cosmos77_ex02.cli import actions
 from cosmos77_ex02.cli.menu import Menu
 from cosmos77_ex02.cli.render import format_logs
 from cosmos77_ex02.sdk.sdk import SDK
+from cosmos77_ex02.shared.logging_setup import init_logging
 from cosmos77_ex02.shared.version import VERSION
 
 
@@ -35,6 +37,8 @@ def build_parser() -> argparse.ArgumentParser:
 def main(argv: list[str] | None = None) -> int:
     """Entry point: dispatch the chosen subcommand (default: the menu)."""
     args = build_parser().parse_args(argv)
+    with contextlib.suppress(Exception):  # logging must never block the CLI
+        init_logging()
     sdk = SDK()
     command = args.command or "menu"
     if command == "menu":
