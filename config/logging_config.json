@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "schema_version": "1.00",
+  "disable_existing_loggers": false,
+  "fifo": {
+    "max_files": 20,
+    "max_lines_per_file": 500
+  },
+  "formatters": {
+    "standard": {
+      "format": "%(asctime)s | %(levelname)-7s | %(name)s | %(message)s",
+      "datefmt": "%Y-%m-%dT%H:%M:%S"
+    },
+    "jsonl": {
+      "format": "%(message)s"
+    }
+  },
+  "handlers": {
+    "console": {
+      "class": "logging.StreamHandler",
+      "level": "INFO",
+      "formatter": "standard",
+      "stream": "ext://sys.stdout"
+    },
+    "fifo_file": {
+      "class": "cosmos77_ex02.shared.fifo_handler.FifoLineRotatingHandler",
+      "level": "DEBUG",
+      "formatter": "jsonl",
+      "directory": "logs",
+      "max_files": 20,
+      "max_lines_per_file": 500,
+      "encoding": "utf-8"
+    }
+  },
+  "loggers": {
+    "cosmos77_ex02": {
+      "level": "DEBUG",
+      "handlers": ["console", "fifo_file"],
+      "propagate": false
+    }
+  },
+  "root": {
+    "level": "WARNING",
+    "handlers": ["console"]
+  }
+}

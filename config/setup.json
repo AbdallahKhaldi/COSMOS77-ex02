@@ -1,0 +1,25 @@
+{
+  "version": "1.00",
+  "debate": {
+    "topic": "Is social media a net positive for society?",
+    "pro_position": "Social media is a NET POSITIVE for society.",
+    "con_position": "Social media is a NET NEGATIVE for society.",
+    "pings_per_side": 10,
+    "max_words_per_turn": 180,
+    "require_citation_per_turn": true,
+    "language": "english"
+  },
+  "runtime": {
+    "claude_cli_path": "claude",
+    "output_format": "json",
+    "allowed_tools": ["WebSearch"],
+    "per_call_timeout_seconds": 120,
+    "max_turns_per_call": 6
+  },
+  "orchestration": {
+    "watchdog_keepalive_seconds": 15,
+    "max_restarts_per_agent": 3,
+    "transcript_dir": "transcripts"
+  },
+  "paths": {"logs_dir": "logs", "assets_dir": "assets"}
+}
