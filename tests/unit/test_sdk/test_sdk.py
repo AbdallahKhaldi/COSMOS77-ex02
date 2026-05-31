@@ -23,7 +23,6 @@ def test_sdk_accepts_injected_config() -> None:
 @pytest.mark.parametrize(
     ("method", "args"),
     [
-        ("run_debate", ()),
         ("set_topic", ("topic",)),
         ("set_pings", (5,)),
         ("last_verdict", ()),
@@ -35,6 +34,18 @@ def test_public_methods_raise_not_implemented(method: str, args: tuple) -> None:
     sdk = SDK()
     with pytest.raises(NotImplementedError):
         getattr(sdk, method)(*args)
+
+
+def test_run_debate_delegates_to_orchestrator(mocker) -> None:
+    fake = mocker.Mock()
+    fake.run.return_value = {"transcript_path": "transcripts/session_001.json", "verdict": None}
+    orch_cls = mocker.patch(
+        "cosmos77_ex02.orchestration.orchestrator.Orchestrator", return_value=fake
+    )
+    out = SDK().run_debate()
+    orch_cls.assert_called_once()
+    fake.run.assert_called_once()
+    assert out["transcript_path"].endswith("session_001.json")
 
 
 def test_build_agent_returns_role_specific_agent() -> None:

@@ -26,8 +26,10 @@ class SDK:
         return self._config
 
     def run_debate(self, topic: str | None = None) -> Any:
-        """Run a full debate and return the transcript path + verdict (Phase 6)."""
-        raise NotImplementedError("run_debate lands in Phase 6")
+        """Run a full debate (3 processes) and return the transcript path + verdict."""
+        from cosmos77_ex02.orchestration.orchestrator import Orchestrator
+
+        return Orchestrator(self._config).run()
 
     def set_topic(self, topic: str, pro: str | None = None, con: str | None = None) -> None:
         """Update the debate topic and positions in config (Phase 8)."""
