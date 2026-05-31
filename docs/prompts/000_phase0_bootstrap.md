@@ -44,9 +44,17 @@ shape, ruff/pytest/coverage config, `.pre-commit-config.yaml`,
 `BADGES.md`, `.gitignore`, `.python-version`.
 
 **Repo & identity.** `git init -b main`; user `Abdallah Khaldi`; remote
-`https://github.com/AbdallahKhaldi/COSMOS77-ex02.git`. The GitHub repo was
-created **private** (per the driver's instruction) — collaborators
-(`rmisegal@gmail.com` + Tasneem) are invited via the web UI per playbook §14.2.
+`https://github.com/AbdallahKhaldi/COSMOS77-ex02.git`. The GitHub repo was first
+created **private**, but GitHub Actions on a private repo is metered against the
+account's billing and the runner refused to start ("recent account payments have
+failed or your spending limit needs to be increased"). To unblock CI at zero
+cost, the repo was switched to **public** (`gh repo edit --visibility public`) —
+which is also the playbook's original §2.1 recommendation, and is safe because
+the repo carries no secrets (rule 9; `detect-private-key` clean, `.env.example`
+placeholders only). A public repo means the grader (`rmisegal@gmail.com`) can
+already clone it without an invite; Tasneem only needs a collaborator invite if
+she wants push access (add via the web UI or `gh api` once her GitHub username
+is known — see playbook §14.2).
 
 **Scaffold created (no business logic).**
 - Package skeleton `src/cosmos77_ex02/` with subpackages `sdk, agents, runtime,
