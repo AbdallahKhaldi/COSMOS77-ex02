@@ -7,16 +7,25 @@ build the judge's verdict prompt, and pull web-source URLs out of a turn.
 
 from __future__ import annotations
 
-import re
 from pathlib import Path
 from typing import TYPE_CHECKING, Any
+
+from cosmos77_ex02.protocol.citation import extract_citations
 
 if TYPE_CHECKING:
     from cosmos77_ex02.protocol.message import ProtocolMessage
     from cosmos77_ex02.shared.config import Config
 
 SKILLS_DIR = Path(__file__).resolve().parents[1] / "skills"
-_URL_RE = re.compile(r"https?://[^\s)>\]\"']+")
+
+__all__ = [
+    "SKILLS_DIR",
+    "count_words",
+    "extract_citations",
+    "load_skill",
+    "render_turn_prompt",
+    "render_verdict_prompt",
+]
 
 
 def load_skill(filename: str) -> str:
@@ -26,18 +35,6 @@ def load_skill(filename: str) -> str:
     if not text:
         raise ValueError(f"skill file is empty: {path}")
     return text
-
-
-def extract_citations(text: str) -> list[str]:
-    """Return the de-duplicated list of web-source URLs found in ``text``."""
-    seen: set[str] = set()
-    out: list[str] = []
-    for raw in _URL_RE.findall(text):
-        url = raw.rstrip(".,;")
-        if url not in seen:
-            seen.add(url)
-            out.append(url)
-    return out
 
 
 def count_words(text: str) -> int:

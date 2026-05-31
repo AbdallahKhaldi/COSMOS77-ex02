@@ -15,6 +15,7 @@ from typing import Any
 from cosmos77_ex02.agents.base import BaseAgent
 from cosmos77_ex02.agents.prompts import render_verdict_prompt
 from cosmos77_ex02.agents.verdict import Verdict
+from cosmos77_ex02.protocol.citation import turn_problems
 from cosmos77_ex02.protocol.message import ProtocolMessage
 
 _JSON_RE = re.compile(r"\{.*\}", re.DOTALL)
@@ -46,15 +47,12 @@ class JudgeAgent(BaseAgent):
         )
 
     def enforce(self, message: ProtocolMessage, config: Any | None = None) -> list[str]:
-        """Return the list of rule violations for ``message`` (empty if clean)."""
-        debate = (config or self._config).debate()
-        problems: list[str] = []
-        if debate.get("require_citation_per_turn", True) and not message.citations:
-            problems.append("missing citation: each debater turn must cite >=1 web source")
-        max_words = int(debate.get("max_words_per_turn", 180))
-        if message.word_count > max_words:
-            problems.append(f"over word limit: {message.word_count} > {max_words}")
-        return problems
+        """Return the list of rule violations for ``message`` (empty if clean).
+
+        Delegates to :func:`cosmos77_ex02.protocol.citation.turn_problems` so the
+        citation/word-limit rules live in exactly one place (rule 3).
+        """
+        return turn_problems(message, config or self._config)
 
     def score_turn(self, message: ProtocolMessage) -> dict[str, int]:
         """Starter persuasion rubric (Phase 7 replaces with an LLM-scored rubric)."""
