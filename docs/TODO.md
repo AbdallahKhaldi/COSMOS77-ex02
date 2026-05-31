@@ -556,16 +556,16 @@ T-0514 | P9 | run | debate completes with a no-tie verdict | session_001.json co
 T-0515 | P9 | run | write transcripts/session_001.json and commit it | session_001.json committed with verdict | todo
 T-0516 | P9 | run | verify every debater turn has non-empty citations | session_001.json committed with verdict | todo
 T-0517 | P9 | run | lower pings + note in README if budget cap trips, then rerun | session_001.json committed with verdict | todo
-T-0518 | P9 | diagrams | docs/diagrams/architecture.mmd (class diagram) | diagrams committed | todo
-T-0519 | P9 | diagrams | docs/diagrams/sequence.mmd (one full ping) | diagrams committed | todo
-T-0520 | P9 | diagrams | render architecture.png into assets/ | diagrams committed | todo
-T-0521 | P9 | diagrams | render sequence.png into assets/ | diagrams committed | todo
-T-0522 | P9 | diagrams | commit .mmd + rendered PNGs (or note if renderer unavailable) | diagrams committed | todo
-T-0523 | P9 | cost | cost_report: total USD spent (sum per-call total_cost_usd) | cost report committed | todo
-T-0524 | P9 | cost | cost_report: input/output tokens | cost report committed | todo
-T-0525 | P9 | cost | cost_report: cost per ping | cost report committed | todo
-T-0526 | P9 | cost | cost_report: projected cost at 10 vs 5 pings | cost report committed | todo
-T-0527 | P9 | cost | save transcripts/session_001_cost.json + human-readable table | cost report committed | todo
+T-0518 | P9 | diagrams | docs/diagrams/architecture.mmd (class diagram) | diagrams committed | done 2026-05-31
+T-0519 | P9 | diagrams | docs/diagrams/sequence.mmd (one full ping) | diagrams committed | done 2026-05-31
+T-0520 | P9 | diagrams | render architecture.png into assets/ | diagrams committed | done 2026-05-31
+T-0521 | P9 | diagrams | render sequence.png into assets/ | diagrams committed | done 2026-05-31
+T-0522 | P9 | diagrams | commit .mmd + rendered PNGs (or note if renderer unavailable) | diagrams committed | done 2026-05-31
+T-0523 | P9 | cost | cost_report: total USD spent (sum per-call total_cost_usd) | cost report committed | done 2026-05-31
+T-0524 | P9 | cost | cost_report: input/output tokens | cost report committed | done 2026-05-31
+T-0525 | P9 | cost | cost_report: cost per ping | cost report committed | done 2026-05-31
+T-0526 | P9 | cost | cost_report: projected cost at 10 vs 5 pings | cost report committed | done 2026-05-31
+T-0527 | P9 | cost | save transcripts/session_001_cost.json + human-readable table | cost report committed | done 2026-05-31
 T-0528 | P9 | assets | screenshot: the menu (assets/) | assets committed (manual screenshots) | todo
 T-0529 | P9 | assets | screenshot: a live debate turn (assets/) | assets committed (manual screenshots) | todo
 T-0530 | P9 | assets | screenshot: the final verdict (assets/) | assets committed (manual screenshots) | todo
