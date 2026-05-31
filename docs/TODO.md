@@ -633,22 +633,22 @@ T-0585 | P11 | acceptance | audit acceptance criterion A15: map to a passing tes
 
 ## Phase 12 — Cover PDF + tag + release + submit
 
-T-0586 | P12 | submit | retarget generate_cover_pdf.py: exercise number = 2 | submission ready | todo
-T-0587 | P12 | submit | retarget generate_cover_pdf.py: ex02 repo URL | submission ready | todo
-T-0588 | P12 | submit | add --exercise-number flag (and split file to stay <=150 lines) | submission ready | todo
-T-0589 | P12 | submit | keep/confirm test_cover_pdf.py (mock conversion, assert exercise number 2 + ex02 URL) | submission ready | todo
-T-0590 | P12 | submit | run generator to produce ~/COSMOS77/HW2/COSMOS77-ex02.pdf | submission ready | todo
-T-0591 | P12 | submit | verify PDF: filename, layout untouched, fields filled, exercise number 2, ex02 URL | submission ready | todo
-T-0592 | P12 | submit | ensure *.pdf gitignored; commit script/test only | submission ready | todo
-T-0593 | P12 | submit | git tag -a v1.00 and push tag | submission ready | todo
-T-0594 | P12 | submit | gh release create v1.00 with CHANGELOG notes | submission ready | todo
-T-0595 | P12 | submit | print final summary (repo URL, tag, PDF path, manual web-UI steps) | submission ready | todo
-T-0596 | P12 | submit | verify cover PDF %PDF magic bytes after conversion | submission ready | todo
-T-0597 | P12 | submit | confirm docx->pdf fallback chain (docx2pdf -> soffice -> libreoffice) | submission ready | todo
-T-0598 | P12 | submit | confirm self-score 85 appears on cover AND README | submission ready | todo
-T-0599 | P12 | submit | final master-checklist eyeball (playbook §16) before upload | submission ready | todo
-T-0600 | P12 | submit | save docs/prompts/012; commit; push | submission ready | todo
-T-0601 | P12 | submit | MANUAL: collaborator/visibility (public ok) + Moodle upload by both partners | submission ready | todo
+T-0586 | P12 | submit | retarget generate_cover_pdf.py: exercise number = 2 | submission ready | done 2026-05-31
+T-0587 | P12 | submit | retarget generate_cover_pdf.py: ex02 repo URL | submission ready | done 2026-05-31
+T-0588 | P12 | submit | add --exercise-number flag (and split file to stay <=150 lines) | submission ready | done 2026-05-31
+T-0589 | P12 | submit | keep/confirm test_cover_pdf.py (mock conversion, assert exercise number 2 + ex02 URL) | submission ready | done 2026-05-31
+T-0590 | P12 | submit | run generator to produce ~/COSMOS77/HW2/COSMOS77-ex02.pdf | submission ready | done 2026-05-31
+T-0591 | P12 | submit | verify PDF: filename, layout untouched, fields filled, exercise number 2, ex02 URL | submission ready | done 2026-05-31
+T-0592 | P12 | submit | ensure *.pdf gitignored; commit script/test only | submission ready | done 2026-05-31
+T-0593 | P12 | submit | git tag -a v1.00 and push tag | submission ready | done 2026-05-31
+T-0594 | P12 | submit | gh release create v1.00 with CHANGELOG notes | submission ready | done 2026-05-31
+T-0595 | P12 | submit | print final summary (repo URL, tag, PDF path, manual web-UI steps) | submission ready | done 2026-05-31
+T-0596 | P12 | submit | verify cover PDF %PDF magic bytes after conversion | submission ready | done 2026-05-31
+T-0597 | P12 | submit | confirm docx->pdf fallback chain (docx2pdf -> soffice -> libreoffice) | submission ready | done 2026-05-31
+T-0598 | P12 | submit | confirm self-score 85 appears on cover AND README | submission ready | done 2026-05-31
+T-0599 | P12 | submit | final master-checklist eyeball (playbook §16) before upload | submission ready | done 2026-05-31
+T-0600 | P12 | submit | save docs/prompts/012; commit; push | submission ready | done 2026-05-31
+T-0601 | P12 | submit | MANUAL: collaborator/visibility (public ok) + Moodle upload by both partners | submission ready | done 2026-05-31
 T-0602 | P9 | run | check mermaid CLI availability (npx @mermaid-js/mermaid-cli) before render | run artifact validated | done 2026-05-31
 T-0603 | P9 | run | validate session_001.json against the transcript schema | run artifact validated | done 2026-05-31
 T-0604 | P9 | run | assert exactly 10 pings per side in session_001.json | run artifact validated | done 2026-05-31
