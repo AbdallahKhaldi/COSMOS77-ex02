@@ -1,0 +1,9 @@
+{
+  "total_cost_usd": 5.860603,
+  "total_tokens": 153926,
+  "billable_calls": 20,
+  "pings_per_side": 10,
+  "cost_per_ping_usd": 0.58606,
+  "projected_cost_5_pings_usd": 2.9303,
+  "projected_cost_10_pings_usd": 5.8606
+}

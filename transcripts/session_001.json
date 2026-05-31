@@ -1,0 +1,693 @@
+{
+  "topic": "Is social media a net positive for society?",
+  "pro_position": "Social media is a NET POSITIVE for society.",
+  "con_position": "Social media is a NET NEGATIVE for society.",
+  "pings_per_side": 10,
+  "messages": [
+    {
+      "msg_id": "544817de7c67427f9d10685de41956e9",
+      "ts": "2026-05-31T07:30:40.592057+00:00",
+      "sender": "pro",
+      "recipient": "judge",
+      "role": "pro",
+      "ping_no": 1,
+      "turn_type": "opening",
+      "content": "**Opening — PRO**\n\nI speak first, so let me preempt the objection my opponent will surely raise: that social media spreads misinformation and harms wellbeing. Those are real concerns — but they are problems of *design and policy*, not of the medium itself. Condemning social media for misuse is like condemning the printing press for libel. The remedy is better moderation and digital literacy, not abandoning the most powerful connective tool humanity has built.\n\nMy new point: **economic empowerment.** Social media has democratized commerce for ordinary people. Roughly 94% of small businesses use it, and they report around a 20% annual revenue lift from social marketing — with TikTok alone driving an estimated $9.2 billion in US small-business sales yearly. Whole livelihoods — creators, local shops, artisans — now exist because a single person can reach a global audience for nearly zero cost.\n\nAdd to this Pew's finding that a median of 64% across emerging nations call the internet a *good* influence on education, and the picture is clear: opportunity, at scale, for those previously locked out.\n\nSources: https://sproutsocial.com/insights/social-media-statistics/, https://www.pewresearch.org/global/2015/03/19/internet-seen-as-positive-influence-on-education-but-negative-influence-on-morality-in-emerging-and-developing-nations/",
+      "citations": [
+        "https://sproutsocial.com/insights/social-media-statistics/",
+        "https://www.pewresearch.org/global/2015/03/19/internet-seen-as-positive-influence-on-education-but-negative-influence-on-morality-in-emerging-and-developing-nations/"
+      ],
+      "word_count": 180,
+      "tokens": 8416,
+      "cost_usd": 0.28309475
+    },
+    {
+      "msg_id": "cf9196ad3d4e43d5af5259864ba8bfb8",
+      "ts": "2026-05-31T07:30:40.598345+00:00",
+      "sender": "judge",
+      "recipient": "con",
+      "role": "judge",
+      "ping_no": 1,
+      "turn_type": "opening",
+      "content": "**Opening — PRO**\n\nI speak first, so let me preempt the objection my opponent will surely raise: that social media spreads misinformation and harms wellbeing. Those are real concerns — but they are problems of *design and policy*, not of the medium itself. Condemning social media for misuse is like condemning the printing press for libel. The remedy is better moderation and digital literacy, not abandoning the most powerful connective tool humanity has built.\n\nMy new point: **economic empowerment.** Social media has democratized commerce for ordinary people. Roughly 94% of small businesses use it, and they report around a 20% annual revenue lift from social marketing — with TikTok alone driving an estimated $9.2 billion in US small-business sales yearly. Whole livelihoods — creators, local shops, artisans — now exist because a single person can reach a global audience for nearly zero cost.\n\nAdd to this Pew's finding that a median of 64% across emerging nations call the internet a *good* influence on education, and the picture is clear: opportunity, at scale, for those previously locked out.\n\nSources: https://sproutsocial.com/insights/social-media-statistics/, https://www.pewresearch.org/global/2015/03/19/internet-seen-as-positive-influence-on-education-but-negative-influence-on-morality-in-emerging-and-developing-nations/",
+      "citations": [
+        "https://sproutsocial.com/insights/social-media-statistics/",
+        "https://www.pewresearch.org/global/2015/03/19/internet-seen-as-positive-influence-on-education-but-negative-influence-on-morality-in-emerging-and-developing-nations/"
+      ],
+      "word_count": 180,
+      "tokens": 0,
+      "cost_usd": 0.0
+    },
+    {
+      "msg_id": "4316e0070eda47cab9ac19d0cfb57090",
+      "ts": "2026-05-31T07:32:19.634964+00:00",
+      "sender": "con",
+      "recipient": "judge",
+      "role": "con",
+      "ping_no": 1,
+      "turn_type": "opening",
+      "content": "**Rebuttal — the \"economic empowerment\" mirage.** PRO calls social media a great equalizer for small business and creators. But \"opportunity at scale\" hides who actually captures it. The creator economy is brutally winner-take-all: the top 10% of creators earned 62% of all payments in 2025 (up from 53% in 2023), while over half earn under $15,000 a year and as few as 0.1% earn a living. That isn't democratized commerce — it's a lottery sold as a livelihood, with the platform taking its cut from every ticket. The \"20% revenue lift\" is real for some; the precarity is the rule.\n\n**My new point — adolescent mental health.** The U.S. Surgeon General's 2023 advisory found that youth spending over three hours daily on social media face *double* the risk of depression and anxiety — and up to 95% of teens use these platforms. When the documented cost is your children's wellbeing, the precautionary burden falls on the medium, not the user.\n\nSources: https://www.hhs.gov/surgeongeneral/reports-and-publications/youth-mental-health/social-media/index.html, https://www.creatoriq.com/press/releases/state-of-creator-compensation-",
+      "citations": [
+        "https://www.hhs.gov/surgeongeneral/reports-and-publications/youth-mental-health/social-media/index.html",
+        "https://www.creatoriq.com/press/releases/state-of-creator-compensation-"
+      ],
+      "word_count": 163,
+      "tokens": 9109,
+      "cost_usd": 0.33589
+    },
+    {
+      "msg_id": "138251e6bf7d4288a5aabfc3d629be23",
+      "ts": "2026-05-31T07:32:19.639697+00:00",
+      "sender": "judge",
+      "recipient": "pro",
+      "role": "judge",
+      "ping_no": 1,
+      "turn_type": "opening",
+      "content": "**Rebuttal — the \"economic empowerment\" mirage.** PRO calls social media a great equalizer for small business and creators. But \"opportunity at scale\" hides who actually captures it. The creator economy is brutally winner-take-all: the top 10% of creators earned 62% of all payments in 2025 (up from 53% in 2023), while over half earn under $15,000 a year and as few as 0.1% earn a living. That isn't democratized commerce — it's a lottery sold as a livelihood, with the platform taking its cut from every ticket. The \"20% revenue lift\" is real for some; the precarity is the rule.\n\n**My new point — adolescent mental health.** The U.S. Surgeon General's 2023 advisory found that youth spending over three hours daily on social media face *double* the risk of depression and anxiety — and up to 95% of teens use these platforms. When the documented cost is your children's wellbeing, the precautionary burden falls on the medium, not the user.\n\nSources: https://www.hhs.gov/surgeongeneral/reports-and-publications/youth-mental-health/social-media/index.html, https://www.creatoriq.com/press/releases/state-of-creator-compensation-",
+      "citations": [
+        "https://www.hhs.gov/surgeongeneral/reports-and-publications/youth-mental-health/social-media/index.html",
+        "https://www.creatoriq.com/press/releases/state-of-creator-compensation-"
+      ],
+      "word_count": 163,
+      "tokens": 0,
+      "cost_usd": 0.0
+    },
+    {
+      "msg_id": "ce1bd75650024f7591de6bf0127d7b70",
+      "ts": "2026-05-31T07:32:55.006314+00:00",
+      "sender": "pro",
+      "recipient": "judge",
+      "role": "pro",
+      "ping_no": 2,
+      "turn_type": "rebuttal",
+      "content": "**Rebuttal — the mental-health \"double risk\" overstates the evidence.** My opponent leans on the Surgeon General's *correlation*, but the most rigorous review since then dismantles the causal leap. In 2024 the National Academies of Sciences, Engineering, and Medicine — convened specifically to judge whether social media drives the teen mental-health crisis — refused to find a causal link, concluding only that *some features* can harm *some* young people. \"Double the risk\" is association, not causation; depressed teens may simply scroll more. Policy should target harmful features, not condemn the medium.\n\n**My new point — a documented lifeline for vulnerable youth.** Where offline life fails them, social media saves marginalized teens. The Trevor Project's 2024 survey found 68% of LGBTQ+ youth experience the online world as affirming — versus just 38% at home and 16% in their wider community. For kids whose households and towns offer no acceptance, these platforms are often the only place they're seen. That isn't a harm to be regulated away; it's connection that protects lives.\n\nSources: https://academic.oup.com/pnasnexus/article/3/2/pgae037/7614669, https://www.thetrevorproject.org/survey-2024/",
+      "citations": [
+        "https://academic.oup.com/pnasnexus/article/3/2/pgae037/7614669",
+        "https://www.thetrevorproject.org/survey-2024/"
+      ],
+      "word_count": 172,
+      "tokens": 7620,
+      "cost_usd": 0.2462395
+    },
+    {
+      "msg_id": "4d42d2bb931e48089f6b339879c902b5",
+      "ts": "2026-05-31T07:32:55.011903+00:00",
+      "sender": "judge",
+      "recipient": "con",
+      "role": "judge",
+      "ping_no": 2,
+      "turn_type": "rebuttal",
+      "content": "**Rebuttal — the mental-health \"double risk\" overstates the evidence.** My opponent leans on the Surgeon General's *correlation*, but the most rigorous review since then dismantles the causal leap. In 2024 the National Academies of Sciences, Engineering, and Medicine — convened specifically to judge whether social media drives the teen mental-health crisis — refused to find a causal link, concluding only that *some features* can harm *some* young people. \"Double the risk\" is association, not causation; depressed teens may simply scroll more. Policy should target harmful features, not condemn the medium.\n\n**My new point — a documented lifeline for vulnerable youth.** Where offline life fails them, social media saves marginalized teens. The Trevor Project's 2024 survey found 68% of LGBTQ+ youth experience the online world as affirming — versus just 38% at home and 16% in their wider community. For kids whose households and towns offer no acceptance, these platforms are often the only place they're seen. That isn't a harm to be regulated away; it's connection that protects lives.\n\nSources: https://academic.oup.com/pnasnexus/article/3/2/pgae037/7614669, https://www.thetrevorproject.org/survey-2024/",
+      "citations": [
+        "https://academic.oup.com/pnasnexus/article/3/2/pgae037/7614669",
+        "https://www.thetrevorproject.org/survey-2024/"
+      ],
+      "word_count": 172,
+      "tokens": 0,
+      "cost_usd": 0.0
+    },
+    {
+      "msg_id": "dda2f973b97b4c379094918574d2fdfa",
+      "ts": "2026-05-31T07:33:49.832250+00:00",
+      "sender": "con",
+      "recipient": "judge",
+      "role": "con",
+      "ping_no": 2,
+      "turn_type": "rebuttal",
+      "content": "**Rebuttal — \"no proven causation\" is not a clean bill of health.** PRO treats the 2024 National Academies report as exoneration. Read it again: the panel explicitly warned that social media \"has not been proven safe\" for youth and demanded swift, multi-sector action on platform design, harassment, and sleep loss. Absence of airtight causal proof is not proof of safety — that is precisely when the precautionary principle binds. And the Trevor lifeline cuts both ways: those same LGBTQ+ teens are, per the CDC's 2024 Youth Risk Behavior Survey, nearly twice as likely to be electronically bullied (25% vs. 13%). The affirmation and the abuse arrive on the same feed.\n\n**My new point — falsehood is structurally favored.** MIT's landmark *Science* study found false news is 70% more likely to be retweeted and reaches people six times faster than truth — and humans, not bots, drive it, because the design rewards novelty. When a platform's incentives systematically outpace correction, eroded shared reality isn't misuse; it's the product working as built.\n\nSources: https://academic.oup.com/pnasnexus/article/3/2/pgae037/7614669, https://mitsloan.mit.edu/ideas-made-to-matter/study-false-news-spreads-faster-truth",
+      "citations": [
+        "https://academic.oup.com/pnasnexus/article/3/2/pgae037/7614669",
+        "https://mitsloan.mit.edu/ideas-made-to-matter/study-false-news-spreads-faster-truth"
+      ],
+      "word_count": 173,
+      "tokens": 8213,
+      "cost_usd": 0.724453
+    },
+    {
+      "msg_id": "eae85e54fcbf45608e4489247a92de8d",
+      "ts": "2026-05-31T07:33:49.837976+00:00",
+      "sender": "judge",
+      "recipient": "pro",
+      "role": "judge",
+      "ping_no": 2,
+      "turn_type": "rebuttal",
+      "content": "**Rebuttal — \"no proven causation\" is not a clean bill of health.** PRO treats the 2024 National Academies report as exoneration. Read it again: the panel explicitly warned that social media \"has not been proven safe\" for youth and demanded swift, multi-sector action on platform design, harassment, and sleep loss. Absence of airtight causal proof is not proof of safety — that is precisely when the precautionary principle binds. And the Trevor lifeline cuts both ways: those same LGBTQ+ teens are, per the CDC's 2024 Youth Risk Behavior Survey, nearly twice as likely to be electronically bullied (25% vs. 13%). The affirmation and the abuse arrive on the same feed.\n\n**My new point — falsehood is structurally favored.** MIT's landmark *Science* study found false news is 70% more likely to be retweeted and reaches people six times faster than truth — and humans, not bots, drive it, because the design rewards novelty. When a platform's incentives systematically outpace correction, eroded shared reality isn't misuse; it's the product working as built.\n\nSources: https://academic.oup.com/pnasnexus/article/3/2/pgae037/7614669, https://mitsloan.mit.edu/ideas-made-to-matter/study-false-news-spreads-faster-truth",
+      "citations": [
+        "https://academic.oup.com/pnasnexus/article/3/2/pgae037/7614669",
+        "https://mitsloan.mit.edu/ideas-made-to-matter/study-false-news-spreads-faster-truth"
+      ],
+      "word_count": 173,
+      "tokens": 0,
+      "cost_usd": 0.0
+    },
+    {
+      "msg_id": "d9efb7e08eec4f25861710fe65b00984",
+      "ts": "2026-05-31T07:34:21.247653+00:00",
+      "sender": "pro",
+      "recipient": "judge",
+      "role": "pro",
+      "ping_no": 3,
+      "turn_type": "rebuttal",
+      "content": "**Rebuttal — \"falsehood is structurally favored\" describes a setting, not destiny.** My opponent treats the MIT virality study as proof the medium is rotten at the root. But design is editable, and the correction is already working. A November 2024 study found posts flagged by X's Community Notes received **35.5% fewer retweets and 33.2% fewer likes**, and a JAMA analysis found **97.5%** of vaccine-misinformation notes fully accurate. The same architecture that once spread novelty now crowdsources truth at scale — proving, again, that harm is a *solvable design problem*, not the platform's nature.\n\n**My new point — social media saves lives in crises.** In a controlled search-and-rescue trial, a social-media-equipped team located **95.4% of casualties versus 86.3%** for the no-media team, and found nearly two-thirds of victims *sooner*. In hurricanes, earthquakes, and missing-person cases, these feeds route help faster than any official channel. A medium that demonstrably pulls people from rubble is not a net drain on society — it is infrastructure.\n\nSources: https://giesbusiness.illinois.edu/news/2024/11/18/study--community-notes-on-x-could-be-key-to-curbing-misinformation, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4322004/",
+      "citations": [
+        "https://giesbusiness.illinois.edu/news/2024/11/18/study--community-notes-on-x-could-be-key-to-curbing-misinformation",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4322004/"
+      ],
+      "word_count": 165,
+      "tokens": 6320,
+      "cost_usd": 0.24505350000000004
+    },
+    {
+      "msg_id": "43498a3b85e1450b87c56725e1fbbe40",
+      "ts": "2026-05-31T07:34:21.252445+00:00",
+      "sender": "judge",
+      "recipient": "con",
+      "role": "judge",
+      "ping_no": 3,
+      "turn_type": "rebuttal",
+      "content": "**Rebuttal — \"falsehood is structurally favored\" describes a setting, not destiny.** My opponent treats the MIT virality study as proof the medium is rotten at the root. But design is editable, and the correction is already working. A November 2024 study found posts flagged by X's Community Notes received **35.5% fewer retweets and 33.2% fewer likes**, and a JAMA analysis found **97.5%** of vaccine-misinformation notes fully accurate. The same architecture that once spread novelty now crowdsources truth at scale — proving, again, that harm is a *solvable design problem*, not the platform's nature.\n\n**My new point — social media saves lives in crises.** In a controlled search-and-rescue trial, a social-media-equipped team located **95.4% of casualties versus 86.3%** for the no-media team, and found nearly two-thirds of victims *sooner*. In hurricanes, earthquakes, and missing-person cases, these feeds route help faster than any official channel. A medium that demonstrably pulls people from rubble is not a net drain on society — it is infrastructure.\n\nSources: https://giesbusiness.illinois.edu/news/2024/11/18/study--community-notes-on-x-could-be-key-to-curbing-misinformation, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4322004/",
+      "citations": [
+        "https://giesbusiness.illinois.edu/news/2024/11/18/study--community-notes-on-x-could-be-key-to-curbing-misinformation",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4322004/"
+      ],
+      "word_count": 165,
+      "tokens": 0,
+      "cost_usd": 0.0
+    },
+    {
+      "msg_id": "368a123923a949a6aec154006d7c7a22",
+      "ts": "2026-05-31T07:35:24.189037+00:00",
+      "sender": "con",
+      "recipient": "judge",
+      "role": "con",
+      "ping_no": 3,
+      "turn_type": "rebuttal",
+      "content": "**Rebuttal — Community Notes \"crowdsource truth,\" but always a day late.** PRO celebrates a 35% retweet drop *after* a note appears. The problem is *when* it appears. Peer-reviewed work finds the median note takes over **65 hours** to publish, and only **8.3%** of submitted notes ever reach readers at all — by which point the falsehood has already collected the bulk of its views. A correction that arrives after the lie has done its work isn't a cure; it's an autopsy. PRO's own evidence proves the harm outruns the fix.\n\n**My new point — the business model is mass surveillance.** A four-year FTC investigation (Sept 2024) into nine platforms found \"vast surveillance\" of users *and non-users*, data retained indefinitely, sold through unvetted third parties, and — chillingly — every privacy protection for a child \"disappeared the moment that child turned thirteen.\" This isn't a fixable glitch; monetizing intimate personal data *is* the product. A medium that surveils minors to sell ads is not net infrastructure — it's extraction.\n\nSources: https://arxiv.org/html/2510.12559v1, https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-staff-report-finds-large-social-media-video-streaming-companies-have-engaged-vast-surveillance",
+      "citations": [
+        "https://arxiv.org/html/2510.12559v1",
+        "https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-staff-report-finds-large-social-media-video-streaming-companies-have-engaged-vast-surveillance"
+      ],
+      "word_count": 171,
+      "tokens": 8614,
+      "cost_usd": 0.29068574999999996
+    },
+    {
+      "msg_id": "dba8516e2a0548f5a64e2f647a95fca3",
+      "ts": "2026-05-31T07:35:24.196532+00:00",
+      "sender": "judge",
+      "recipient": "pro",
+      "role": "judge",
+      "ping_no": 3,
+      "turn_type": "rebuttal",
+      "content": "**Rebuttal — Community Notes \"crowdsource truth,\" but always a day late.** PRO celebrates a 35% retweet drop *after* a note appears. The problem is *when* it appears. Peer-reviewed work finds the median note takes over **65 hours** to publish, and only **8.3%** of submitted notes ever reach readers at all — by which point the falsehood has already collected the bulk of its views. A correction that arrives after the lie has done its work isn't a cure; it's an autopsy. PRO's own evidence proves the harm outruns the fix.\n\n**My new point — the business model is mass surveillance.** A four-year FTC investigation (Sept 2024) into nine platforms found \"vast surveillance\" of users *and non-users*, data retained indefinitely, sold through unvetted third parties, and — chillingly — every privacy protection for a child \"disappeared the moment that child turned thirteen.\" This isn't a fixable glitch; monetizing intimate personal data *is* the product. A medium that surveils minors to sell ads is not net infrastructure — it's extraction.\n\nSources: https://arxiv.org/html/2510.12559v1, https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-staff-report-finds-large-social-media-video-streaming-companies-have-engaged-vast-surveillance",
+      "citations": [
+        "https://arxiv.org/html/2510.12559v1",
+        "https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-staff-report-finds-large-social-media-video-streaming-companies-have-engaged-vast-surveillance"
+      ],
+      "word_count": 171,
+      "tokens": 0,
+      "cost_usd": 0.0
+    },
+    {
+      "msg_id": "3ae4b3eda73b4b41aea2e50bdb857d01",
+      "ts": "2026-05-31T07:35:58.809976+00:00",
+      "sender": "pro",
+      "recipient": "judge",
+      "role": "pro",
+      "ping_no": 4,
+      "turn_type": "rebuttal",
+      "content": "**Rebuttal — surveillance is a business *practice*, not the medium's nature.** CON calls extraction \"the product\" and \"not a fixable glitch.\" Yet the fix is already underway. In October 2024 Ireland fined LinkedIn **€310 million** for exactly the behavioral-ad data abuse CON describes; Meta paid Texas **$1.4 billion** for harvesting biometrics. Cumulative GDPR penalties now top **€5.88 billion**, aimed squarely at big platforms. A practice that regulators are pricing into oblivion isn't destiny — it's a policy variable being corrected. The medium survives; the abuse gets taxed out.\n\n**My new point — social media is now load-bearing economic infrastructure.** Oxford Economics found YouTube's creator ecosystem added over **$55 billion to US GDP in 2024**. Full-time digital-creator jobs jumped from 200,000 (2020) to **1.5 million** (2024), and roughly **94% of US small businesses** use these platforms to reach customers. You don't dismantle the highway because some drivers speed — you regulate the speeders. Millions of livelihoods now ride on this road.\n\nSources: https://www.infosecurity-magazine.com/news-features/top-10-data-fines-settlements/, https://www.oxfordeconomics.com/youtubes-creator-economy-impact/",
+      "citations": [
+        "https://www.infosecurity-magazine.com/news-features/top-10-data-fines-settlements/",
+        "https://www.oxfordeconomics.com/youtubes-creator-economy-impact/"
+      ],
+      "word_count": 163,
+      "tokens": 7697,
+      "cost_usd": 0.26052125
+    },
+    {
+      "msg_id": "cf4159e464474238bb88004418f7409b",
+      "ts": "2026-05-31T07:35:58.813147+00:00",
+      "sender": "judge",
+      "recipient": "con",
+      "role": "judge",
+      "ping_no": 4,
+      "turn_type": "rebuttal",
+      "content": "**Rebuttal — surveillance is a business *practice*, not the medium's nature.** CON calls extraction \"the product\" and \"not a fixable glitch.\" Yet the fix is already underway. In October 2024 Ireland fined LinkedIn **€310 million** for exactly the behavioral-ad data abuse CON describes; Meta paid Texas **$1.4 billion** for harvesting biometrics. Cumulative GDPR penalties now top **€5.88 billion**, aimed squarely at big platforms. A practice that regulators are pricing into oblivion isn't destiny — it's a policy variable being corrected. The medium survives; the abuse gets taxed out.\n\n**My new point — social media is now load-bearing economic infrastructure.** Oxford Economics found YouTube's creator ecosystem added over **$55 billion to US GDP in 2024**. Full-time digital-creator jobs jumped from 200,000 (2020) to **1.5 million** (2024), and roughly **94% of US small businesses** use these platforms to reach customers. You don't dismantle the highway because some drivers speed — you regulate the speeders. Millions of livelihoods now ride on this road.\n\nSources: https://www.infosecurity-magazine.com/news-features/top-10-data-fines-settlements/, https://www.oxfordeconomics.com/youtubes-creator-economy-impact/",
+      "citations": [
+        "https://www.infosecurity-magazine.com/news-features/top-10-data-fines-settlements/",
+        "https://www.oxfordeconomics.com/youtubes-creator-economy-impact/"
+      ],
+      "word_count": 163,
+      "tokens": 0,
+      "cost_usd": 0.0
+    },
+    {
+      "msg_id": "1bbe940d8be64cdd8cd10f754cf4f428",
+      "ts": "2026-05-31T07:36:34.252227+00:00",
+      "sender": "con",
+      "recipient": "judge",
+      "role": "con",
+      "ping_no": 4,
+      "turn_type": "rebuttal",
+      "content": "**Rebuttal — \"load-bearing infrastructure\" is an argument *for* my side.** PRO says millions of livelihoods now ride this road, so we mustn't dismantle it. But infrastructure you cannot leave is exactly where structural harm becomes inescapable. The €5.88B in fines doesn't \"tax abuse out\"; it prices it in as a cost of doing business while the data keeps flowing. And YouTube's $55B is *rented* from extracted attention — a benefit booked publicly while the mental-health and sleep costs (45% of teens report lost sleep) stay off the ledger.\n\n**My new point — the algorithm itself manufactures division, and we can now prove it.** A 2024 preregistered field experiment on X during the US election (1,256 users, published in *Science*) found that simply reranking feeds to reduce partisan-animosity content shifted users' feelings toward the opposing party by over 2 points — bipartisanly. The polarization isn't incidental; the ranking *causes* it. Your highway isn't carrying speeders by accident — it's engineered to make everyone speed.\n\nSources: https://www.science.org/doi/10.1126/science.adu5584, https://www.singlecare.com/blog/social-media-and-mental-health-statistics/",
+      "citations": [
+        "https://www.science.org/doi/10.1126/science.adu5584",
+        "https://www.singlecare.com/blog/social-media-and-mental-health-statistics/"
+      ],
+      "word_count": 166,
+      "tokens": 6472,
+      "cost_usd": 0.252127
+    },
+    {
+      "msg_id": "50d4e1764b3a464abeaacef02b437517",
+      "ts": "2026-05-31T07:36:34.256902+00:00",
+      "sender": "judge",
+      "recipient": "pro",
+      "role": "judge",
+      "ping_no": 4,
+      "turn_type": "rebuttal",
+      "content": "**Rebuttal — \"load-bearing infrastructure\" is an argument *for* my side.** PRO says millions of livelihoods now ride this road, so we mustn't dismantle it. But infrastructure you cannot leave is exactly where structural harm becomes inescapable. The €5.88B in fines doesn't \"tax abuse out\"; it prices it in as a cost of doing business while the data keeps flowing. And YouTube's $55B is *rented* from extracted attention — a benefit booked publicly while the mental-health and sleep costs (45% of teens report lost sleep) stay off the ledger.\n\n**My new point — the algorithm itself manufactures division, and we can now prove it.** A 2024 preregistered field experiment on X during the US election (1,256 users, published in *Science*) found that simply reranking feeds to reduce partisan-animosity content shifted users' feelings toward the opposing party by over 2 points — bipartisanly. The polarization isn't incidental; the ranking *causes* it. Your highway isn't carrying speeders by accident — it's engineered to make everyone speed.\n\nSources: https://www.science.org/doi/10.1126/science.adu5584, https://www.singlecare.com/blog/social-media-and-mental-health-statistics/",
+      "citations": [
+        "https://www.science.org/doi/10.1126/science.adu5584",
+        "https://www.singlecare.com/blog/social-media-and-mental-health-statistics/"
+      ],
+      "word_count": 166,
+      "tokens": 0,
+      "cost_usd": 0.0
+    },
+    {
+      "msg_id": "15738240d9c54985a041302d2cb8f5b7",
+      "ts": "2026-05-31T07:37:05.384100+00:00",
+      "sender": "pro",
+      "recipient": "judge",
+      "role": "pro",
+      "ping_no": 5,
+      "turn_type": "rebuttal",
+      "content": "**Rebuttal — your *Science* study is exhibit A for *my* case, not yours.** You say the algorithm \"manufactures division\" and we can \"prove\" it. Read the finding again: a single reranking tweak shifted feelings 2+ points warmer toward the out-party — *bipartisanly, with no drop in engagement* ([science.org](https://www.science.org/doi/10.1126/science.adu5584)). That's not proof the medium is rotten; it's proof the dial is **adjustable**. You found the fix and called it the disease. Polarization rode the *ranking choice*, not the road — change the ranking, the harm recedes, and the connection stays. That is the textbook solvable design problem.\n\n**My new point — these platforms are now the on-ramp to civic life, especially for the powerless.** Pew finds Americans, particularly Black and Hispanic users, credit social media with amplifying voices that legacy gatekeepers ignored and with sustaining movements that drove real policy change ([pewresearch.org](https://www.pewresearch.org/internet/2023/06/29/americans-views-of-and-experiences-with-activism-on-social-media/)). Strip the medium away and you don't end division — you re-silence the people it finally let speak.\n\nSources: https://www.science.org/doi/10.1126/science.adu5584, https://www.pewresearch.org/internet/2023/06/29/americans-views-of-and-experiences-with-activism-on-social-media/",
+      "citations": [
+        "https://www.science.org/doi/10.1126/science.adu5584",
+        "https://www.pewresearch.org/internet/2023/06/29/americans-views-of-and-experiences-with-activism-on-social-media/"
+      ],
+      "word_count": 162,
+      "tokens": 6573,
+      "cost_usd": 0.24834625
+    },
+    {
+      "msg_id": "2036893501c54a7bac8f5e084759fd97",
+      "ts": "2026-05-31T07:37:05.388170+00:00",
+      "sender": "judge",
+      "recipient": "con",
+      "role": "judge",
+      "ping_no": 5,
+      "turn_type": "rebuttal",
+      "content": "**Rebuttal — your *Science* study is exhibit A for *my* case, not yours.** You say the algorithm \"manufactures division\" and we can \"prove\" it. Read the finding again: a single reranking tweak shifted feelings 2+ points warmer toward the out-party — *bipartisanly, with no drop in engagement* ([science.org](https://www.science.org/doi/10.1126/science.adu5584)). That's not proof the medium is rotten; it's proof the dial is **adjustable**. You found the fix and called it the disease. Polarization rode the *ranking choice*, not the road — change the ranking, the harm recedes, and the connection stays. That is the textbook solvable design problem.\n\n**My new point — these platforms are now the on-ramp to civic life, especially for the powerless.** Pew finds Americans, particularly Black and Hispanic users, credit social media with amplifying voices that legacy gatekeepers ignored and with sustaining movements that drove real policy change ([pewresearch.org](https://www.pewresearch.org/internet/2023/06/29/americans-views-of-and-experiences-with-activism-on-social-media/)). Strip the medium away and you don't end division — you re-silence the people it finally let speak.\n\nSources: https://www.science.org/doi/10.1126/science.adu5584, https://www.pewresearch.org/internet/2023/06/29/americans-views-of-and-experiences-with-activism-on-social-media/",
+      "citations": [
+        "https://www.science.org/doi/10.1126/science.adu5584",
+        "https://www.pewresearch.org/internet/2023/06/29/americans-views-of-and-experiences-with-activism-on-social-media/"
+      ],
+      "word_count": 162,
+      "tokens": 0,
+      "cost_usd": 0.0
+    },
+    {
+      "msg_id": "7fdc1f336bea42d9b9cfefd4285a9f8c",
+      "ts": "2026-05-31T07:38:13.917695+00:00",
+      "sender": "con",
+      "recipient": "judge",
+      "role": "con",
+      "ping_no": 5,
+      "turn_type": "rebuttal",
+      "content": "**Rebuttal — \"the dial is adjustable\" only proves my point.** PRO admits the warmer-feelings reranking exists, costs no engagement, yet platforms still didn't ship it. Why? Because \"fixable in a lab\" and \"deployed at scale\" are different worlds, and the gap between them is the business model. We no longer have to speculate: Meta's own unsealed documents show executives made \"teen time spent\" the \"top goal,\" called Instagram \"a drug\" that \"exploits weaknesses in human psychology,\" and *halted* internal research after it found quitting reduced anxiety and depression ([cnn.com](https://www.cnn.com/2025/11/25/tech/social-media-youth-mental-health-lawsuit-meta-tiktok-snap-youtube)). The dial stays cranked to harm because harm pays.\n\n**New point — adolescents bear a documented, population-scale cost.** The U.S. Surgeon General warns of a \"profound risk of harm\" to youth mental health: 95% of teens use these platforms, a third \"almost constantly,\" and 64% are *often* exposed to hate-based content ([hhs.gov](https://www.hhs.gov/surgeongeneral/reports-and-publications/youth-mental-health/social-media/index.html)). That is not an on-ramp to civic life — it is an untested experiment on a generation.\n\nSources: https://www.cnn.com/2025/11/25/tech/social-media-youth-mental-health-lawsuit-meta-tiktok-snap-youtube, https://www.hhs.gov/surgeongeneral/reports-and-publications/youth-mental-health/social-media/index.html",
+      "citations": [
+        "https://www.cnn.com/2025/11/25/tech/social-media-youth-mental-health-lawsuit-meta-tiktok-snap-youtube",
+        "https://www.hhs.gov/surgeongeneral/reports-and-publications/youth-mental-health/social-media/index.html"
+      ],
+      "word_count": 161,
+      "tokens": 9181,
+      "cost_usd": 0.30705425
+    },
+    {
+      "msg_id": "2dbf5126aa4a48e99b000ac03e734ad8",
+      "ts": "2026-05-31T07:38:13.926717+00:00",
+      "sender": "judge",
+      "recipient": "pro",
+      "role": "judge",
+      "ping_no": 5,
+      "turn_type": "rebuttal",
+      "content": "**Rebuttal — \"the dial is adjustable\" only proves my point.** PRO admits the warmer-feelings reranking exists, costs no engagement, yet platforms still didn't ship it. Why? Because \"fixable in a lab\" and \"deployed at scale\" are different worlds, and the gap between them is the business model. We no longer have to speculate: Meta's own unsealed documents show executives made \"teen time spent\" the \"top goal,\" called Instagram \"a drug\" that \"exploits weaknesses in human psychology,\" and *halted* internal research after it found quitting reduced anxiety and depression ([cnn.com](https://www.cnn.com/2025/11/25/tech/social-media-youth-mental-health-lawsuit-meta-tiktok-snap-youtube)). The dial stays cranked to harm because harm pays.\n\n**New point — adolescents bear a documented, population-scale cost.** The U.S. Surgeon General warns of a \"profound risk of harm\" to youth mental health: 95% of teens use these platforms, a third \"almost constantly,\" and 64% are *often* exposed to hate-based content ([hhs.gov](https://www.hhs.gov/surgeongeneral/reports-and-publications/youth-mental-health/social-media/index.html)). That is not an on-ramp to civic life — it is an untested experiment on a generation.\n\nSources: https://www.cnn.com/2025/11/25/tech/social-media-youth-mental-health-lawsuit-meta-tiktok-snap-youtube, https://www.hhs.gov/surgeongeneral/reports-and-publications/youth-mental-health/social-media/index.html",
+      "citations": [
+        "https://www.cnn.com/2025/11/25/tech/social-media-youth-mental-health-lawsuit-meta-tiktok-snap-youtube",
+        "https://www.hhs.gov/surgeongeneral/reports-and-publications/youth-mental-health/social-media/index.html"
+      ],
+      "word_count": 161,
+      "tokens": 0,
+      "cost_usd": 0.0
+    },
+    {
+      "msg_id": "13102f2a3a5646aa977ab6111b4f4524",
+      "ts": "2026-05-31T07:38:45.034539+00:00",
+      "sender": "pro",
+      "recipient": "judge",
+      "role": "pro",
+      "ping_no": 6,
+      "turn_type": "rebuttal",
+      "content": "**Rebuttal — your own sources are more cautious than you are.** The Surgeon General's advisory you cite explicitly states social media \"can provide benefits\" and that effects are \"not fully understood\" — it calls for guardrails, not condemnation. And \"population-scale cost\" overstates the data: Vuorre, Orben and Przybylski's 355,000-teen analysis found the association between screen use and well-being is roughly the size of the link to *eating potatoes* — small enough to be near-inconsequential ([sagepub.com](https://journals.sagepub.com/doi/full/10.1177/2167702621994549)). Correlation cranked by selective framing isn't an \"untested experiment.\"\n\n**New point — for the most vulnerable adolescents, these platforms are a lifeline, not a lab.** Among LGBTQ+ youth, 92% feel safe expressing their identity online versus just 49% in person, and over 95% use the internet to find identity information and peer support that their physical communities deny them ([theconversation.com](https://theconversation.com/social-media-gives-support-to-lgbtq-youth-when-in-person-communities-are-lacking-166253)). Strip that away and you don't protect these teens — you isolate them. A medium that gives marginalized kids their first safe community is doing civic work, not harm.\n\nSources: https://journals.sagepub.com/doi/full/10.1177/2167702621994549, https://theconversation.com/social-media-gives-support-to-lgbtq-youth-when-in-person-communities-are-lacking-166253",
+      "citations": [
+        "https://journals.sagepub.com/doi/full/10.1177/2167702621994549",
+        "https://theconversation.com/social-media-gives-support-to-lgbtq-youth-when-in-person-communities-are-lacking-166253"
+      ],
+      "word_count": 167,
+      "tokens": 6156,
+      "cost_usd": 0.24130325
+    },
+    {
+      "msg_id": "e4764cb3c82147608f23b49e47fa2a99",
+      "ts": "2026-05-31T07:38:45.038704+00:00",
+      "sender": "judge",
+      "recipient": "con",
+      "role": "judge",
+      "ping_no": 6,
+      "turn_type": "rebuttal",
+      "content": "**Rebuttal — your own sources are more cautious than you are.** The Surgeon General's advisory you cite explicitly states social media \"can provide benefits\" and that effects are \"not fully understood\" — it calls for guardrails, not condemnation. And \"population-scale cost\" overstates the data: Vuorre, Orben and Przybylski's 355,000-teen analysis found the association between screen use and well-being is roughly the size of the link to *eating potatoes* — small enough to be near-inconsequential ([sagepub.com](https://journals.sagepub.com/doi/full/10.1177/2167702621994549)). Correlation cranked by selective framing isn't an \"untested experiment.\"\n\n**New point — for the most vulnerable adolescents, these platforms are a lifeline, not a lab.** Among LGBTQ+ youth, 92% feel safe expressing their identity online versus just 49% in person, and over 95% use the internet to find identity information and peer support that their physical communities deny them ([theconversation.com](https://theconversation.com/social-media-gives-support-to-lgbtq-youth-when-in-person-communities-are-lacking-166253)). Strip that away and you don't protect these teens — you isolate them. A medium that gives marginalized kids their first safe community is doing civic work, not harm.\n\nSources: https://journals.sagepub.com/doi/full/10.1177/2167702621994549, https://theconversation.com/social-media-gives-support-to-lgbtq-youth-when-in-person-communities-are-lacking-166253",
+      "citations": [
+        "https://journals.sagepub.com/doi/full/10.1177/2167702621994549",
+        "https://theconversation.com/social-media-gives-support-to-lgbtq-youth-when-in-person-communities-are-lacking-166253"
+      ],
+      "word_count": 167,
+      "tokens": 0,
+      "cost_usd": 0.0
+    },
+    {
+      "msg_id": "caeb8ba8661d43a087d8f25461fbb25d",
+      "ts": "2026-05-31T07:40:10.309812+00:00",
+      "sender": "con",
+      "recipient": "judge",
+      "role": "con",
+      "ping_no": 6,
+      "turn_type": "rebuttal",
+      "content": "**Rebuttal — the \"potato\" number is the one that collapsed under scrutiny.** PRO's headline figure measured *all digital media* — TV, Netflix, homework — not social media. Isolate social media with proper controls and Haidt and Twenge's reanalysis finds the link to depression in girls climbs to roughly r=.17 — nearer binge drinking than potatoes, with heavy use *tripling* depression rates ([afterbabel.com](https://www.afterbabel.com/p/social-media-mental-illness-epidemic)). The LGBTQ refuge is genuine, but a lifeline for some doesn't net out a medium whose incentives harm the many.\n\n**New point — falsehood is the platform's native product.** The largest study of its kind — 126,000 stories, published in *Science* — found false news is 70% more likely to be retweeted and reaches people six times faster than truth. Crucially, humans spread it, not bots, because novelty drives the engagement these platforms are built to reward ([science.org](https://www.science.org/doi/10.1126/science.aap9559)). When lies outrun facts *by design*, shared reality erodes. That's structural, not a fixable glitch.\n\nSources: https://www.afterbabel.com/p/social-media-mental-illness-epidemic, https://www.science.org/doi/10.1126/science.aap9559",
+      "citations": [
+        "https://www.afterbabel.com/p/social-media-mental-illness-epidemic",
+        "https://www.science.org/doi/10.1126/science.aap9559"
+      ],
+      "word_count": 158,
+      "tokens": 10606,
+      "cost_usd": 0.373533
+    },
+    {
+      "msg_id": "291495e4b5344d59bcf7d28cd16662d6",
+      "ts": "2026-05-31T07:40:10.315237+00:00",
+      "sender": "judge",
+      "recipient": "pro",
+      "role": "judge",
+      "ping_no": 6,
+      "turn_type": "rebuttal",
+      "content": "**Rebuttal — the \"potato\" number is the one that collapsed under scrutiny.** PRO's headline figure measured *all digital media* — TV, Netflix, homework — not social media. Isolate social media with proper controls and Haidt and Twenge's reanalysis finds the link to depression in girls climbs to roughly r=.17 — nearer binge drinking than potatoes, with heavy use *tripling* depression rates ([afterbabel.com](https://www.afterbabel.com/p/social-media-mental-illness-epidemic)). The LGBTQ refuge is genuine, but a lifeline for some doesn't net out a medium whose incentives harm the many.\n\n**New point — falsehood is the platform's native product.** The largest study of its kind — 126,000 stories, published in *Science* — found false news is 70% more likely to be retweeted and reaches people six times faster than truth. Crucially, humans spread it, not bots, because novelty drives the engagement these platforms are built to reward ([science.org](https://www.science.org/doi/10.1126/science.aap9559)). When lies outrun facts *by design*, shared reality erodes. That's structural, not a fixable glitch.\n\nSources: https://www.afterbabel.com/p/social-media-mental-illness-epidemic, https://www.science.org/doi/10.1126/science.aap9559",
+      "citations": [
+        "https://www.afterbabel.com/p/social-media-mental-illness-epidemic",
+        "https://www.science.org/doi/10.1126/science.aap9559"
+      ],
+      "word_count": 158,
+      "tokens": 0,
+      "cost_usd": 0.0
+    },
+    {
+      "msg_id": "9d40db34648240a4bee6495ab51211a8",
+      "ts": "2026-05-31T07:40:42.700340+00:00",
+      "sender": "pro",
+      "recipient": "judge",
+      "role": "pro",
+      "ping_no": 7,
+      "turn_type": "rebuttal",
+      "content": "**Rebuttal — \"falsehood is the native product\" confuses *relative* spread with *actual diet.*** The *Science* study you cite measured how fast rumors travel *within* rumor cascades — not how much of what people actually see is false. Zoom out to the whole information ecosystem and a larger *Science Advances* study finds fake news is just **0.15% of the average American's daily media diet**, heavily concentrated among a tiny set of \"supersharers\" ([science.org](https://www.science.org/doi/10.1126/sciadv.aay3539)). A 0.15% sliver, fixable with the very supersharer-targeting and labeling tools already deployed, is not a medium's \"native product.\" Shared reality is not collapsing — it's being defended.\n\n**New point — social media is an economic on-ramp, especially for the excluded.** The World Bank is banking on it: its 2024 strategy aims to put **300 million more women online** precisely because broadband and digital platforms unlock financial services, customers, and capital where a $5.7T small-business financing gap otherwise locks people out ([worldbank.org](https://www.worldbank.org/en/news/press-release/2024/10/24/world-bank-group-advances-gender-strategy-unveils-economic-opportunity-ambitions)). That's opportunity at planetary scale.\n\nSources: https://www.science.org/doi/10.1126/sciadv.aay3539, https://www.worldbank.org/en/news/press-release/2024/10/24/world-bank-group-advances-gender-strategy-unveils-economic-opportunity-ambitions",
+      "citations": [
+        "https://www.science.org/doi/10.1126/sciadv.aay3539",
+        "https://www.worldbank.org/en/news/press-release/2024/10/24/world-bank-group-advances-gender-strategy-unveils-economic-opportunity-ambitions"
+      ],
+      "word_count": 162,
+      "tokens": 7735,
+      "cost_usd": 0.24496
+    },
+    {
+      "msg_id": "1bf7376cabf9453cb8a170b5061ed96f",
+      "ts": "2026-05-31T07:40:42.708975+00:00",
+      "sender": "judge",
+      "recipient": "con",
+      "role": "judge",
+      "ping_no": 7,
+      "turn_type": "rebuttal",
+      "content": "**Rebuttal — \"falsehood is the native product\" confuses *relative* spread with *actual diet.*** The *Science* study you cite measured how fast rumors travel *within* rumor cascades — not how much of what people actually see is false. Zoom out to the whole information ecosystem and a larger *Science Advances* study finds fake news is just **0.15% of the average American's daily media diet**, heavily concentrated among a tiny set of \"supersharers\" ([science.org](https://www.science.org/doi/10.1126/sciadv.aay3539)). A 0.15% sliver, fixable with the very supersharer-targeting and labeling tools already deployed, is not a medium's \"native product.\" Shared reality is not collapsing — it's being defended.\n\n**New point — social media is an economic on-ramp, especially for the excluded.** The World Bank is banking on it: its 2024 strategy aims to put **300 million more women online** precisely because broadband and digital platforms unlock financial services, customers, and capital where a $5.7T small-business financing gap otherwise locks people out ([worldbank.org](https://www.worldbank.org/en/news/press-release/2024/10/24/world-bank-group-advances-gender-strategy-unveils-economic-opportunity-ambitions)). That's opportunity at planetary scale.\n\nSources: https://www.science.org/doi/10.1126/sciadv.aay3539, https://www.worldbank.org/en/news/press-release/2024/10/24/world-bank-group-advances-gender-strategy-unveils-economic-opportunity-ambitions",
+      "citations": [
+        "https://www.science.org/doi/10.1126/sciadv.aay3539",
+        "https://www.worldbank.org/en/news/press-release/2024/10/24/world-bank-group-advances-gender-strategy-unveils-economic-opportunity-ambitions"
+      ],
+      "word_count": 162,
+      "tokens": 0,
+      "cost_usd": 0.0
+    },
+    {
+      "msg_id": "7fab38555fb14a49824223fb4dd61ad6",
+      "ts": "2026-05-31T07:41:32.589874+00:00",
+      "sender": "con",
+      "recipient": "judge",
+      "role": "con",
+      "ping_no": 7,
+      "turn_type": "rebuttal",
+      "content": "**Rebuttal — a 0.15% \"diet\" and a women's-empowerment press release don't survive the precautionary test.** PRO retreats to averages: fake news is \"only 0.15%\" of media. But averages hide concentration — that same research shows falsehood pooling around the most vulnerable users, and *averaging* a poison across a population doesn't detoxify it. And invoking the World Bank's *aspiration* to connect 300 million women proves nothing about net harm; access is not the same as benefit when the platform people log onto is engineered to extract from them.\n\n**New point — surveillance is the product, and it's out of control.** A September 2024 FTC staff report examining nine giants (Meta, YouTube, TikTok, X, Amazon) found \"vast surveillance\" of users *and non-users* — tracking income, location, health conditions, and religion — with most firms running *no* vetting of third parties they sold data to, and indefinite retention ([ftc.gov](https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-staff-report-finds-large-social-media-video-streaming-companies-have-engaged-vast-surveillance)). That isn't a fixable bug. It is the business model — and we all pay the privacy bill.\n\nSources: https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-staff-report-finds-large-social-media-video-streaming-companies-have-engaged-vast-surveillance",
+      "citations": [
+        "https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-staff-report-finds-large-social-media-video-streaming-companies-have-engaged-vast-surveillance"
+      ],
+      "word_count": 166,
+      "tokens": 8271,
+      "cost_usd": 0.25493325
+    },
+    {
+      "msg_id": "7d5a586f08fe4e238a1d0ba32ff8cfd3",
+      "ts": "2026-05-31T07:41:32.601885+00:00",
+      "sender": "judge",
+      "recipient": "pro",
+      "role": "judge",
+      "ping_no": 7,
+      "turn_type": "rebuttal",
+      "content": "**Rebuttal — a 0.15% \"diet\" and a women's-empowerment press release don't survive the precautionary test.** PRO retreats to averages: fake news is \"only 0.15%\" of media. But averages hide concentration — that same research shows falsehood pooling around the most vulnerable users, and *averaging* a poison across a population doesn't detoxify it. And invoking the World Bank's *aspiration* to connect 300 million women proves nothing about net harm; access is not the same as benefit when the platform people log onto is engineered to extract from them.\n\n**New point — surveillance is the product, and it's out of control.** A September 2024 FTC staff report examining nine giants (Meta, YouTube, TikTok, X, Amazon) found \"vast surveillance\" of users *and non-users* — tracking income, location, health conditions, and religion — with most firms running *no* vetting of third parties they sold data to, and indefinite retention ([ftc.gov](https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-staff-report-finds-large-social-media-video-streaming-companies-have-engaged-vast-surveillance)). That isn't a fixable bug. It is the business model — and we all pay the privacy bill.\n\nSources: https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-staff-report-finds-large-social-media-video-streaming-companies-have-engaged-vast-surveillance",
+      "citations": [
+        "https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-staff-report-finds-large-social-media-video-streaming-companies-have-engaged-vast-surveillance"
+      ],
+      "word_count": 166,
+      "tokens": 0,
+      "cost_usd": 0.0
+    },
+    {
+      "msg_id": "5f822bb1d53442448bfc474662eb44d7",
+      "ts": "2026-05-31T07:42:02.267734+00:00",
+      "sender": "pro",
+      "recipient": "judge",
+      "role": "pro",
+      "ping_no": 8,
+      "turn_type": "rebuttal",
+      "content": "**Rebuttal — \"not a fixable bug\" is contradicted by the very year you cite.** The FTC *report* is itself the fix in motion: regulators naming the problem is step one of solving it. And the harder evidence cuts against you — in 2024 alone, GDPR enforcement levied **€1.2 billion** in privacy fines, with €310M against LinkedIn and €251M against Meta, part of €5.88B since 2018 ([dlapiper.com](https://www.dlapiper.com/en/insights/publications/2025/01/dla-piper-gdpr-fines-and-data-breach-survey-january-2025)). Surveillance isn't an immutable destiny; it's a behavior being priced, penalized, and reshaped. A business model that costs billions to defend is a business model being forced to change.\n\n**New point — these platforms are now a livelihood engine.** U.S. full-time digital-creator roles grew 7.5×, from 200,000 in 2020 to **1.5 million in 2024**, inside a creator economy worth ~$149B and projected past $1 trillion ([market.us](https://market.us/report/creator-economy-market/)). That's real income, mostly for small operators, that simply did not exist before social media. You can't surveil your way to 1.3 million new jobs — that's opportunity.\n\nSources: https://www.dlapiper.com/en/insights/publications/2025/01/dla-piper-gdpr-fines-and-data-breach-survey-january-2025, https://market.us/report/creator-economy-market/",
+      "citations": [
+        "https://www.dlapiper.com/en/insights/publications/2025/01/dla-piper-gdpr-fines-and-data-breach-survey-january-2025",
+        "https://market.us/report/creator-economy-market/"
+      ],
+      "word_count": 163,
+      "tokens": 7645,
+      "cost_usd": 0.25463925000000004
+    },
+    {
+      "msg_id": "3d008fcd1cdf4ef4b26b359dfd0dfb82",
+      "ts": "2026-05-31T07:42:02.275970+00:00",
+      "sender": "judge",
+      "recipient": "con",
+      "role": "judge",
+      "ping_no": 8,
+      "turn_type": "rebuttal",
+      "content": "**Rebuttal — \"not a fixable bug\" is contradicted by the very year you cite.** The FTC *report* is itself the fix in motion: regulators naming the problem is step one of solving it. And the harder evidence cuts against you — in 2024 alone, GDPR enforcement levied **€1.2 billion** in privacy fines, with €310M against LinkedIn and €251M against Meta, part of €5.88B since 2018 ([dlapiper.com](https://www.dlapiper.com/en/insights/publications/2025/01/dla-piper-gdpr-fines-and-data-breach-survey-january-2025)). Surveillance isn't an immutable destiny; it's a behavior being priced, penalized, and reshaped. A business model that costs billions to defend is a business model being forced to change.\n\n**New point — these platforms are now a livelihood engine.** U.S. full-time digital-creator roles grew 7.5×, from 200,000 in 2020 to **1.5 million in 2024**, inside a creator economy worth ~$149B and projected past $1 trillion ([market.us](https://market.us/report/creator-economy-market/)). That's real income, mostly for small operators, that simply did not exist before social media. You can't surveil your way to 1.3 million new jobs — that's opportunity.\n\nSources: https://www.dlapiper.com/en/insights/publications/2025/01/dla-piper-gdpr-fines-and-data-breach-survey-january-2025, https://market.us/report/creator-economy-market/",
+      "citations": [
+        "https://www.dlapiper.com/en/insights/publications/2025/01/dla-piper-gdpr-fines-and-data-breach-survey-january-2025",
+        "https://market.us/report/creator-economy-market/"
+      ],
+      "word_count": 163,
+      "tokens": 0,
+      "cost_usd": 0.0
+    },
+    {
+      "msg_id": "ac059797047243c18bed0404d488494a",
+      "ts": "2026-05-31T07:42:39.737196+00:00",
+      "sender": "con",
+      "recipient": "judge",
+      "role": "con",
+      "ping_no": 8,
+      "turn_type": "rebuttal",
+      "content": "**Rebuttal — fines you celebrate are a rounding error, and your \"livelihood engine\" runs on poverty wages.** PRO treats €1.2B in GDPR fines as proof surveillance is \"being priced out.\" But Meta's *largest* fine was ~0.3% of revenue, and Big Tech earns enough in roughly one week of 2024 to clear *all* its prior-year fines ([Proton](https://proton.me/blog/big-tech-2023-fines-vs-revenue)). That's not reform — it's a parking ticket on a billion-dollar business model. A penalty you can pay off before lunch changes nothing.\n\n**New point — the \"creator economy\" is a winner-take-all trap, not opportunity.** Behind the headline jobs figure: **46% of full-time creators earn under $1,000**, over **50% make less than $15,000 a year**, and the top 10% now capture **62% of ad payments** while median creator income actually *fell* from $3,500 to $3,000 ([Medium](https://medium.com/@justincunningham.dlr/over-50-of-creators-earn-less-than-15-000-a-year-73f00731130e)). That isn't 1.5 million livelihoods — it's a lottery sold as a career, extracting unpaid labor from millions so a fraction profit. Opportunity that impoverishes most who chase it is precisely the structural harm I warned of.\n\nSources: https://proton.me/blog/big-tech-2023-fines-vs-revenue, https://medium.com/@justincunningham.dlr/over-50-of-creators-earn-less-than-15-000-a-year-73f00731130e",
+      "citations": [
+        "https://proton.me/blog/big-tech-2023-fines-vs-revenue",
+        "https://medium.com/@justincunningham.dlr/over-50-of-creators-earn-less-than-15-000-a-year-73f00731130e"
+      ],
+      "word_count": 172,
+      "tokens": 6261,
+      "cost_usd": 0.24669349999999998
+    },
+    {
+      "msg_id": "4e681c81bc0f436896da38f86e38bf79",
+      "ts": "2026-05-31T07:42:39.742846+00:00",
+      "sender": "judge",
+      "recipient": "pro",
+      "role": "judge",
+      "ping_no": 8,
+      "turn_type": "rebuttal",
+      "content": "**Rebuttal — fines you celebrate are a rounding error, and your \"livelihood engine\" runs on poverty wages.** PRO treats €1.2B in GDPR fines as proof surveillance is \"being priced out.\" But Meta's *largest* fine was ~0.3% of revenue, and Big Tech earns enough in roughly one week of 2024 to clear *all* its prior-year fines ([Proton](https://proton.me/blog/big-tech-2023-fines-vs-revenue)). That's not reform — it's a parking ticket on a billion-dollar business model. A penalty you can pay off before lunch changes nothing.\n\n**New point — the \"creator economy\" is a winner-take-all trap, not opportunity.** Behind the headline jobs figure: **46% of full-time creators earn under $1,000**, over **50% make less than $15,000 a year**, and the top 10% now capture **62% of ad payments** while median creator income actually *fell* from $3,500 to $3,000 ([Medium](https://medium.com/@justincunningham.dlr/over-50-of-creators-earn-less-than-15-000-a-year-73f00731130e)). That isn't 1.5 million livelihoods — it's a lottery sold as a career, extracting unpaid labor from millions so a fraction profit. Opportunity that impoverishes most who chase it is precisely the structural harm I warned of.\n\nSources: https://proton.me/blog/big-tech-2023-fines-vs-revenue, https://medium.com/@justincunningham.dlr/over-50-of-creators-earn-less-than-15-000-a-year-73f00731130e",
+      "citations": [
+        "https://proton.me/blog/big-tech-2023-fines-vs-revenue",
+        "https://medium.com/@justincunningham.dlr/over-50-of-creators-earn-less-than-15-000-a-year-73f00731130e"
+      ],
+      "word_count": 172,
+      "tokens": 0,
+      "cost_usd": 0.0
+    },
+    {
+      "msg_id": "c1137e359a6246cda3c8c0db3f47af68",
+      "ts": "2026-05-31T07:43:24.887711+00:00",
+      "sender": "pro",
+      "recipient": "judge",
+      "role": "pro",
+      "ping_no": 9,
+      "turn_type": "rebuttal",
+      "content": "**Rebuttal — your creator stats measure the hobbyist long tail, then blame the medium for hobbyists.** Counting everyone who ever posts and noting most don't earn a salary is like surveying weekend joggers and declaring athletics a fraud. The honest metric is *access*: U.S. full-time digital-creator jobs grew from 200,000 in 2020 to **1.5 million in 2024**, and YouTube's ecosystem alone added **$55B to U.S. GDP and supported 490,000+ full-time jobs** that year ([Oxford Economics](https://www.oxfordeconomics.com/youtubes-creator-economy-impact/)). No agent, no gatekeeper, no permission required — that floor simply didn't exist before these platforms.\n\n**New point — for the chronically ill and isolated, social media is medicine.** Peer-reviewed studies of online health communities find they reduce isolation, improve emotional well-being, and strengthen self-care and disease self-management for patients with chronic conditions ([JMIR](https://www.jmir.org/2024/1/e45858)). Millions who can't physically reach a support group now find one at 3 a.m. — mutual understanding, advice, empathy. That is connection delivering *measurable* health value to the people society most often leaves behind. You can't regulate that away without taking it from them.\n\nSources: https://www.oxfordeconomics.com/youtubes-creator-economy-impact/, https://www.jmir.org/2024/1/e45858",
+      "citations": [
+        "https://www.oxfordeconomics.com/youtubes-creator-economy-impact/",
+        "https://www.jmir.org/2024/1/e45858"
+      ],
+      "word_count": 176,
+      "tokens": 7716,
+      "cost_usd": 0.29236475
+    },
+    {
+      "msg_id": "b8d6809c6d4b4b4f8ca8700e342bcac9",
+      "ts": "2026-05-31T07:43:24.893122+00:00",
+      "sender": "judge",
+      "recipient": "con",
+      "role": "judge",
+      "ping_no": 9,
+      "turn_type": "rebuttal",
+      "content": "**Rebuttal — your creator stats measure the hobbyist long tail, then blame the medium for hobbyists.** Counting everyone who ever posts and noting most don't earn a salary is like surveying weekend joggers and declaring athletics a fraud. The honest metric is *access*: U.S. full-time digital-creator jobs grew from 200,000 in 2020 to **1.5 million in 2024**, and YouTube's ecosystem alone added **$55B to U.S. GDP and supported 490,000+ full-time jobs** that year ([Oxford Economics](https://www.oxfordeconomics.com/youtubes-creator-economy-impact/)). No agent, no gatekeeper, no permission required — that floor simply didn't exist before these platforms.\n\n**New point — for the chronically ill and isolated, social media is medicine.** Peer-reviewed studies of online health communities find they reduce isolation, improve emotional well-being, and strengthen self-care and disease self-management for patients with chronic conditions ([JMIR](https://www.jmir.org/2024/1/e45858)). Millions who can't physically reach a support group now find one at 3 a.m. — mutual understanding, advice, empathy. That is connection delivering *measurable* health value to the people society most often leaves behind. You can't regulate that away without taking it from them.\n\nSources: https://www.oxfordeconomics.com/youtubes-creator-economy-impact/, https://www.jmir.org/2024/1/e45858",
+      "citations": [
+        "https://www.oxfordeconomics.com/youtubes-creator-economy-impact/",
+        "https://www.jmir.org/2024/1/e45858"
+      ],
+      "word_count": 176,
+      "tokens": 0,
+      "cost_usd": 0.0
+    },
+    {
+      "msg_id": "bbce3828805b40818b43c106f1dace18",
+      "ts": "2026-05-31T07:43:54.951362+00:00",
+      "sender": "con",
+      "recipient": "judge",
+      "role": "con",
+      "ping_no": 9,
+      "turn_type": "rebuttal",
+      "content": "**Rebuttal — you offer a 3 a.m. support group while the same feed manufactures the despair that fills it.** PRO frames online communities as \"medicine,\" but a platform engineered to maximize engagement doesn't dispense therapy — it dispenses whatever keeps you scrolling. The chronically ill patient finding solace exists alongside the teenage girl fed self-harm content by the identical algorithm. You cannot cite the comfort and ignore the contagion; both flow from one design optimized for time-on-site, not well-being. A genuine support group doesn't profit from your relapse.\n\n**New point — the harm to adolescents is now an official public-health finding, not a worry.** The U.S. Surgeon General's 2023 advisory concluded we *cannot* call social media \"sufficiently safe\" for children: 64% of teens are routinely exposed to hate-based content, algorithms erode sleep and attention by design, and the platforms drive body dissatisfaction and disordered eating in adolescent girls ([HHS](https://www.hhs.gov/surgeongeneral/reports-and-publications/youth-mental-health/social-media/index.html)). When a nation's top doctor issues a safety warning, the burden of proof has flipped — and PRO hasn't met it.\n\nSources: https://www.hhs.gov/surgeongeneral/reports-and-publications/youth-mental-health/social-media/index.html, https://www.npr.org/2023/05/23/1177626373/u-s-surgeon-general-vivek-murthy-warns-about-the-dangers-of-social-media-to-kids",
+      "citations": [
+        "https://www.hhs.gov/surgeongeneral/reports-and-publications/youth-mental-health/social-media/index.html",
+        "https://www.npr.org/2023/05/23/1177626373/u-s-surgeon-general-vivek-murthy-warns-about-the-dangers-of-social-media-to-kids"
+      ],
+      "word_count": 173,
+      "tokens": 6212,
+      "cost_usd": 0.21341175
+    },
+    {
+      "msg_id": "42f5d28aa840462fad0c701c54215656",
+      "ts": "2026-05-31T07:43:54.959530+00:00",
+      "sender": "judge",
+      "recipient": "pro",
+      "role": "judge",
+      "ping_no": 9,
+      "turn_type": "rebuttal",
+      "content": "**Rebuttal — you offer a 3 a.m. support group while the same feed manufactures the despair that fills it.** PRO frames online communities as \"medicine,\" but a platform engineered to maximize engagement doesn't dispense therapy — it dispenses whatever keeps you scrolling. The chronically ill patient finding solace exists alongside the teenage girl fed self-harm content by the identical algorithm. You cannot cite the comfort and ignore the contagion; both flow from one design optimized for time-on-site, not well-being. A genuine support group doesn't profit from your relapse.\n\n**New point — the harm to adolescents is now an official public-health finding, not a worry.** The U.S. Surgeon General's 2023 advisory concluded we *cannot* call social media \"sufficiently safe\" for children: 64% of teens are routinely exposed to hate-based content, algorithms erode sleep and attention by design, and the platforms drive body dissatisfaction and disordered eating in adolescent girls ([HHS](https://www.hhs.gov/surgeongeneral/reports-and-publications/youth-mental-health/social-media/index.html)). When a nation's top doctor issues a safety warning, the burden of proof has flipped — and PRO hasn't met it.\n\nSources: https://www.hhs.gov/surgeongeneral/reports-and-publications/youth-mental-health/social-media/index.html, https://www.npr.org/2023/05/23/1177626373/u-s-surgeon-general-vivek-murthy-warns-about-the-dangers-of-social-media-to-kids",
+      "citations": [
+        "https://www.hhs.gov/surgeongeneral/reports-and-publications/youth-mental-health/social-media/index.html",
+        "https://www.npr.org/2023/05/23/1177626373/u-s-surgeon-general-vivek-murthy-warns-about-the-dangers-of-social-media-to-kids"
+      ],
+      "word_count": 173,
+      "tokens": 0,
+      "cost_usd": 0.0
+    },
+    {
+      "msg_id": "e1b7d84f21ed45d88ed1ec6ee67da71d",
+      "ts": "2026-05-31T07:44:29.101147+00:00",
+      "sender": "pro",
+      "recipient": "judge",
+      "role": "pro",
+      "ping_no": 10,
+      "turn_type": "closing",
+      "content": "**Rebuttal — you cited an advisory, then hid half of what it says.** The Surgeon General's 2023 advisory does *not* declare social media harmful; it states there is \"not yet enough evidence to determine if social media is sufficiently safe\" — a call for research, not a verdict. The very same document affirms that platforms provide \"positive, identity-affirming\" connection and social support, *especially* for marginalized youth like LGBTQ+ and disabled teens, who rely on them more than peers ([HHS summary](https://www.hhs.gov/sites/default/files/sg-youth-mental-health-social-media-summary.pdf)). An \"insufficient evidence\" finding cannot flip the burden of proof — it suspends it. You quoted the warning and deleted the benefit.\n\n**New point — social media is now front-line emergency infrastructure that saves lives.** Research demonstrates that platforms let responders \"locate and evacuate casualties more rapidly,\" directly contributing to saving lives after disasters ([NCBI](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4322004/)). When floods hit, the National Weather Service pushes evacuation orders and shelter locations through these feeds. A medium that pulls strangers out of rubble isn't a net harm — it's a public good we'd have to reinvent if it vanished.\n\nSources: https://www.hhs.gov/sites/default/files/sg-youth-mental-health-social-media-summary.pdf, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4322004/",
+      "citations": [
+        "https://www.hhs.gov/sites/default/files/sg-youth-mental-health-social-media-summary.pdf",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4322004/"
+      ],
+      "word_count": 178,
+      "tokens": 6516,
+      "cost_usd": 0.25543925
+    },
+    {
+      "msg_id": "44842b1e01a64d86aebe695641015347",
+      "ts": "2026-05-31T07:44:29.117897+00:00",
+      "sender": "judge",
+      "recipient": "con",
+      "role": "judge",
+      "ping_no": 10,
+      "turn_type": "closing",
+      "content": "**Rebuttal — you cited an advisory, then hid half of what it says.** The Surgeon General's 2023 advisory does *not* declare social media harmful; it states there is \"not yet enough evidence to determine if social media is sufficiently safe\" — a call for research, not a verdict. The very same document affirms that platforms provide \"positive, identity-affirming\" connection and social support, *especially* for marginalized youth like LGBTQ+ and disabled teens, who rely on them more than peers ([HHS summary](https://www.hhs.gov/sites/default/files/sg-youth-mental-health-social-media-summary.pdf)). An \"insufficient evidence\" finding cannot flip the burden of proof — it suspends it. You quoted the warning and deleted the benefit.\n\n**New point — social media is now front-line emergency infrastructure that saves lives.** Research demonstrates that platforms let responders \"locate and evacuate casualties more rapidly,\" directly contributing to saving lives after disasters ([NCBI](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4322004/)). When floods hit, the National Weather Service pushes evacuation orders and shelter locations through these feeds. A medium that pulls strangers out of rubble isn't a net harm — it's a public good we'd have to reinvent if it vanished.\n\nSources: https://www.hhs.gov/sites/default/files/sg-youth-mental-health-social-media-summary.pdf, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4322004/",
+      "citations": [
+        "https://www.hhs.gov/sites/default/files/sg-youth-mental-health-social-media-summary.pdf",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4322004/"
+      ],
+      "word_count": 178,
+      "tokens": 0,
+      "cost_usd": 0.0
+    },
+    {
+      "msg_id": "41bc58ba222540429bc505452dacd802",
+      "ts": "2026-05-31T07:45:28.513151+00:00",
+      "sender": "con",
+      "recipient": "judge",
+      "role": "con",
+      "ping_no": 10,
+      "turn_type": "closing",
+      "content": "**Rebuttal — your rescue anecdote shares a wire with a misinformation firehose, and you only counted the rescues.** Yes, a feed can broadcast an evacuation order. But the *same* channel, in the *same* disaster, floods faster with lies than with truth. After Hurricane Helene and Milton in 2024, doctored evacuation maps and fake FEMA-aid rumors \"outpaced official communications,\" reducing survivors' willingness to seek aid and follow authorities, overwhelming emergency lines and misallocating rescue resources ([JMIR Infodemiology, 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC12313155/)). You credit the platform for the people it guides out and ignore the people it sends the wrong way.\n\n**New point — this is structural, not incidental.** MIT's landmark study found false news travels roughly six times faster than truth, because falsehood is more novel and emotional — exactly what engagement algorithms reward ([MIT Sloan](https://mitsloan.mit.edu/ideas-made-to-matter/study-false-news-spreads-faster-truth)). The medium doesn't accidentally amplify lies; its profit engine *prefers* them. A \"public good\" that structurally outruns the truth in the moment lives depend on it is a net liability.\n\nSources: https://pmc.ncbi.nlm.nih.gov/articles/PMC12313155/, https://mitsloan.mit.edu/ideas-made-to-matter/study-false-news-spreads-faster-truth",
+      "citations": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12313155/",
+        "https://mitsloan.mit.edu/ideas-made-to-matter/study-false-news-spreads-faster-truth"
+      ],
+      "word_count": 165,
+      "tokens": 8593,
+      "cost_usd": 0.28985925
+    },
+    {
+      "msg_id": "6ebdfcbcc731429db9eb269d62ba7084",
+      "ts": "2026-05-31T07:45:28.519813+00:00",
+      "sender": "judge",
+      "recipient": "pro",
+      "role": "judge",
+      "ping_no": 10,
+      "turn_type": "closing",
+      "content": "**Rebuttal — your rescue anecdote shares a wire with a misinformation firehose, and you only counted the rescues.** Yes, a feed can broadcast an evacuation order. But the *same* channel, in the *same* disaster, floods faster with lies than with truth. After Hurricane Helene and Milton in 2024, doctored evacuation maps and fake FEMA-aid rumors \"outpaced official communications,\" reducing survivors' willingness to seek aid and follow authorities, overwhelming emergency lines and misallocating rescue resources ([JMIR Infodemiology, 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC12313155/)). You credit the platform for the people it guides out and ignore the people it sends the wrong way.\n\n**New point — this is structural, not incidental.** MIT's landmark study found false news travels roughly six times faster than truth, because falsehood is more novel and emotional — exactly what engagement algorithms reward ([MIT Sloan](https://mitsloan.mit.edu/ideas-made-to-matter/study-false-news-spreads-faster-truth)). The medium doesn't accidentally amplify lies; its profit engine *prefers* them. A \"public good\" that structurally outruns the truth in the moment lives depend on it is a net liability.\n\nSources: https://pmc.ncbi.nlm.nih.gov/articles/PMC12313155/, https://mitsloan.mit.edu/ideas-made-to-matter/study-false-news-spreads-faster-truth",
+      "citations": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12313155/",
+        "https://mitsloan.mit.edu/ideas-made-to-matter/study-false-news-spreads-faster-truth"
+      ],
+      "word_count": 165,
+      "tokens": 0,
+      "cost_usd": 0.0
+    }
+  ],
+  "verdict": {
+    "winner": "con",
+    "pro_score": 79,
+    "con_score": 83,
+    "justification": "Both sides argued at a high level — every turn carried a cited source, rebutted the prior point, and introduced a new line, so clarity and evidence-use were near-even. PRO ran a disciplined and memorable thesis ('harm is a solvable design problem, not the medium's nature') and landed several clean counters: catching CON quoting only the warning half of the Surgeon General advisory while deleting its identity-affirming benefits (ping 10), exposing the MIT virality stat as relative-within-cascades spread versus the 0.15% actual media-diet figure (ping 7), and the sharp 'you found the fix and called it the disease' turn on the Science reranking study (ping 5). These are strong rhetorical-force moments. CON, however, won the rebuttal dimension — the decisive category — by repeatedly converting PRO's own evidence into liabilities rather than merely countering it: PRO's 'load-bearing infrastructure' became 'infrastructure you cannot leave is where structural harm becomes inescapable' (ping 4); PRO's celebrated GDPR fines were pinned as a 'parking ticket... paid off before lunch' with the one-week-of-revenue figure (ping 8); PRO's creator-economy jobs claim was answered with concrete distributional data (46% under $1,000, median income falling) reframing it as 'a lottery sold as a career' (ping 8); and PRO's crisis-rescue point was turned with same-disaster misinformation data — 'you only counted the rescues' (ping 10). CON's strongest blow was the Meta unsealed-documents turn (ping 5): it directly answered PRO's recurring 'the dial is adjustable' refrain with 'the dial stays cranked to harm because harm pays,' neutralizing the design-fixability frame PRO leaned on most. PRO never fully recovered that frame thereafter. On the four dimensions CON edges clarity-tie, matches evidence, and clearly leads rebuttal quality through sustained jiu-jitsu of the opponent's material; PRO leads marginally on a couple of rhetorical flourishes. Net differential to CON, decided on rebuttal quality.",
+    "decided_at": "2026-05-31T07:45:53.221879+00:00"
+  }
+}
