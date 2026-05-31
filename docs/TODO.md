@@ -503,51 +503,51 @@ T-0467 | P7 | judge | update TODO; save docs/prompts/007; commit (>=4); push; CI
 
 ## Phase 8 — Terminal menu + CLI
 
-T-0468 | P8 | cli | design cli/menu.py public interface and signatures | interface documented in PRD/PLAN; reviewed | todo
-T-0469 | P8 | cli | test(cli): happy-path for Menu rendering with rich; options call SDK | failing test written first (red) | todo
-T-0470 | P8 | cli | test(cli): error-path for Menu rendering with rich; options call SDK | raises/handles the error path; test green | todo
-T-0471 | P8 | cli | test(cli): edge-case/property test for cli/menu.py | boundary inputs covered | todo
-T-0472 | P8 | cli | implement cli/menu.py: Menu rendering with rich; options call SDK | smallest impl that passes tests (green) | todo
-T-0473 | P8 | cli | docstrings on cli/menu.py public API (why, not what) | every public symbol documented | todo
-T-0474 | P8 | cli | type hints on cli/menu.py public signatures (no bare Any) | mypy-clean signatures | todo
-T-0475 | P8 | cli | review cli/menu.py for duplication (rule 3) | no copy-paste; shared helpers extracted | todo
-T-0476 | P8 | cli | keep cli/menu.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | todo
-T-0477 | P8 | cli | design cli/actions.py public interface and signatures | interface documented in PRD/PLAN; reviewed | todo
-T-0478 | P8 | cli | test(cli): happy-path for menu action handlers calling the SDK | failing test written first (red) | todo
-T-0479 | P8 | cli | test(cli): error-path for menu action handlers calling the SDK | raises/handles the error path; test green | todo
-T-0480 | P8 | cli | test(cli): edge-case/property test for cli/actions.py | boundary inputs covered | todo
-T-0481 | P8 | cli | implement cli/actions.py: menu action handlers calling the SDK | smallest impl that passes tests (green) | todo
-T-0482 | P8 | cli | docstrings on cli/actions.py public API (why, not what) | every public symbol documented | todo
-T-0483 | P8 | cli | type hints on cli/actions.py public signatures (no bare Any) | mypy-clean signatures | todo
-T-0484 | P8 | cli | review cli/actions.py for duplication (rule 3) | no copy-paste; shared helpers extracted | todo
-T-0485 | P8 | cli | keep cli/actions.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | todo
-T-0486 | P8 | cli | design cli/main.py public interface and signatures | interface documented in PRD/PLAN; reviewed | todo
-T-0487 | P8 | cli | test(cli): happy-path for argparse entry: menu/run/verdict/cost/logs subcommands | failing test written first (red) | todo
-T-0488 | P8 | cli | test(cli): error-path for argparse entry: menu/run/verdict/cost/logs subcommands | raises/handles the error path; test green | todo
-T-0489 | P8 | cli | test(cli): edge-case/property test for cli/main.py | boundary inputs covered | todo
-T-0490 | P8 | cli | implement cli/main.py: argparse entry: menu/run/verdict/cost/logs subcommands | smallest impl that passes tests (green) | todo
-T-0491 | P8 | cli | docstrings on cli/main.py public API (why, not what) | every public symbol documented | todo
-T-0492 | P8 | cli | type hints on cli/main.py public signatures (no bare Any) | mypy-clean signatures | todo
-T-0493 | P8 | cli | review cli/main.py for duplication (rule 3) | no copy-paste; shared helpers extracted | todo
-T-0494 | P8 | cli | keep cli/main.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | todo
-T-0495 | P8 | cli | design cli/render.py public interface and signatures | interface documented in PRD/PLAN; reviewed | todo
-T-0496 | P8 | cli | test(cli): happy-path for rich rendering helpers (tables, panels) for menu output | failing test written first (red) | todo
-T-0497 | P8 | cli | test(cli): error-path for rich rendering helpers (tables, panels) for menu output | raises/handles the error path; test green | todo
-T-0498 | P8 | cli | test(cli): edge-case/property test for cli/render.py | boundary inputs covered | todo
-T-0499 | P8 | cli | implement cli/render.py: rich rendering helpers (tables, panels) for menu output | smallest impl that passes tests (green) | todo
-T-0500 | P8 | cli | docstrings on cli/render.py public API (why, not what) | every public symbol documented | todo
-T-0501 | P8 | cli | type hints on cli/render.py public signatures (no bare Any) | mypy-clean signatures | todo
-T-0502 | P8 | cli | review cli/render.py for duplication (rule 3) | no copy-paste; shared helpers extracted | todo
-T-0503 | P8 | cli | keep cli/render.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | todo
-T-0504 | P8 | cli | render the 8-option menu ([1]..[7],[0]) | task complete and tested | todo
-T-0505 | P8 | cli | each option calls the right SDK method | task complete and tested | todo
-T-0506 | P8 | cli | invalid input re-prompts gracefully | task complete and tested | todo
-T-0507 | P8 | cli | --help lists subcommands | task complete and tested | todo
-T-0508 | P8 | cli | menu launches the interactive loop (default subcommand) | task complete and tested | todo
-T-0509 | P8 | cli | wire cosmos77-debate script | task complete and tested | todo
-T-0510 | P8 | cli | monkeypatch input() to drive menu tests; SDK mocked | task complete and tested | todo
-T-0511 | P8 | cli | cosmos77-debate --help and menu work after uv sync | task complete and tested | todo
-T-0512 | P8 | cli | update TODO; save docs/prompts/008; commit (>=2); push; CI green | task complete and tested | todo
+T-0468 | P8 | cli | design cli/menu.py public interface and signatures | interface documented in PRD/PLAN; reviewed | done 2026-05-31
+T-0469 | P8 | cli | test(cli): happy-path for Menu rendering with rich; options call SDK | failing test written first (red) | done 2026-05-31
+T-0470 | P8 | cli | test(cli): error-path for Menu rendering with rich; options call SDK | raises/handles the error path; test green | done 2026-05-31
+T-0471 | P8 | cli | test(cli): edge-case/property test for cli/menu.py | boundary inputs covered | done 2026-05-31
+T-0472 | P8 | cli | implement cli/menu.py: Menu rendering with rich; options call SDK | smallest impl that passes tests (green) | done 2026-05-31
+T-0473 | P8 | cli | docstrings on cli/menu.py public API (why, not what) | every public symbol documented | done 2026-05-31
+T-0474 | P8 | cli | type hints on cli/menu.py public signatures (no bare Any) | mypy-clean signatures | done 2026-05-31
+T-0475 | P8 | cli | review cli/menu.py for duplication (rule 3) | no copy-paste; shared helpers extracted | done 2026-05-31
+T-0476 | P8 | cli | keep cli/menu.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | done 2026-05-31
+T-0477 | P8 | cli | design cli/actions.py public interface and signatures | interface documented in PRD/PLAN; reviewed | done 2026-05-31
+T-0478 | P8 | cli | test(cli): happy-path for menu action handlers calling the SDK | failing test written first (red) | done 2026-05-31
+T-0479 | P8 | cli | test(cli): error-path for menu action handlers calling the SDK | raises/handles the error path; test green | done 2026-05-31
+T-0480 | P8 | cli | test(cli): edge-case/property test for cli/actions.py | boundary inputs covered | done 2026-05-31
+T-0481 | P8 | cli | implement cli/actions.py: menu action handlers calling the SDK | smallest impl that passes tests (green) | done 2026-05-31
+T-0482 | P8 | cli | docstrings on cli/actions.py public API (why, not what) | every public symbol documented | done 2026-05-31
+T-0483 | P8 | cli | type hints on cli/actions.py public signatures (no bare Any) | mypy-clean signatures | done 2026-05-31
+T-0484 | P8 | cli | review cli/actions.py for duplication (rule 3) | no copy-paste; shared helpers extracted | done 2026-05-31
+T-0485 | P8 | cli | keep cli/actions.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | done 2026-05-31
+T-0486 | P8 | cli | design cli/main.py public interface and signatures | interface documented in PRD/PLAN; reviewed | done 2026-05-31
+T-0487 | P8 | cli | test(cli): happy-path for argparse entry: menu/run/verdict/cost/logs subcommands | failing test written first (red) | done 2026-05-31
+T-0488 | P8 | cli | test(cli): error-path for argparse entry: menu/run/verdict/cost/logs subcommands | raises/handles the error path; test green | done 2026-05-31
+T-0489 | P8 | cli | test(cli): edge-case/property test for cli/main.py | boundary inputs covered | done 2026-05-31
+T-0490 | P8 | cli | implement cli/main.py: argparse entry: menu/run/verdict/cost/logs subcommands | smallest impl that passes tests (green) | done 2026-05-31
+T-0491 | P8 | cli | docstrings on cli/main.py public API (why, not what) | every public symbol documented | done 2026-05-31
+T-0492 | P8 | cli | type hints on cli/main.py public signatures (no bare Any) | mypy-clean signatures | done 2026-05-31
+T-0493 | P8 | cli | review cli/main.py for duplication (rule 3) | no copy-paste; shared helpers extracted | done 2026-05-31
+T-0494 | P8 | cli | keep cli/main.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | done 2026-05-31
+T-0495 | P8 | cli | design cli/render.py public interface and signatures | interface documented in PRD/PLAN; reviewed | done 2026-05-31
+T-0496 | P8 | cli | test(cli): happy-path for rich rendering helpers (tables, panels) for menu output | failing test written first (red) | done 2026-05-31
+T-0497 | P8 | cli | test(cli): error-path for rich rendering helpers (tables, panels) for menu output | raises/handles the error path; test green | done 2026-05-31
+T-0498 | P8 | cli | test(cli): edge-case/property test for cli/render.py | boundary inputs covered | done 2026-05-31
+T-0499 | P8 | cli | implement cli/render.py: rich rendering helpers (tables, panels) for menu output | smallest impl that passes tests (green) | done 2026-05-31
+T-0500 | P8 | cli | docstrings on cli/render.py public API (why, not what) | every public symbol documented | done 2026-05-31
+T-0501 | P8 | cli | type hints on cli/render.py public signatures (no bare Any) | mypy-clean signatures | done 2026-05-31
+T-0502 | P8 | cli | review cli/render.py for duplication (rule 3) | no copy-paste; shared helpers extracted | done 2026-05-31
+T-0503 | P8 | cli | keep cli/render.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | done 2026-05-31
+T-0504 | P8 | cli | render the 8-option menu ([1]..[7],[0]) | task complete and tested | done 2026-05-31
+T-0505 | P8 | cli | each option calls the right SDK method | task complete and tested | done 2026-05-31
+T-0506 | P8 | cli | invalid input re-prompts gracefully | task complete and tested | done 2026-05-31
+T-0507 | P8 | cli | --help lists subcommands | task complete and tested | done 2026-05-31
+T-0508 | P8 | cli | menu launches the interactive loop (default subcommand) | task complete and tested | done 2026-05-31
+T-0509 | P8 | cli | wire cosmos77-debate script | task complete and tested | done 2026-05-31
+T-0510 | P8 | cli | monkeypatch input() to drive menu tests; SDK mocked | task complete and tested | done 2026-05-31
+T-0511 | P8 | cli | cosmos77-debate --help and menu work after uv sync | task complete and tested | done 2026-05-31
+T-0512 | P8 | cli | update TODO; save docs/prompts/008; commit (>=2); push; CI green | task complete and tested | done 2026-05-31
 
 ## Phase 9 — Real debate run, transcript, diagrams, cost
 
