@@ -596,40 +596,40 @@ T-0551 | P10 | readme | update TODO; save docs/prompts/010; commit (>=2); push; 
 
 ## Phase 11 — Final QA gauntlet
 
-T-0552 | P11 | qa | ruff check . zero | gate green | todo
-T-0553 | P11 | qa | ruff format --check . clean | gate green | todo
-T-0554 | P11 | qa | pytest --cov-fail-under=85 green (unit + non-live integration) | gate green | todo
-T-0555 | P11 | qa | check_line_cap.py 0 offenders | gate green | todo
-T-0556 | P11 | qa | integration: full loop (mocked) produces 10 pings/side | gate green | todo
-T-0557 | P11 | qa | integration: every message routed through judge | gate green | todo
-T-0558 | P11 | qa | integration: watchdog restarts a killed process | gate green | todo
-T-0559 | P11 | qa | integration: verdict never a tie | gate green | todo
-T-0560 | P11 | qa | integration: SDK end-to-end | gate green | todo
-T-0561 | P11 | qa | integration: menu via monkeypatched input | gate green | todo
-T-0562 | P11 | qa | re-run real debate; session_001.json has no-tie verdict + citations | gate green | todo
-T-0563 | P11 | qa | secrets: no .env tracked; no keys in src; .env.example present | gate green | todo
-T-0564 | P11 | qa | uv lock --check passes; uv.lock committed | gate green | todo
-T-0565 | P11 | qa | CLAUDE.md unchanged from Phase 0 except whitespace | gate green | todo
-T-0566 | P11 | qa | no wip/tmp/fixup commits; >=30 commits; both authors in shortlog | gate green | todo
-T-0567 | P11 | qa | GitHub Actions green on latest main | gate green | todo
-T-0568 | P11 | qa | reproducibility: fresh clone -> uv sync -> pytest -> --help all work | gate green | todo
-T-0569 | P11 | qa | docs/prompts 000-011 present; CHANGELOG full [1.00] entry | gate green | todo
-T-0570 | P11 | qa | save docs/prompts/011; commit fixes; push; CI green | gate green | todo
-T-0571 | P11 | acceptance | audit acceptance criterion A1: map to a passing test or committed artifact in docs/ACCEPTANCE.md | A-id mapped and satisfied | todo
-T-0572 | P11 | acceptance | audit acceptance criterion A2: map to a passing test or committed artifact in docs/ACCEPTANCE.md | A-id mapped and satisfied | todo
-T-0573 | P11 | acceptance | audit acceptance criterion A3: map to a passing test or committed artifact in docs/ACCEPTANCE.md | A-id mapped and satisfied | todo
-T-0574 | P11 | acceptance | audit acceptance criterion A4: map to a passing test or committed artifact in docs/ACCEPTANCE.md | A-id mapped and satisfied | todo
-T-0575 | P11 | acceptance | audit acceptance criterion A5: map to a passing test or committed artifact in docs/ACCEPTANCE.md | A-id mapped and satisfied | todo
-T-0576 | P11 | acceptance | audit acceptance criterion A6: map to a passing test or committed artifact in docs/ACCEPTANCE.md | A-id mapped and satisfied | todo
-T-0577 | P11 | acceptance | audit acceptance criterion A7: map to a passing test or committed artifact in docs/ACCEPTANCE.md | A-id mapped and satisfied | todo
-T-0578 | P11 | acceptance | audit acceptance criterion A8: map to a passing test or committed artifact in docs/ACCEPTANCE.md | A-id mapped and satisfied | todo
-T-0579 | P11 | acceptance | audit acceptance criterion A9: map to a passing test or committed artifact in docs/ACCEPTANCE.md | A-id mapped and satisfied | todo
-T-0580 | P11 | acceptance | audit acceptance criterion A10: map to a passing test or committed artifact in docs/ACCEPTANCE.md | A-id mapped and satisfied | todo
-T-0581 | P11 | acceptance | audit acceptance criterion A11: map to a passing test or committed artifact in docs/ACCEPTANCE.md | A-id mapped and satisfied | todo
-T-0582 | P11 | acceptance | audit acceptance criterion A12: map to a passing test or committed artifact in docs/ACCEPTANCE.md | A-id mapped and satisfied | todo
-T-0583 | P11 | acceptance | audit acceptance criterion A13: map to a passing test or committed artifact in docs/ACCEPTANCE.md | A-id mapped and satisfied | todo
-T-0584 | P11 | acceptance | audit acceptance criterion A14: map to a passing test or committed artifact in docs/ACCEPTANCE.md | A-id mapped and satisfied | todo
-T-0585 | P11 | acceptance | audit acceptance criterion A15: map to a passing test or committed artifact in docs/ACCEPTANCE.md | A-id mapped and satisfied | todo
+T-0552 | P11 | qa | ruff check . zero | gate green | done 2026-05-31
+T-0553 | P11 | qa | ruff format --check . clean | gate green | done 2026-05-31
+T-0554 | P11 | qa | pytest --cov-fail-under=85 green (unit + non-live integration) | gate green | done 2026-05-31
+T-0555 | P11 | qa | check_line_cap.py 0 offenders | gate green | done 2026-05-31
+T-0556 | P11 | qa | integration: full loop (mocked) produces 10 pings/side | gate green | done 2026-05-31
+T-0557 | P11 | qa | integration: every message routed through judge | gate green | done 2026-05-31
+T-0558 | P11 | qa | integration: watchdog restarts a killed process | gate green | done 2026-05-31
+T-0559 | P11 | qa | integration: verdict never a tie | gate green | done 2026-05-31
+T-0560 | P11 | qa | integration: SDK end-to-end | gate green | done 2026-05-31
+T-0561 | P11 | qa | integration: menu via monkeypatched input | gate green | done 2026-05-31
+T-0562 | P11 | qa | re-run real debate; session_001.json has no-tie verdict + citations | gate green | done 2026-05-31
+T-0563 | P11 | qa | secrets: no .env tracked; no keys in src; .env.example present | gate green | done 2026-05-31
+T-0564 | P11 | qa | uv lock --check passes; uv.lock committed | gate green | done 2026-05-31
+T-0565 | P11 | qa | CLAUDE.md unchanged from Phase 0 except whitespace | gate green | done 2026-05-31
+T-0566 | P11 | qa | no wip/tmp/fixup commits; >=30 commits; both authors in shortlog | gate green | done 2026-05-31
+T-0567 | P11 | qa | GitHub Actions green on latest main | gate green | done 2026-05-31
+T-0568 | P11 | qa | reproducibility: fresh clone -> uv sync -> pytest -> --help all work | gate green | done 2026-05-31
+T-0569 | P11 | qa | docs/prompts 000-011 present; CHANGELOG full [1.00] entry | gate green | done 2026-05-31
+T-0570 | P11 | qa | save docs/prompts/011; commit fixes; push; CI green | gate green | done 2026-05-31
+T-0571 | P11 | acceptance | audit acceptance criterion A1: map to a passing test or committed artifact in docs/ACCEPTANCE.md | A-id mapped and satisfied | done 2026-05-31
+T-0572 | P11 | acceptance | audit acceptance criterion A2: map to a passing test or committed artifact in docs/ACCEPTANCE.md | A-id mapped and satisfied | done 2026-05-31
+T-0573 | P11 | acceptance | audit acceptance criterion A3: map to a passing test or committed artifact in docs/ACCEPTANCE.md | A-id mapped and satisfied | done 2026-05-31
+T-0574 | P11 | acceptance | audit acceptance criterion A4: map to a passing test or committed artifact in docs/ACCEPTANCE.md | A-id mapped and satisfied | done 2026-05-31
+T-0575 | P11 | acceptance | audit acceptance criterion A5: map to a passing test or committed artifact in docs/ACCEPTANCE.md | A-id mapped and satisfied | done 2026-05-31
+T-0576 | P11 | acceptance | audit acceptance criterion A6: map to a passing test or committed artifact in docs/ACCEPTANCE.md | A-id mapped and satisfied | done 2026-05-31
+T-0577 | P11 | acceptance | audit acceptance criterion A7: map to a passing test or committed artifact in docs/ACCEPTANCE.md | A-id mapped and satisfied | done 2026-05-31
+T-0578 | P11 | acceptance | audit acceptance criterion A8: map to a passing test or committed artifact in docs/ACCEPTANCE.md | A-id mapped and satisfied | done 2026-05-31
+T-0579 | P11 | acceptance | audit acceptance criterion A9: map to a passing test or committed artifact in docs/ACCEPTANCE.md | A-id mapped and satisfied | done 2026-05-31
+T-0580 | P11 | acceptance | audit acceptance criterion A10: map to a passing test or committed artifact in docs/ACCEPTANCE.md | A-id mapped and satisfied | done 2026-05-31
+T-0581 | P11 | acceptance | audit acceptance criterion A11: map to a passing test or committed artifact in docs/ACCEPTANCE.md | A-id mapped and satisfied | done 2026-05-31
+T-0582 | P11 | acceptance | audit acceptance criterion A12: map to a passing test or committed artifact in docs/ACCEPTANCE.md | A-id mapped and satisfied | done 2026-05-31
+T-0583 | P11 | acceptance | audit acceptance criterion A13: map to a passing test or committed artifact in docs/ACCEPTANCE.md | A-id mapped and satisfied | done 2026-05-31
+T-0584 | P11 | acceptance | audit acceptance criterion A14: map to a passing test or committed artifact in docs/ACCEPTANCE.md | A-id mapped and satisfied | done 2026-05-31
+T-0585 | P11 | acceptance | audit acceptance criterion A15: map to a passing test or committed artifact in docs/ACCEPTANCE.md | A-id mapped and satisfied | done 2026-05-31
 
 ## Phase 12 — Cover PDF + tag + release + submit
 
