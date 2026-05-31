@@ -383,81 +383,81 @@ T-0353 | P5 | protocol | update TODO; save docs/prompts/005; commit (>=3); push;
 
 ## Phase 6 — Orchestrator + Watchdog
 
-T-0354 | P6 | orchestration | design orchestration/process_agent.py public interface and signatures | interface documented in PRD/PLAN; reviewed | todo
-T-0355 | P6 | orchestration | test(orchestration): happy-path for run one agent in its own multiprocessing.Process with in/out Queues + heartbeat | failing test written first (red) | todo
-T-0356 | P6 | orchestration | test(orchestration): error-path for run one agent in its own multiprocessing.Process with in/out Queues + heartbeat | raises/handles the error path; test green | todo
-T-0357 | P6 | orchestration | test(orchestration): edge-case/property test for orchestration/process_agent.py | boundary inputs covered | todo
-T-0358 | P6 | orchestration | implement orchestration/process_agent.py: run one agent in its own multiprocessing.Process with in/out Queues + heartbeat | smallest impl that passes tests (green) | todo
-T-0359 | P6 | orchestration | docstrings on orchestration/process_agent.py public API (why, not what) | every public symbol documented | todo
-T-0360 | P6 | orchestration | type hints on orchestration/process_agent.py public signatures (no bare Any) | mypy-clean signatures | todo
-T-0361 | P6 | orchestration | review orchestration/process_agent.py for duplication (rule 3) | no copy-paste; shared helpers extracted | todo
-T-0362 | P6 | orchestration | keep orchestration/process_agent.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | todo
-T-0363 | P6 | orchestration | integrate orchestration/process_agent.py with the SDK / its callers | SDK method or caller wired and tested | todo
-T-0364 | P6 | orchestration | design orchestration/orchestrator.py public interface and signatures | interface documented in PRD/PLAN; reviewed | todo
-T-0365 | P6 | orchestration | test(orchestration): happy-path for spawn 3 processes; own transcript; run ping loop; persist session JSON | failing test written first (red) | todo
-T-0366 | P6 | orchestration | test(orchestration): error-path for spawn 3 processes; own transcript; run ping loop; persist session JSON | raises/handles the error path; test green | todo
-T-0367 | P6 | orchestration | test(orchestration): edge-case/property test for orchestration/orchestrator.py | boundary inputs covered | todo
-T-0368 | P6 | orchestration | implement orchestration/orchestrator.py: spawn 3 processes; own transcript; run ping loop; persist session JSON | smallest impl that passes tests (green) | todo
-T-0369 | P6 | orchestration | docstrings on orchestration/orchestrator.py public API (why, not what) | every public symbol documented | todo
-T-0370 | P6 | orchestration | type hints on orchestration/orchestrator.py public signatures (no bare Any) | mypy-clean signatures | todo
-T-0371 | P6 | orchestration | review orchestration/orchestrator.py for duplication (rule 3) | no copy-paste; shared helpers extracted | todo
-T-0372 | P6 | orchestration | keep orchestration/orchestrator.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | todo
-T-0373 | P6 | orchestration | integrate orchestration/orchestrator.py with the SDK / its callers | SDK method or caller wired and tested | todo
-T-0374 | P6 | orchestration | design orchestration/loop.py public interface and signatures | interface documented in PRD/PLAN; reviewed | todo
-T-0375 | P6 | orchestration | test(orchestration): happy-path for ping-loop helpers and alternation/ordering | failing test written first (red) | todo
-T-0376 | P6 | orchestration | test(orchestration): error-path for ping-loop helpers and alternation/ordering | raises/handles the error path; test green | todo
-T-0377 | P6 | orchestration | test(orchestration): edge-case/property test for orchestration/loop.py | boundary inputs covered | todo
-T-0378 | P6 | orchestration | implement orchestration/loop.py: ping-loop helpers and alternation/ordering | smallest impl that passes tests (green) | todo
-T-0379 | P6 | orchestration | docstrings on orchestration/loop.py public API (why, not what) | every public symbol documented | todo
-T-0380 | P6 | orchestration | type hints on orchestration/loop.py public signatures (no bare Any) | mypy-clean signatures | todo
-T-0381 | P6 | orchestration | review orchestration/loop.py for duplication (rule 3) | no copy-paste; shared helpers extracted | todo
-T-0382 | P6 | orchestration | keep orchestration/loop.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | todo
-T-0383 | P6 | orchestration | integrate orchestration/loop.py with the SDK / its callers | SDK method or caller wired and tested | todo
-T-0384 | P6 | orchestration | design orchestration/watchdog.py public interface and signatures | interface documented in PRD/PLAN; reviewed | todo
-T-0385 | P6 | orchestration | test(orchestration): happy-path for timeouts + heartbeat monitor + kill/restart with context replay | failing test written first (red) | todo
-T-0386 | P6 | orchestration | test(orchestration): error-path for timeouts + heartbeat monitor + kill/restart with context replay | raises/handles the error path; test green | todo
-T-0387 | P6 | orchestration | test(orchestration): edge-case/property test for orchestration/watchdog.py | boundary inputs covered | todo
-T-0388 | P6 | orchestration | implement orchestration/watchdog.py: timeouts + heartbeat monitor + kill/restart with context replay | smallest impl that passes tests (green) | todo
-T-0389 | P6 | orchestration | docstrings on orchestration/watchdog.py public API (why, not what) | every public symbol documented | todo
-T-0390 | P6 | orchestration | type hints on orchestration/watchdog.py public signatures (no bare Any) | mypy-clean signatures | todo
-T-0391 | P6 | orchestration | review orchestration/watchdog.py for duplication (rule 3) | no copy-paste; shared helpers extracted | todo
-T-0392 | P6 | orchestration | keep orchestration/watchdog.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | todo
-T-0393 | P6 | orchestration | integrate orchestration/watchdog.py with the SDK / its callers | SDK method or caller wired and tested | todo
-T-0394 | P6 | orchestration | design orchestration/transcript.py public interface and signatures | interface documented in PRD/PLAN; reviewed | todo
-T-0395 | P6 | orchestration | test(orchestration): happy-path for incremental session_NNN.json writer + schema | failing test written first (red) | todo
-T-0396 | P6 | orchestration | test(orchestration): error-path for incremental session_NNN.json writer + schema | raises/handles the error path; test green | todo
-T-0397 | P6 | orchestration | test(orchestration): edge-case/property test for orchestration/transcript.py | boundary inputs covered | todo
-T-0398 | P6 | orchestration | implement orchestration/transcript.py: incremental session_NNN.json writer + schema | smallest impl that passes tests (green) | todo
-T-0399 | P6 | orchestration | docstrings on orchestration/transcript.py public API (why, not what) | every public symbol documented | todo
-T-0400 | P6 | orchestration | type hints on orchestration/transcript.py public signatures (no bare Any) | mypy-clean signatures | todo
-T-0401 | P6 | orchestration | review orchestration/transcript.py for duplication (rule 3) | no copy-paste; shared helpers extracted | todo
-T-0402 | P6 | orchestration | keep orchestration/transcript.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | todo
-T-0403 | P6 | orchestration | integrate orchestration/transcript.py with the SDK / its callers | SDK method or caller wired and tested | todo
-T-0404 | P6 | orchestration | design orchestration/summary.py public interface and signatures | interface documented in PRD/PLAN; reviewed | todo
-T-0405 | P6 | orchestration | test(orchestration): happy-path for running-summary builder for Context Engineering | failing test written first (red) | todo
-T-0406 | P6 | orchestration | test(orchestration): error-path for running-summary builder for Context Engineering | raises/handles the error path; test green | todo
-T-0407 | P6 | orchestration | test(orchestration): edge-case/property test for orchestration/summary.py | boundary inputs covered | todo
-T-0408 | P6 | orchestration | implement orchestration/summary.py: running-summary builder for Context Engineering | smallest impl that passes tests (green) | todo
-T-0409 | P6 | orchestration | docstrings on orchestration/summary.py public API (why, not what) | every public symbol documented | todo
-T-0410 | P6 | orchestration | type hints on orchestration/summary.py public signatures (no bare Any) | mypy-clean signatures | todo
-T-0411 | P6 | orchestration | review orchestration/summary.py for duplication (rule 3) | no copy-paste; shared helpers extracted | todo
-T-0412 | P6 | orchestration | keep orchestration/summary.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | todo
-T-0413 | P6 | orchestration | integrate orchestration/summary.py with the SDK / its callers | SDK method or caller wired and tested | todo
-T-0414 | P6 | orchestration | Context Engineering: select opponent last turn + running summary into next prompt | task complete and tested | todo
-T-0415 | P6 | orchestration | evict old raw turns to keep prompts small | task complete and tested | todo
-T-0416 | P6 | orchestration | loop produces exactly pings_per_side turns per side | task complete and tested | todo
-T-0417 | P6 | orchestration | every message routed through the judge (assert is_through_father) | task complete and tested | todo
-T-0418 | P6 | orchestration | simulated dead process detected and restarted (<= max_restarts_per_agent) | task complete and tested | todo
-T-0419 | P6 | orchestration | a hung call hits the timeout | task complete and tested | todo
-T-0420 | P6 | orchestration | transcript file written incrementally to transcripts/session_NNN.json | task complete and tested | todo
-T-0421 | P6 | orchestration | verdict requested from judge on completion and appended | task complete and tested | todo
-T-0422 | P6 | orchestration | mock agents return canned ProtocolMessages in unit tests | task complete and tested | todo
-T-0423 | P6 | orchestration | integration test (marker live) runs a 1-ping real debate, skipped in CI | task complete and tested | todo
-T-0424 | P6 | orchestration | SDK.run_debate() returns transcript path + verdict | task complete and tested | todo
-T-0425 | P6 | orchestration | watchdog logs every restart | task complete and tested | todo
-T-0426 | P6 | orchestration | restart exhaustion handled cleanly | task complete and tested | todo
-T-0427 | P6 | orchestration | coverage >=85% on orchestration/ | task complete and tested | todo
-T-0428 | P6 | orchestration | update TODO; save docs/prompts/006; commit (>=5); push; CI green | task complete and tested | todo
+T-0354 | P6 | orchestration | design orchestration/process_agent.py public interface and signatures | interface documented in PRD/PLAN; reviewed | done 2026-05-31
+T-0355 | P6 | orchestration | test(orchestration): happy-path for run one agent in its own multiprocessing.Process with in/out Queues + heartbeat | failing test written first (red) | done 2026-05-31
+T-0356 | P6 | orchestration | test(orchestration): error-path for run one agent in its own multiprocessing.Process with in/out Queues + heartbeat | raises/handles the error path; test green | done 2026-05-31
+T-0357 | P6 | orchestration | test(orchestration): edge-case/property test for orchestration/process_agent.py | boundary inputs covered | done 2026-05-31
+T-0358 | P6 | orchestration | implement orchestration/process_agent.py: run one agent in its own multiprocessing.Process with in/out Queues + heartbeat | smallest impl that passes tests (green) | done 2026-05-31
+T-0359 | P6 | orchestration | docstrings on orchestration/process_agent.py public API (why, not what) | every public symbol documented | done 2026-05-31
+T-0360 | P6 | orchestration | type hints on orchestration/process_agent.py public signatures (no bare Any) | mypy-clean signatures | done 2026-05-31
+T-0361 | P6 | orchestration | review orchestration/process_agent.py for duplication (rule 3) | no copy-paste; shared helpers extracted | done 2026-05-31
+T-0362 | P6 | orchestration | keep orchestration/process_agent.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | done 2026-05-31
+T-0363 | P6 | orchestration | integrate orchestration/process_agent.py with the SDK / its callers | SDK method or caller wired and tested | done 2026-05-31
+T-0364 | P6 | orchestration | design orchestration/orchestrator.py public interface and signatures | interface documented in PRD/PLAN; reviewed | done 2026-05-31
+T-0365 | P6 | orchestration | test(orchestration): happy-path for spawn 3 processes; own transcript; run ping loop; persist session JSON | failing test written first (red) | done 2026-05-31
+T-0366 | P6 | orchestration | test(orchestration): error-path for spawn 3 processes; own transcript; run ping loop; persist session JSON | raises/handles the error path; test green | done 2026-05-31
+T-0367 | P6 | orchestration | test(orchestration): edge-case/property test for orchestration/orchestrator.py | boundary inputs covered | done 2026-05-31
+T-0368 | P6 | orchestration | implement orchestration/orchestrator.py: spawn 3 processes; own transcript; run ping loop; persist session JSON | smallest impl that passes tests (green) | done 2026-05-31
+T-0369 | P6 | orchestration | docstrings on orchestration/orchestrator.py public API (why, not what) | every public symbol documented | done 2026-05-31
+T-0370 | P6 | orchestration | type hints on orchestration/orchestrator.py public signatures (no bare Any) | mypy-clean signatures | done 2026-05-31
+T-0371 | P6 | orchestration | review orchestration/orchestrator.py for duplication (rule 3) | no copy-paste; shared helpers extracted | done 2026-05-31
+T-0372 | P6 | orchestration | keep orchestration/orchestrator.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | done 2026-05-31
+T-0373 | P6 | orchestration | integrate orchestration/orchestrator.py with the SDK / its callers | SDK method or caller wired and tested | done 2026-05-31
+T-0374 | P6 | orchestration | design orchestration/loop.py public interface and signatures | interface documented in PRD/PLAN; reviewed | done 2026-05-31
+T-0375 | P6 | orchestration | test(orchestration): happy-path for ping-loop helpers and alternation/ordering | failing test written first (red) | done 2026-05-31
+T-0376 | P6 | orchestration | test(orchestration): error-path for ping-loop helpers and alternation/ordering | raises/handles the error path; test green | done 2026-05-31
+T-0377 | P6 | orchestration | test(orchestration): edge-case/property test for orchestration/loop.py | boundary inputs covered | done 2026-05-31
+T-0378 | P6 | orchestration | implement orchestration/loop.py: ping-loop helpers and alternation/ordering | smallest impl that passes tests (green) | done 2026-05-31
+T-0379 | P6 | orchestration | docstrings on orchestration/loop.py public API (why, not what) | every public symbol documented | done 2026-05-31
+T-0380 | P6 | orchestration | type hints on orchestration/loop.py public signatures (no bare Any) | mypy-clean signatures | done 2026-05-31
+T-0381 | P6 | orchestration | review orchestration/loop.py for duplication (rule 3) | no copy-paste; shared helpers extracted | done 2026-05-31
+T-0382 | P6 | orchestration | keep orchestration/loop.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | done 2026-05-31
+T-0383 | P6 | orchestration | integrate orchestration/loop.py with the SDK / its callers | SDK method or caller wired and tested | done 2026-05-31
+T-0384 | P6 | orchestration | design orchestration/watchdog.py public interface and signatures | interface documented in PRD/PLAN; reviewed | done 2026-05-31
+T-0385 | P6 | orchestration | test(orchestration): happy-path for timeouts + heartbeat monitor + kill/restart with context replay | failing test written first (red) | done 2026-05-31
+T-0386 | P6 | orchestration | test(orchestration): error-path for timeouts + heartbeat monitor + kill/restart with context replay | raises/handles the error path; test green | done 2026-05-31
+T-0387 | P6 | orchestration | test(orchestration): edge-case/property test for orchestration/watchdog.py | boundary inputs covered | done 2026-05-31
+T-0388 | P6 | orchestration | implement orchestration/watchdog.py: timeouts + heartbeat monitor + kill/restart with context replay | smallest impl that passes tests (green) | done 2026-05-31
+T-0389 | P6 | orchestration | docstrings on orchestration/watchdog.py public API (why, not what) | every public symbol documented | done 2026-05-31
+T-0390 | P6 | orchestration | type hints on orchestration/watchdog.py public signatures (no bare Any) | mypy-clean signatures | done 2026-05-31
+T-0391 | P6 | orchestration | review orchestration/watchdog.py for duplication (rule 3) | no copy-paste; shared helpers extracted | done 2026-05-31
+T-0392 | P6 | orchestration | keep orchestration/watchdog.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | done 2026-05-31
+T-0393 | P6 | orchestration | integrate orchestration/watchdog.py with the SDK / its callers | SDK method or caller wired and tested | done 2026-05-31
+T-0394 | P6 | orchestration | design orchestration/transcript.py public interface and signatures | interface documented in PRD/PLAN; reviewed | done 2026-05-31
+T-0395 | P6 | orchestration | test(orchestration): happy-path for incremental session_NNN.json writer + schema | failing test written first (red) | done 2026-05-31
+T-0396 | P6 | orchestration | test(orchestration): error-path for incremental session_NNN.json writer + schema | raises/handles the error path; test green | done 2026-05-31
+T-0397 | P6 | orchestration | test(orchestration): edge-case/property test for orchestration/transcript.py | boundary inputs covered | done 2026-05-31
+T-0398 | P6 | orchestration | implement orchestration/transcript.py: incremental session_NNN.json writer + schema | smallest impl that passes tests (green) | done 2026-05-31
+T-0399 | P6 | orchestration | docstrings on orchestration/transcript.py public API (why, not what) | every public symbol documented | done 2026-05-31
+T-0400 | P6 | orchestration | type hints on orchestration/transcript.py public signatures (no bare Any) | mypy-clean signatures | done 2026-05-31
+T-0401 | P6 | orchestration | review orchestration/transcript.py for duplication (rule 3) | no copy-paste; shared helpers extracted | done 2026-05-31
+T-0402 | P6 | orchestration | keep orchestration/transcript.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | done 2026-05-31
+T-0403 | P6 | orchestration | integrate orchestration/transcript.py with the SDK / its callers | SDK method or caller wired and tested | done 2026-05-31
+T-0404 | P6 | orchestration | design orchestration/summary.py public interface and signatures | interface documented in PRD/PLAN; reviewed | done 2026-05-31
+T-0405 | P6 | orchestration | test(orchestration): happy-path for running-summary builder for Context Engineering | failing test written first (red) | done 2026-05-31
+T-0406 | P6 | orchestration | test(orchestration): error-path for running-summary builder for Context Engineering | raises/handles the error path; test green | done 2026-05-31
+T-0407 | P6 | orchestration | test(orchestration): edge-case/property test for orchestration/summary.py | boundary inputs covered | done 2026-05-31
+T-0408 | P6 | orchestration | implement orchestration/summary.py: running-summary builder for Context Engineering | smallest impl that passes tests (green) | done 2026-05-31
+T-0409 | P6 | orchestration | docstrings on orchestration/summary.py public API (why, not what) | every public symbol documented | done 2026-05-31
+T-0410 | P6 | orchestration | type hints on orchestration/summary.py public signatures (no bare Any) | mypy-clean signatures | done 2026-05-31
+T-0411 | P6 | orchestration | review orchestration/summary.py for duplication (rule 3) | no copy-paste; shared helpers extracted | done 2026-05-31
+T-0412 | P6 | orchestration | keep orchestration/summary.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | done 2026-05-31
+T-0413 | P6 | orchestration | integrate orchestration/summary.py with the SDK / its callers | SDK method or caller wired and tested | done 2026-05-31
+T-0414 | P6 | orchestration | Context Engineering: select opponent last turn + running summary into next prompt | task complete and tested | done 2026-05-31
+T-0415 | P6 | orchestration | evict old raw turns to keep prompts small | task complete and tested | done 2026-05-31
+T-0416 | P6 | orchestration | loop produces exactly pings_per_side turns per side | task complete and tested | done 2026-05-31
+T-0417 | P6 | orchestration | every message routed through the judge (assert is_through_father) | task complete and tested | done 2026-05-31
+T-0418 | P6 | orchestration | simulated dead process detected and restarted (<= max_restarts_per_agent) | task complete and tested | done 2026-05-31
+T-0419 | P6 | orchestration | a hung call hits the timeout | task complete and tested | done 2026-05-31
+T-0420 | P6 | orchestration | transcript file written incrementally to transcripts/session_NNN.json | task complete and tested | done 2026-05-31
+T-0421 | P6 | orchestration | verdict requested from judge on completion and appended | task complete and tested | done 2026-05-31
+T-0422 | P6 | orchestration | mock agents return canned ProtocolMessages in unit tests | task complete and tested | done 2026-05-31
+T-0423 | P6 | orchestration | integration test (marker live) runs a 1-ping real debate, skipped in CI | task complete and tested | done 2026-05-31
+T-0424 | P6 | orchestration | SDK.run_debate() returns transcript path + verdict | task complete and tested | done 2026-05-31
+T-0425 | P6 | orchestration | watchdog logs every restart | task complete and tested | done 2026-05-31
+T-0426 | P6 | orchestration | restart exhaustion handled cleanly | task complete and tested | done 2026-05-31
+T-0427 | P6 | orchestration | coverage >=85% on orchestration/ | task complete and tested | done 2026-05-31
+T-0428 | P6 | orchestration | update TODO; save docs/prompts/006; commit (>=5); push; CI green | task complete and tested | done 2026-05-31
 
 ## Phase 7 — Judge logic
 
