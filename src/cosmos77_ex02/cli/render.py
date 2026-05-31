@@ -39,13 +39,16 @@ def format_verdict(verdict: Any) -> str:
 
 
 def format_cost(report: Any) -> str:
-    """Render a cost report dict as a human-readable block."""
+    """Render a cost report dict (from SDK.cost_report) as a human-readable block."""
     if not report:
-        return "No cost data yet."
+        return "No cost data yet — run a debate first."
     return (
-        f"Total: ${report.get('total_cost_usd', 0):.4f} over {report.get('calls', 0)} calls  "
-        f"(in {report.get('input_tokens', 0)} / out {report.get('output_tokens', 0)} tokens)  "
-        f"remaining ${report.get('remaining_usd', 0):.4f}"
+        f"Total: ${report.get('total_cost_usd', 0):.4f} over "
+        f"{report.get('billable_calls', 0)} billable calls "
+        f"({report.get('total_tokens', 0)} tokens)\n"
+        f"Cost/ping: ${report.get('cost_per_ping_usd', 0):.4f}  |  "
+        f"projected 5-ping ${report.get('projected_cost_5_pings_usd', 0):.4f} / "
+        f"10-ping ${report.get('projected_cost_10_pings_usd', 0):.4f}"
     )
 
 
