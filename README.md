@@ -150,7 +150,7 @@ no business logic.
 uv run cosmos77-debate menu
 ```
 
-![Terminal menu](assets/menu.svg)
+![Terminal menu](assets/menu.png)
 
 | Option | Action | What it does |
 |---|---|---|
@@ -186,7 +186,7 @@ uv run cosmos77-debate cost            # total $5.86, 153,926 tokens, $0.586 / p
 
 A live debate turn as rendered in the terminal:
 
-![A live debate turn](assets/debate_turn.svg)
+![A live debate turn](assets/debate_turn.png)
 
 ---
 
@@ -356,7 +356,7 @@ into the block below to keep this report navigable.
 
 ### The verdict
 
-![Verdict](assets/verdict.svg)
+![Verdict](assets/verdict.png)
 
 **Winner: CON — Con 83 / Pro 79.** The Judge's full justification, verbatim:
 
@@ -457,7 +457,7 @@ end.
 
 ## 10. Cost analysis
 
-![Cost report](assets/cost_report.svg)
+![Cost report](assets/cost_report.png)
 
 Costs come straight from the Gatekeeper's accounting of each `claude -p` JSON
 result (`transcripts/session_001_cost.json`):
@@ -608,7 +608,7 @@ Trevor Project, Oxford Economics, and others.
 | **A9** | Real LLM debate (not templated) | ✅ | `runtime/claude_cli.py`; live `claude -p` calls |
 | **A10** | PC, turn-taking, word limit | ✅ | `max_words_per_turn=180`; `enforce()`; respectful Skills |
 | **A11** | Timeouts, watchdog, gatekeeper, SDK, FIFO logs, no hardcode | ✅ | §9; `config/*.json`; `.env.example` only |
-| **A12** | Terminal menu | ✅ | `cli/menu.py`, `cli/main.py`; `assets/menu.svg` |
+| **A12** | Terminal menu | ✅ | `cli/menu.py`, `cli/main.py`; `assets/menu.png` |
 | **A13** | OOP + committed class/sequence diagrams | ✅ | `agents/*`; `docs/diagrams/*.mmd`; `assets/architecture.png`, `sequence.png` |
 | **A14** | Reproducible env (uv + pyproject) | ✅ | `pyproject.toml`, `uv.lock`; `uv sync` |
 | **A15** | README w/ screenshots, prompts, full dialogue, cost | ✅ | This file: §8 dialogue, 6 images, §10 cost, §18 self-assessment |

@@ -24,9 +24,9 @@ agent process meters its own Gatekeeper), `latest_session` helper, and the
 Mermaid **class + sequence diagrams** rendered to `assets/*.png`.
 
 **Screenshots, the A+ way:** instead of manual screen-grabs, `scripts/capture_screens.py`
-renders the *real* program output to SVG via `rich` — reproducible, crisp
-"terminal screenshots" of the menu, a real debate turn, the verdict, and the cost
-report.
+renders the *real* program output to PNG (via `rich` → SVG → headless Chrome) —
+reproducible, crisp "terminal screenshots" of the menu, a real debate turn, the
+verdict, and the cost report.
 
 **Structured FIFO logging wired in:** the Orchestrator now logs a JSON-line per
 message + start/verdict events; `cli.main` calls `init_logging`, so a real run
