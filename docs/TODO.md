@@ -551,11 +551,11 @@ T-0512 | P8 | cli | update TODO; save docs/prompts/008; commit (>=2); push; CI g
 
 ## Phase 9 — Real debate run, transcript, diagrams, cost
 
-T-0513 | P9 | run | run full debate (10 pings/side) on configured topic via cosmos77-debate run | session_001.json committed with verdict | todo
-T-0514 | P9 | run | debate completes with a no-tie verdict | session_001.json committed with verdict | todo
-T-0515 | P9 | run | write transcripts/session_001.json and commit it | session_001.json committed with verdict | todo
-T-0516 | P9 | run | verify every debater turn has non-empty citations | session_001.json committed with verdict | todo
-T-0517 | P9 | run | lower pings + note in README if budget cap trips, then rerun | session_001.json committed with verdict | todo
+T-0513 | P9 | run | run full debate (10 pings/side) on configured topic via cosmos77-debate run | session_001.json committed with verdict | done 2026-05-31
+T-0514 | P9 | run | debate completes with a no-tie verdict | session_001.json committed with verdict | done 2026-05-31
+T-0515 | P9 | run | write transcripts/session_001.json and commit it | session_001.json committed with verdict | done 2026-05-31
+T-0516 | P9 | run | verify every debater turn has non-empty citations | session_001.json committed with verdict | done 2026-05-31
+T-0517 | P9 | run | lower pings + note in README if budget cap trips, then rerun | session_001.json committed with verdict | done 2026-05-31
 T-0518 | P9 | diagrams | docs/diagrams/architecture.mmd (class diagram) | diagrams committed | done 2026-05-31
 T-0519 | P9 | diagrams | docs/diagrams/sequence.mmd (one full ping) | diagrams committed | done 2026-05-31
 T-0520 | P9 | diagrams | render architecture.png into assets/ | diagrams committed | done 2026-05-31
@@ -566,11 +566,11 @@ T-0524 | P9 | cost | cost_report: input/output tokens | cost report committed | 
 T-0525 | P9 | cost | cost_report: cost per ping | cost report committed | done 2026-05-31
 T-0526 | P9 | cost | cost_report: projected cost at 10 vs 5 pings | cost report committed | done 2026-05-31
 T-0527 | P9 | cost | save transcripts/session_001_cost.json + human-readable table | cost report committed | done 2026-05-31
-T-0528 | P9 | assets | screenshot: the menu (assets/) | assets committed (manual screenshots) | todo
-T-0529 | P9 | assets | screenshot: a live debate turn (assets/) | assets committed (manual screenshots) | todo
-T-0530 | P9 | assets | screenshot: the final verdict (assets/) | assets committed (manual screenshots) | todo
-T-0531 | P9 | assets | screenshot: the cost report (assets/) | assets committed (manual screenshots) | todo
-T-0532 | P9 | assets | update TODO; save docs/prompts/009; commit (>=4); push; CI green | assets committed (manual screenshots) | todo
+T-0528 | P9 | assets | screenshot: the menu (assets/) | assets committed (manual screenshots) | done 2026-05-31
+T-0529 | P9 | assets | screenshot: a live debate turn (assets/) | assets committed (manual screenshots) | done 2026-05-31
+T-0530 | P9 | assets | screenshot: the final verdict (assets/) | assets committed (manual screenshots) | done 2026-05-31
+T-0531 | P9 | assets | screenshot: the cost report (assets/) | assets committed (manual screenshots) | done 2026-05-31
+T-0532 | P9 | assets | update TODO; save docs/prompts/009; commit (>=4); push; CI green | assets committed (manual screenshots) | done 2026-05-31
 
 ## Phase 10 — README lab report
 
@@ -649,10 +649,10 @@ T-0598 | P12 | submit | confirm self-score 85 appears on cover AND README | subm
 T-0599 | P12 | submit | final master-checklist eyeball (playbook §16) before upload | submission ready | todo
 T-0600 | P12 | submit | save docs/prompts/012; commit; push | submission ready | todo
 T-0601 | P12 | submit | MANUAL: collaborator/visibility (public ok) + Moodle upload by both partners | submission ready | todo
-T-0602 | P9 | run | check mermaid CLI availability (npx @mermaid-js/mermaid-cli) before render | run artifact validated | todo
-T-0603 | P9 | run | validate session_001.json against the transcript schema | run artifact validated | todo
-T-0604 | P9 | run | assert exactly 10 pings per side in session_001.json | run artifact validated | todo
-T-0605 | P9 | run | confirm verdict winner + differential score present in transcript | run artifact validated | todo
+T-0602 | P9 | run | check mermaid CLI availability (npx @mermaid-js/mermaid-cli) before render | run artifact validated | done 2026-05-31
+T-0603 | P9 | run | validate session_001.json against the transcript schema | run artifact validated | done 2026-05-31
+T-0604 | P9 | run | assert exactly 10 pings per side in session_001.json | run artifact validated | done 2026-05-31
+T-0605 | P9 | run | confirm verdict winner + differential score present in transcript | run artifact validated | done 2026-05-31
 T-0606 | P10 | readme | embed BADGES.md badges at the top of README | README polish complete | todo
 T-0607 | P10 | readme | verify README image links resolve to assets/ files | README polish complete | todo
 T-0608 | P10 | readme | proofread README for English-only and PC language | README polish complete | todo
