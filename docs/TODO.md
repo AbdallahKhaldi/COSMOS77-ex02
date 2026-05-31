@@ -231,102 +231,102 @@ T-0207 | P3 | runtime | update TODO; save docs/prompts/003; commit (>=3); push; 
 
 ## Phase 4 — Agent hierarchy + Skills
 
-T-0208 | P4 | skills | skill_pro.md: evidence-driven optimist persona + Description selector line | skill files present and distinct | todo
-T-0209 | P4 | skills | skill_con.md: critical skeptic persona, distinct argumentative strategy | skill files present and distinct | todo
-T-0210 | P4 | skills | skill_judge.md: rules-only rubric; scores persuasion; no right answer; forbids ties | skill files present and distinct | todo
-T-0211 | P4 | skills | assert three skills exist, non-empty, with distinct Description lines | skill files present and distinct | todo
-T-0212 | P4 | skills | skills are English and PC | skill files present and distinct | todo
-T-0213 | P4 | agents | design agents/base.py public interface and signatures | interface documented in PRD/PLAN; reviewed | todo
-T-0214 | P4 | agents | test(agents): happy-path for BaseAgent(ABC): role, skill, runtime, gatekeeper; act() abstract; shared helpers | failing test written first (red) | todo
-T-0215 | P4 | agents | test(agents): error-path for BaseAgent(ABC): role, skill, runtime, gatekeeper; act() abstract; shared helpers | raises/handles the error path; test green | todo
-T-0216 | P4 | agents | test(agents): edge-case/property test for agents/base.py | boundary inputs covered | todo
-T-0217 | P4 | agents | implement agents/base.py: BaseAgent(ABC): role, skill, runtime, gatekeeper; act() abstract; shared helpers | smallest impl that passes tests (green) | todo
-T-0218 | P4 | agents | docstrings on agents/base.py public API (why, not what) | every public symbol documented | todo
-T-0219 | P4 | agents | type hints on agents/base.py public signatures (no bare Any) | mypy-clean signatures | todo
-T-0220 | P4 | agents | review agents/base.py for duplication (rule 3) | no copy-paste; shared helpers extracted | todo
-T-0221 | P4 | agents | keep agents/base.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | todo
-T-0222 | P4 | agents | integrate agents/base.py with the SDK / its callers | SDK method or caller wired and tested | todo
-T-0223 | P4 | agents | design agents/debater.py public interface and signatures | interface documented in PRD/PLAN; reviewed | todo
-T-0224 | P4 | agents | test(agents): happy-path for DebaterAgent.act(): rebut + new point + citation + word limit | failing test written first (red) | todo
-T-0225 | P4 | agents | test(agents): error-path for DebaterAgent.act(): rebut + new point + citation + word limit | raises/handles the error path; test green | todo
-T-0226 | P4 | agents | test(agents): edge-case/property test for agents/debater.py | boundary inputs covered | todo
-T-0227 | P4 | agents | implement agents/debater.py: DebaterAgent.act(): rebut + new point + citation + word limit | smallest impl that passes tests (green) | todo
-T-0228 | P4 | agents | docstrings on agents/debater.py public API (why, not what) | every public symbol documented | todo
-T-0229 | P4 | agents | type hints on agents/debater.py public signatures (no bare Any) | mypy-clean signatures | todo
-T-0230 | P4 | agents | review agents/debater.py for duplication (rule 3) | no copy-paste; shared helpers extracted | todo
-T-0231 | P4 | agents | keep agents/debater.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | todo
-T-0232 | P4 | agents | integrate agents/debater.py with the SDK / its callers | SDK method or caller wired and tested | todo
-T-0233 | P4 | agents | design agents/pro.py public interface and signatures | interface documented in PRD/PLAN; reviewed | todo
-T-0234 | P4 | agents | test(agents): happy-path for ProAgent(DebaterAgent): loads skill_pro, fixed Pro position | failing test written first (red) | todo
-T-0235 | P4 | agents | test(agents): error-path for ProAgent(DebaterAgent): loads skill_pro, fixed Pro position | raises/handles the error path; test green | todo
-T-0236 | P4 | agents | test(agents): edge-case/property test for agents/pro.py | boundary inputs covered | todo
-T-0237 | P4 | agents | implement agents/pro.py: ProAgent(DebaterAgent): loads skill_pro, fixed Pro position | smallest impl that passes tests (green) | todo
-T-0238 | P4 | agents | docstrings on agents/pro.py public API (why, not what) | every public symbol documented | todo
-T-0239 | P4 | agents | type hints on agents/pro.py public signatures (no bare Any) | mypy-clean signatures | todo
-T-0240 | P4 | agents | review agents/pro.py for duplication (rule 3) | no copy-paste; shared helpers extracted | todo
-T-0241 | P4 | agents | keep agents/pro.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | todo
-T-0242 | P4 | agents | integrate agents/pro.py with the SDK / its callers | SDK method or caller wired and tested | todo
-T-0243 | P4 | agents | design agents/con.py public interface and signatures | interface documented in PRD/PLAN; reviewed | todo
-T-0244 | P4 | agents | test(agents): happy-path for ConAgent(DebaterAgent): loads skill_con, fixed Con position | failing test written first (red) | todo
-T-0245 | P4 | agents | test(agents): error-path for ConAgent(DebaterAgent): loads skill_con, fixed Con position | raises/handles the error path; test green | todo
-T-0246 | P4 | agents | test(agents): edge-case/property test for agents/con.py | boundary inputs covered | todo
-T-0247 | P4 | agents | implement agents/con.py: ConAgent(DebaterAgent): loads skill_con, fixed Con position | smallest impl that passes tests (green) | todo
-T-0248 | P4 | agents | docstrings on agents/con.py public API (why, not what) | every public symbol documented | todo
-T-0249 | P4 | agents | type hints on agents/con.py public signatures (no bare Any) | mypy-clean signatures | todo
-T-0250 | P4 | agents | review agents/con.py for duplication (rule 3) | no copy-paste; shared helpers extracted | todo
-T-0251 | P4 | agents | keep agents/con.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | todo
-T-0252 | P4 | agents | integrate agents/con.py with the SDK / its callers | SDK method or caller wired and tested | todo
-T-0253 | P4 | agents | design agents/judge.py public interface and signatures | interface documented in PRD/PLAN; reviewed | todo
-T-0254 | P4 | agents | test(agents): happy-path for JudgeAgent: relay/enforce/score_turn/verdict | failing test written first (red) | todo
-T-0255 | P4 | agents | test(agents): error-path for JudgeAgent: relay/enforce/score_turn/verdict | raises/handles the error path; test green | todo
-T-0256 | P4 | agents | test(agents): edge-case/property test for agents/judge.py | boundary inputs covered | todo
-T-0257 | P4 | agents | implement agents/judge.py: JudgeAgent: relay/enforce/score_turn/verdict | smallest impl that passes tests (green) | todo
-T-0258 | P4 | agents | docstrings on agents/judge.py public API (why, not what) | every public symbol documented | todo
-T-0259 | P4 | agents | type hints on agents/judge.py public signatures (no bare Any) | mypy-clean signatures | todo
-T-0260 | P4 | agents | review agents/judge.py for duplication (rule 3) | no copy-paste; shared helpers extracted | todo
-T-0261 | P4 | agents | keep agents/judge.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | todo
-T-0262 | P4 | agents | integrate agents/judge.py with the SDK / its callers | SDK method or caller wired and tested | todo
-T-0263 | P4 | agents | design agents/factory.py public interface and signatures | interface documented in PRD/PLAN; reviewed | todo
-T-0264 | P4 | agents | test(agents): happy-path for build_agent(role, cfg); unknown role raises | failing test written first (red) | todo
-T-0265 | P4 | agents | test(agents): error-path for build_agent(role, cfg); unknown role raises | raises/handles the error path; test green | todo
-T-0266 | P4 | agents | test(agents): edge-case/property test for agents/factory.py | boundary inputs covered | todo
-T-0267 | P4 | agents | implement agents/factory.py: build_agent(role, cfg); unknown role raises | smallest impl that passes tests (green) | todo
-T-0268 | P4 | agents | docstrings on agents/factory.py public API (why, not what) | every public symbol documented | todo
-T-0269 | P4 | agents | type hints on agents/factory.py public signatures (no bare Any) | mypy-clean signatures | todo
-T-0270 | P4 | agents | review agents/factory.py for duplication (rule 3) | no copy-paste; shared helpers extracted | todo
-T-0271 | P4 | agents | keep agents/factory.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | todo
-T-0272 | P4 | agents | integrate agents/factory.py with the SDK / its callers | SDK method or caller wired and tested | todo
-T-0273 | P4 | agents | design agents/verdict.py public interface and signatures | interface documented in PRD/PLAN; reviewed | todo
-T-0274 | P4 | agents | test(agents): happy-path for Verdict dataclass; validation forbids ties/equal scores | failing test written first (red) | todo
-T-0275 | P4 | agents | test(agents): error-path for Verdict dataclass; validation forbids ties/equal scores | raises/handles the error path; test green | todo
-T-0276 | P4 | agents | test(agents): edge-case/property test for agents/verdict.py | boundary inputs covered | todo
-T-0277 | P4 | agents | implement agents/verdict.py: Verdict dataclass; validation forbids ties/equal scores | smallest impl that passes tests (green) | todo
-T-0278 | P4 | agents | docstrings on agents/verdict.py public API (why, not what) | every public symbol documented | todo
-T-0279 | P4 | agents | type hints on agents/verdict.py public signatures (no bare Any) | mypy-clean signatures | todo
-T-0280 | P4 | agents | review agents/verdict.py for duplication (rule 3) | no copy-paste; shared helpers extracted | todo
-T-0281 | P4 | agents | keep agents/verdict.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | todo
-T-0282 | P4 | agents | integrate agents/verdict.py with the SDK / its callers | SDK method or caller wired and tested | todo
-T-0283 | P4 | agents | design agents/prompts.py public interface and signatures | interface documented in PRD/PLAN; reviewed | todo
-T-0284 | P4 | agents | test(agents): happy-path for prompt templates: render Skill + injected context per role | failing test written first (red) | todo
-T-0285 | P4 | agents | test(agents): error-path for prompt templates: render Skill + injected context per role | raises/handles the error path; test green | todo
-T-0286 | P4 | agents | test(agents): edge-case/property test for agents/prompts.py | boundary inputs covered | todo
-T-0287 | P4 | agents | implement agents/prompts.py: prompt templates: render Skill + injected context per role | smallest impl that passes tests (green) | todo
-T-0288 | P4 | agents | docstrings on agents/prompts.py public API (why, not what) | every public symbol documented | todo
-T-0289 | P4 | agents | type hints on agents/prompts.py public signatures (no bare Any) | mypy-clean signatures | todo
-T-0290 | P4 | agents | review agents/prompts.py for duplication (rule 3) | no copy-paste; shared helpers extracted | todo
-T-0291 | P4 | agents | keep agents/prompts.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | todo
-T-0292 | P4 | agents | integrate agents/prompts.py with the SDK / its callers | SDK method or caller wired and tested | todo
-T-0293 | P4 | agents | _render_prompt(context) builds Skill + injected context | task complete and tested | todo
-T-0294 | P4 | agents | _invoke() always routes through Gatekeeper.guard | task complete and tested | todo
-T-0295 | P4 | agents | _to_message(...) emits a ProtocolMessage | task complete and tested | todo
-T-0296 | P4 | agents | DebaterAgent.act produces a ProtocolMessage with a citation within word limit | task complete and tested | todo
-T-0297 | P4 | agents | missing-citation turn is flagged | task complete and tested | todo
-T-0298 | P4 | agents | JudgeAgent.verdict never ties and always names a winner | task complete and tested | todo
-T-0299 | P4 | agents | factory returns ProAgent/ConAgent/JudgeAgent for each role | task complete and tested | todo
-T-0300 | P4 | agents | mock runtime + gatekeeper in all agent tests | task complete and tested | todo
-T-0301 | P4 | agents | SDK.build_agent(role) wired | task complete and tested | todo
-T-0302 | P4 | agents | coverage >=90% on agents/ | task complete and tested | todo
-T-0303 | P4 | agents | update TODO; save docs/prompts/004; commit (>=5); push; CI green | task complete and tested | todo
+T-0208 | P4 | skills | skill_pro.md: evidence-driven optimist persona + Description selector line | skill files present and distinct | done 2026-05-31
+T-0209 | P4 | skills | skill_con.md: critical skeptic persona, distinct argumentative strategy | skill files present and distinct | done 2026-05-31
+T-0210 | P4 | skills | skill_judge.md: rules-only rubric; scores persuasion; no right answer; forbids ties | skill files present and distinct | done 2026-05-31
+T-0211 | P4 | skills | assert three skills exist, non-empty, with distinct Description lines | skill files present and distinct | done 2026-05-31
+T-0212 | P4 | skills | skills are English and PC | skill files present and distinct | done 2026-05-31
+T-0213 | P4 | agents | design agents/base.py public interface and signatures | interface documented in PRD/PLAN; reviewed | done 2026-05-31
+T-0214 | P4 | agents | test(agents): happy-path for BaseAgent(ABC): role, skill, runtime, gatekeeper; act() abstract; shared helpers | failing test written first (red) | done 2026-05-31
+T-0215 | P4 | agents | test(agents): error-path for BaseAgent(ABC): role, skill, runtime, gatekeeper; act() abstract; shared helpers | raises/handles the error path; test green | done 2026-05-31
+T-0216 | P4 | agents | test(agents): edge-case/property test for agents/base.py | boundary inputs covered | done 2026-05-31
+T-0217 | P4 | agents | implement agents/base.py: BaseAgent(ABC): role, skill, runtime, gatekeeper; act() abstract; shared helpers | smallest impl that passes tests (green) | done 2026-05-31
+T-0218 | P4 | agents | docstrings on agents/base.py public API (why, not what) | every public symbol documented | done 2026-05-31
+T-0219 | P4 | agents | type hints on agents/base.py public signatures (no bare Any) | mypy-clean signatures | done 2026-05-31
+T-0220 | P4 | agents | review agents/base.py for duplication (rule 3) | no copy-paste; shared helpers extracted | done 2026-05-31
+T-0221 | P4 | agents | keep agents/base.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | done 2026-05-31
+T-0222 | P4 | agents | integrate agents/base.py with the SDK / its callers | SDK method or caller wired and tested | done 2026-05-31
+T-0223 | P4 | agents | design agents/debater.py public interface and signatures | interface documented in PRD/PLAN; reviewed | done 2026-05-31
+T-0224 | P4 | agents | test(agents): happy-path for DebaterAgent.act(): rebut + new point + citation + word limit | failing test written first (red) | done 2026-05-31
+T-0225 | P4 | agents | test(agents): error-path for DebaterAgent.act(): rebut + new point + citation + word limit | raises/handles the error path; test green | done 2026-05-31
+T-0226 | P4 | agents | test(agents): edge-case/property test for agents/debater.py | boundary inputs covered | done 2026-05-31
+T-0227 | P4 | agents | implement agents/debater.py: DebaterAgent.act(): rebut + new point + citation + word limit | smallest impl that passes tests (green) | done 2026-05-31
+T-0228 | P4 | agents | docstrings on agents/debater.py public API (why, not what) | every public symbol documented | done 2026-05-31
+T-0229 | P4 | agents | type hints on agents/debater.py public signatures (no bare Any) | mypy-clean signatures | done 2026-05-31
+T-0230 | P4 | agents | review agents/debater.py for duplication (rule 3) | no copy-paste; shared helpers extracted | done 2026-05-31
+T-0231 | P4 | agents | keep agents/debater.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | done 2026-05-31
+T-0232 | P4 | agents | integrate agents/debater.py with the SDK / its callers | SDK method or caller wired and tested | done 2026-05-31
+T-0233 | P4 | agents | design agents/pro.py public interface and signatures | interface documented in PRD/PLAN; reviewed | done 2026-05-31
+T-0234 | P4 | agents | test(agents): happy-path for ProAgent(DebaterAgent): loads skill_pro, fixed Pro position | failing test written first (red) | done 2026-05-31
+T-0235 | P4 | agents | test(agents): error-path for ProAgent(DebaterAgent): loads skill_pro, fixed Pro position | raises/handles the error path; test green | done 2026-05-31
+T-0236 | P4 | agents | test(agents): edge-case/property test for agents/pro.py | boundary inputs covered | done 2026-05-31
+T-0237 | P4 | agents | implement agents/pro.py: ProAgent(DebaterAgent): loads skill_pro, fixed Pro position | smallest impl that passes tests (green) | done 2026-05-31
+T-0238 | P4 | agents | docstrings on agents/pro.py public API (why, not what) | every public symbol documented | done 2026-05-31
+T-0239 | P4 | agents | type hints on agents/pro.py public signatures (no bare Any) | mypy-clean signatures | done 2026-05-31
+T-0240 | P4 | agents | review agents/pro.py for duplication (rule 3) | no copy-paste; shared helpers extracted | done 2026-05-31
+T-0241 | P4 | agents | keep agents/pro.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | done 2026-05-31
+T-0242 | P4 | agents | integrate agents/pro.py with the SDK / its callers | SDK method or caller wired and tested | done 2026-05-31
+T-0243 | P4 | agents | design agents/con.py public interface and signatures | interface documented in PRD/PLAN; reviewed | done 2026-05-31
+T-0244 | P4 | agents | test(agents): happy-path for ConAgent(DebaterAgent): loads skill_con, fixed Con position | failing test written first (red) | done 2026-05-31
+T-0245 | P4 | agents | test(agents): error-path for ConAgent(DebaterAgent): loads skill_con, fixed Con position | raises/handles the error path; test green | done 2026-05-31
+T-0246 | P4 | agents | test(agents): edge-case/property test for agents/con.py | boundary inputs covered | done 2026-05-31
+T-0247 | P4 | agents | implement agents/con.py: ConAgent(DebaterAgent): loads skill_con, fixed Con position | smallest impl that passes tests (green) | done 2026-05-31
+T-0248 | P4 | agents | docstrings on agents/con.py public API (why, not what) | every public symbol documented | done 2026-05-31
+T-0249 | P4 | agents | type hints on agents/con.py public signatures (no bare Any) | mypy-clean signatures | done 2026-05-31
+T-0250 | P4 | agents | review agents/con.py for duplication (rule 3) | no copy-paste; shared helpers extracted | done 2026-05-31
+T-0251 | P4 | agents | keep agents/con.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | done 2026-05-31
+T-0252 | P4 | agents | integrate agents/con.py with the SDK / its callers | SDK method or caller wired and tested | done 2026-05-31
+T-0253 | P4 | agents | design agents/judge.py public interface and signatures | interface documented in PRD/PLAN; reviewed | done 2026-05-31
+T-0254 | P4 | agents | test(agents): happy-path for JudgeAgent: relay/enforce/score_turn/verdict | failing test written first (red) | done 2026-05-31
+T-0255 | P4 | agents | test(agents): error-path for JudgeAgent: relay/enforce/score_turn/verdict | raises/handles the error path; test green | done 2026-05-31
+T-0256 | P4 | agents | test(agents): edge-case/property test for agents/judge.py | boundary inputs covered | done 2026-05-31
+T-0257 | P4 | agents | implement agents/judge.py: JudgeAgent: relay/enforce/score_turn/verdict | smallest impl that passes tests (green) | done 2026-05-31
+T-0258 | P4 | agents | docstrings on agents/judge.py public API (why, not what) | every public symbol documented | done 2026-05-31
+T-0259 | P4 | agents | type hints on agents/judge.py public signatures (no bare Any) | mypy-clean signatures | done 2026-05-31
+T-0260 | P4 | agents | review agents/judge.py for duplication (rule 3) | no copy-paste; shared helpers extracted | done 2026-05-31
+T-0261 | P4 | agents | keep agents/judge.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | done 2026-05-31
+T-0262 | P4 | agents | integrate agents/judge.py with the SDK / its callers | SDK method or caller wired and tested | done 2026-05-31
+T-0263 | P4 | agents | design agents/factory.py public interface and signatures | interface documented in PRD/PLAN; reviewed | done 2026-05-31
+T-0264 | P4 | agents | test(agents): happy-path for build_agent(role, cfg); unknown role raises | failing test written first (red) | done 2026-05-31
+T-0265 | P4 | agents | test(agents): error-path for build_agent(role, cfg); unknown role raises | raises/handles the error path; test green | done 2026-05-31
+T-0266 | P4 | agents | test(agents): edge-case/property test for agents/factory.py | boundary inputs covered | done 2026-05-31
+T-0267 | P4 | agents | implement agents/factory.py: build_agent(role, cfg); unknown role raises | smallest impl that passes tests (green) | done 2026-05-31
+T-0268 | P4 | agents | docstrings on agents/factory.py public API (why, not what) | every public symbol documented | done 2026-05-31
+T-0269 | P4 | agents | type hints on agents/factory.py public signatures (no bare Any) | mypy-clean signatures | done 2026-05-31
+T-0270 | P4 | agents | review agents/factory.py for duplication (rule 3) | no copy-paste; shared helpers extracted | done 2026-05-31
+T-0271 | P4 | agents | keep agents/factory.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | done 2026-05-31
+T-0272 | P4 | agents | integrate agents/factory.py with the SDK / its callers | SDK method or caller wired and tested | done 2026-05-31
+T-0273 | P4 | agents | design agents/verdict.py public interface and signatures | interface documented in PRD/PLAN; reviewed | done 2026-05-31
+T-0274 | P4 | agents | test(agents): happy-path for Verdict dataclass; validation forbids ties/equal scores | failing test written first (red) | done 2026-05-31
+T-0275 | P4 | agents | test(agents): error-path for Verdict dataclass; validation forbids ties/equal scores | raises/handles the error path; test green | done 2026-05-31
+T-0276 | P4 | agents | test(agents): edge-case/property test for agents/verdict.py | boundary inputs covered | done 2026-05-31
+T-0277 | P4 | agents | implement agents/verdict.py: Verdict dataclass; validation forbids ties/equal scores | smallest impl that passes tests (green) | done 2026-05-31
+T-0278 | P4 | agents | docstrings on agents/verdict.py public API (why, not what) | every public symbol documented | done 2026-05-31
+T-0279 | P4 | agents | type hints on agents/verdict.py public signatures (no bare Any) | mypy-clean signatures | done 2026-05-31
+T-0280 | P4 | agents | review agents/verdict.py for duplication (rule 3) | no copy-paste; shared helpers extracted | done 2026-05-31
+T-0281 | P4 | agents | keep agents/verdict.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | done 2026-05-31
+T-0282 | P4 | agents | integrate agents/verdict.py with the SDK / its callers | SDK method or caller wired and tested | done 2026-05-31
+T-0283 | P4 | agents | design agents/prompts.py public interface and signatures | interface documented in PRD/PLAN; reviewed | done 2026-05-31
+T-0284 | P4 | agents | test(agents): happy-path for prompt templates: render Skill + injected context per role | failing test written first (red) | done 2026-05-31
+T-0285 | P4 | agents | test(agents): error-path for prompt templates: render Skill + injected context per role | raises/handles the error path; test green | done 2026-05-31
+T-0286 | P4 | agents | test(agents): edge-case/property test for agents/prompts.py | boundary inputs covered | done 2026-05-31
+T-0287 | P4 | agents | implement agents/prompts.py: prompt templates: render Skill + injected context per role | smallest impl that passes tests (green) | done 2026-05-31
+T-0288 | P4 | agents | docstrings on agents/prompts.py public API (why, not what) | every public symbol documented | done 2026-05-31
+T-0289 | P4 | agents | type hints on agents/prompts.py public signatures (no bare Any) | mypy-clean signatures | done 2026-05-31
+T-0290 | P4 | agents | review agents/prompts.py for duplication (rule 3) | no copy-paste; shared helpers extracted | done 2026-05-31
+T-0291 | P4 | agents | keep agents/prompts.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | done 2026-05-31
+T-0292 | P4 | agents | integrate agents/prompts.py with the SDK / its callers | SDK method or caller wired and tested | done 2026-05-31
+T-0293 | P4 | agents | _render_prompt(context) builds Skill + injected context | task complete and tested | done 2026-05-31
+T-0294 | P4 | agents | _invoke() always routes through Gatekeeper.guard | task complete and tested | done 2026-05-31
+T-0295 | P4 | agents | _to_message(...) emits a ProtocolMessage | task complete and tested | done 2026-05-31
+T-0296 | P4 | agents | DebaterAgent.act produces a ProtocolMessage with a citation within word limit | task complete and tested | done 2026-05-31
+T-0297 | P4 | agents | missing-citation turn is flagged | task complete and tested | done 2026-05-31
+T-0298 | P4 | agents | JudgeAgent.verdict never ties and always names a winner | task complete and tested | done 2026-05-31
+T-0299 | P4 | agents | factory returns ProAgent/ConAgent/JudgeAgent for each role | task complete and tested | done 2026-05-31
+T-0300 | P4 | agents | mock runtime + gatekeeper in all agent tests | task complete and tested | done 2026-05-31
+T-0301 | P4 | agents | SDK.build_agent(role) wired | task complete and tested | done 2026-05-31
+T-0302 | P4 | agents | coverage >=90% on agents/ | task complete and tested | done 2026-05-31
+T-0303 | P4 | agents | update TODO; save docs/prompts/004; commit (>=5); push; CI green | task complete and tested | done 2026-05-31
 
 ## Phase 5 — JSON IPC protocol
 
