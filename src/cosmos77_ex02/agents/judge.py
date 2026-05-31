@@ -13,9 +13,9 @@ from datetime import UTC, datetime
 from typing import Any
 
 from cosmos77_ex02.agents.base import BaseAgent
+from cosmos77_ex02.agents.enforcement import enforcement_problems, references_opponent
 from cosmos77_ex02.agents.prompts import render_verdict_prompt
 from cosmos77_ex02.agents.verdict import Verdict
-from cosmos77_ex02.protocol.citation import turn_problems
 from cosmos77_ex02.protocol.message import ProtocolMessage
 
 _JSON_RE = re.compile(r"\{.*\}", re.DOTALL)
@@ -46,21 +46,30 @@ class JudgeAgent(BaseAgent):
             citations=list(message.citations),
         )
 
-    def enforce(self, message: ProtocolMessage, config: Any | None = None) -> list[str]:
-        """Return the list of rule violations for ``message`` (empty if clean).
+    def enforce(
+        self,
+        message: ProtocolMessage,
+        config: Any | None = None,
+        opponent_last: str | None = None,
+    ) -> list[str]:
+        """Return the rule violations for ``message`` (empty if the turn is clean).
 
-        Delegates to :func:`cosmos77_ex02.protocol.citation.turn_problems` so the
-        citation/word-limit rules live in exactly one place (rule 3).
+        Covers citation + word-limit (via the protocol), plus the judge's own
+        rebuttal and anti-collusion checks (A4, A10). A non-empty result is the
+        signal to reject the turn and request a redo / intervene.
         """
-        return turn_problems(message, config or self._config)
+        return enforcement_problems(message, config or self._config, opponent_last)
 
-    def score_turn(self, message: ProtocolMessage) -> dict[str, int]:
-        """Starter persuasion rubric (Phase 7 replaces with an LLM-scored rubric)."""
+    def score_turn(
+        self, message: ProtocolMessage, opponent_last: str | None = None
+    ) -> dict[str, int]:
+        """Persuasion rubric (clarity, evidence, rebuttal, rhetoric) — never truth."""
+        words = message.word_count
         return {
-            "clarity": min(10, max(1, message.word_count // 20)),
-            "evidence": min(10, len(message.citations) * 3),
-            "rebuttal": 5,
-            "rhetoric": 5,
+            "clarity": min(10, max(1, words // 18)),
+            "evidence": min(10, len(message.citations) * 4),
+            "rebuttal": 8 if references_opponent(message.content, opponent_last) else 3,
+            "rhetoric": min(10, max(2, words // 24)),
         }
 
     def verdict(self, transcript: list[ProtocolMessage]) -> Verdict:

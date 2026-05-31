@@ -53,10 +53,35 @@ def test_enforce_clean_turn_has_no_problems(config, gatekeeper, fake_runtime) ->
     assert judge.enforce(_turn("short rebuttal", ["https://a.example"])) == []
 
 
+def test_enforce_flags_non_rebutting_turn(config, gatekeeper, fake_runtime) -> None:
+    judge = JudgeAgent(fake_runtime, gatekeeper, config)
+    turn = _turn("Quarterly output rose globally.", ["https://a.example"])
+    problems = judge.enforce(turn, opponent_last="Apps harm adolescent mental health.")
+    assert any("no rebuttal" in p for p in problems)
+
+
+def test_enforce_flags_agreement_drift(config, gatekeeper, fake_runtime) -> None:
+    judge = JudgeAgent(fake_runtime, gatekeeper, config)
+    turn = _turn("I agree with you. https://a.example", ["https://a.example"])
+    problems = judge.enforce(turn, opponent_last="Apps harm teens.")
+    assert any("agreement drift" in p for p in problems)
+
+
 def test_score_turn_returns_rubric(config, gatekeeper, fake_runtime) -> None:
     judge = JudgeAgent(fake_runtime, gatekeeper, config)
     scores = judge.score_turn(_turn("a fair length turn here", ["https://a.example"]))
     assert set(scores) == {"clarity", "evidence", "rebuttal", "rhetoric"}
+
+
+def test_score_turn_rewards_rebuttal_reference(config, gatekeeper, fake_runtime) -> None:
+    judge = JudgeAgent(fake_runtime, gatekeeper, config)
+    rebuts = judge.score_turn(
+        _turn("However, your point fails.", ["https://a.example"]), opponent_last="X claim."
+    )
+    ignores = judge.score_turn(
+        _turn("Unrelated statement entirely.", ["https://a.example"]), opponent_last="X claim."
+    )
+    assert rebuts["rebuttal"] > ignores["rebuttal"]
 
 
 def test_verdict_parses_json_and_names_winner(config, gatekeeper) -> None:
