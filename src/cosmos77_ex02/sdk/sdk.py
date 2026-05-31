@@ -50,5 +50,14 @@ class SDK:
         raise NotImplementedError("tail_logs lands in Phase 8")
 
     def build_agent(self, role: str) -> Any:
-        """Construct an agent for ``role`` via the factory (Phase 4)."""
-        raise NotImplementedError("build_agent lands in Phase 4")
+        """Construct an agent for ``role`` via the factory (rule 2 entry point)."""
+        from cosmos77_ex02.agents.factory import build_agent
+        from cosmos77_ex02.runtime.claude_cli import ClaudeCliRuntime
+        from cosmos77_ex02.shared.gatekeeper import Gatekeeper
+
+        return build_agent(
+            role,
+            ClaudeCliRuntime(self._config),
+            Gatekeeper(self._config.gatekeeper()),
+            self._config,
+        )
