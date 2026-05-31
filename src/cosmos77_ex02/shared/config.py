@@ -91,6 +91,19 @@ class Config:
         """Return a shallow copy of the underlying ``setup.json`` payload."""
         return dict(self._setup)
 
+    def set(self, dot_path: str, value: Any) -> None:
+        """Set the in-memory value at ``dot_path`` (call :meth:`save` to persist)."""
+        parts = dot_path.split(".")
+        node = self._setup
+        for part in parts[:-1]:
+            node = node.setdefault(part, {})
+        node[parts[-1]] = value
+
+    def save(self) -> None:
+        """Write the current setup payload back to ``setup.json``."""
+        path = self._config_dir / "setup.json"
+        path.write_text(json.dumps(self._setup, indent=2, ensure_ascii=False), encoding="utf-8")
+
     @property
     def version(self) -> str:
         """The config version string (e.g. ``"1.00"``)."""

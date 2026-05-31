@@ -32,12 +32,18 @@ class SDK:
         return Orchestrator(self._config).run()
 
     def set_topic(self, topic: str, pro: str | None = None, con: str | None = None) -> None:
-        """Update the debate topic and positions in config (Phase 8)."""
-        raise NotImplementedError("set_topic lands in Phase 8")
+        """Update the debate topic (and optionally positions) in config and persist."""
+        self._config.set("debate.topic", topic)
+        if pro is not None:
+            self._config.set("debate.pro_position", pro)
+        if con is not None:
+            self._config.set("debate.con_position", con)
+        self._config.save()
 
     def set_pings(self, pings_per_side: int) -> None:
-        """Update the number of pings per side in config (Phase 8)."""
-        raise NotImplementedError("set_pings lands in Phase 8")
+        """Update the number of pings per side in config and persist."""
+        self._config.set("debate.pings_per_side", int(pings_per_side))
+        self._config.save()
 
     def last_verdict(self) -> Any:
         """Return the verdict dict from the most recent transcript, or raise if none."""
@@ -56,8 +62,14 @@ class SDK:
         raise NotImplementedError("cost_report lands in Phase 9")
 
     def tail_logs(self, n: int = 50) -> list[str]:
-        """Return the last ``n`` structured log lines (Phase 8)."""
-        raise NotImplementedError("tail_logs lands in Phase 8")
+        """Return the last ``n`` structured (JSON-lines) log lines across the FIFO files."""
+        from pathlib import Path
+
+        logs_dir = Path(self._config.paths().get("logs_dir", "logs"))
+        lines: list[str] = []
+        for log_file in sorted(logs_dir.glob("*.jsonl")):
+            lines.extend(log_file.read_text(encoding="utf-8").splitlines())
+        return lines[-n:]
 
     def build_agent(self, role: str) -> Any:
         """Construct an agent for ``role`` via the factory (rule 2 entry point)."""

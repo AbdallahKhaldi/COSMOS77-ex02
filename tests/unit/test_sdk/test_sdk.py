@@ -20,19 +20,59 @@ def test_sdk_accepts_injected_config() -> None:
     assert sdk.config is cfg
 
 
-@pytest.mark.parametrize(
-    ("method", "args"),
-    [
-        ("set_topic", ("topic",)),
-        ("set_pings", (5,)),
-        ("cost_report", ()),
-        ("tail_logs", ()),
-    ],
-)
-def test_public_methods_raise_not_implemented(method: str, args: tuple) -> None:
-    sdk = SDK()
+def test_cost_report_not_implemented_until_phase9() -> None:
     with pytest.raises(NotImplementedError):
-        getattr(sdk, method)(*args)
+        SDK().cost_report()
+
+
+def _sdk_with_tmp_config(tmp_path) -> SDK:
+    import json
+
+    from cosmos77_ex02.shared.config import Config
+
+    cfg_dir = tmp_path / "config"
+    cfg_dir.mkdir()
+    (cfg_dir / "setup.json").write_text(
+        json.dumps(
+            {
+                "version": "1.00",
+                "debate": {"topic": "old?", "pings_per_side": 10},
+                "paths": {"logs_dir": str(tmp_path / "logs")},
+            }
+        )
+    )
+    return SDK(Config(cfg_dir))
+
+
+def test_set_topic_persists_to_config(tmp_path) -> None:
+    import json
+
+    sdk = _sdk_with_tmp_config(tmp_path)
+    sdk.set_topic("Is AI good?", pro="AI is good", con="AI is bad")
+    saved = json.loads((tmp_path / "config" / "setup.json").read_text())
+    assert saved["debate"]["topic"] == "Is AI good?"
+    assert saved["debate"]["pro_position"] == "AI is good"
+
+
+def test_set_pings_persists_to_config(tmp_path) -> None:
+    import json
+
+    sdk = _sdk_with_tmp_config(tmp_path)
+    sdk.set_pings(3)
+    saved = json.loads((tmp_path / "config" / "setup.json").read_text())
+    assert saved["debate"]["pings_per_side"] == 3
+
+
+def test_tail_logs_reads_recent_lines(tmp_path) -> None:
+    sdk = _sdk_with_tmp_config(tmp_path)
+    logs = tmp_path / "logs"
+    logs.mkdir()
+    (logs / "debate_00000.jsonl").write_text("\n".join(f"line{i}" for i in range(10)) + "\n")
+    assert sdk.tail_logs(3) == ["line7", "line8", "line9"]
+
+
+def test_tail_logs_empty_when_no_logs(tmp_path) -> None:
+    assert _sdk_with_tmp_config(tmp_path).tail_logs() == []
 
 
 def test_last_verdict_reads_latest_transcript(tmp_path) -> None:
