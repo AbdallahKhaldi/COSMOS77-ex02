@@ -9,8 +9,7 @@ subsequent minor bumps reserved for post-grading patches.
 
 ## [Unreleased]
 
-### Added
-- _Phase 12 (submission): cover PDF + `v1.00` tag + release._
+_Nothing yet — `1.00` is the submission cut._
 
 ## [1.00] — 2026-05-31
 
@@ -52,13 +51,17 @@ subsequent minor bumps reserved for post-grading patches.
 - **Phase 10 (README)** — full lab-report README (666 lines, 6 images, full
   session-1 dialogue, cost analysis, self-assessment).
 - **Phase 11 (QA)** — `docs/ACCEPTANCE.md` (A1–A15 audit); all gates green.
+- **Phase 12 (submission)** — `scripts/generate_cover_pdf.py` retargeted to
+  exercise 2 / ex02 URL (+ `test_cover_pdf.py`); `v1.00` tag + GitHub release.
+- **Screenshots** rendered to high-fidelity PNG via headless Chrome
+  (`scripts/capture_screens.py`); README embeds the 4 real-run screenshots.
 
 ### Verified at the v1.00 cut
 
 - `uv run ruff check .` / `ruff format --check .` → 0 issues.
 - `uv run python scripts/check_line_cap.py` → 0 offenders (every `.py` ≤150 lines).
-- `uv run pytest -m "not live" --cov-fail-under=85` → **201 passed, 98.11 % coverage**.
-- GitHub Actions CI green on `main`; ≥30 conventional commits, both authors.
+- `uv run pytest -m "not live" --cov-fail-under=85` → **207 passed, 98.11 % coverage**.
+- GitHub Actions CI green on `main`; 60+ conventional commits, both authors balanced.
 - Live debate reproduced end-to-end with a no-tie verdict and cited turns.
 
 ### Security
