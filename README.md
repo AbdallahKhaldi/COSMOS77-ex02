@@ -33,3 +33,11 @@ Built phase-by-phase per [`../CLAUDE_CODE_PLAYBOOK.md`](../CLAUDE_CODE_PLAYBOOK.
 See [`docs/TODO.md`](docs/TODO.md) for task tracking, [`docs/prompts/`](docs/prompts/)
 for the graded vibe-coding prompt log, and [`CHANGELOG.md`](CHANGELOG.md) for the
 release history. License: [MIT](LICENSE).
+
+## Acknowledgements
+
+This project is **vibe-coded with [Claude Code](https://claude.com/claude-code)**
+(Anthropic's Claude Opus 4.8), driven phase-by-phase by the two student authors per
+the UOH-RL07 methodology. Every prompt issued to the agent and a summary of its work
+is logged under [`docs/prompts/`](docs/prompts/) as graded evidence of the workflow;
+the full *"How we used AI agents"* write-up lands in the Phase 10 README.
