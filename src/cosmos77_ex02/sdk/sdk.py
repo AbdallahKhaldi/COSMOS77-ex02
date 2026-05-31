@@ -40,8 +40,16 @@ class SDK:
         raise NotImplementedError("set_pings lands in Phase 8")
 
     def last_verdict(self) -> Any:
-        """Return the verdict from the latest transcript (Phase 7)."""
-        raise NotImplementedError("last_verdict lands in Phase 7")
+        """Return the verdict dict from the most recent transcript, or raise if none."""
+        import json
+        from pathlib import Path
+
+        directory = Path(self._config.orchestration().get("transcript_dir", "transcripts"))
+        sessions = sorted(directory.glob("session_*.json"))
+        if not sessions:
+            raise FileNotFoundError(f"no transcript found in {directory}; run a debate first")
+        data = json.loads(sessions[-1].read_text(encoding="utf-8"))
+        return data.get("verdict")
 
     def cost_report(self) -> Any:
         """Return the token/USD cost report for the latest run (Phase 9)."""

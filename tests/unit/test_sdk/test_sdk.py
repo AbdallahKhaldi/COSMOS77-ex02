@@ -25,7 +25,6 @@ def test_sdk_accepts_injected_config() -> None:
     [
         ("set_topic", ("topic",)),
         ("set_pings", (5,)),
-        ("last_verdict", ()),
         ("cost_report", ()),
         ("tail_logs", ()),
     ],
@@ -34,6 +33,40 @@ def test_public_methods_raise_not_implemented(method: str, args: tuple) -> None:
     sdk = SDK()
     with pytest.raises(NotImplementedError):
         getattr(sdk, method)(*args)
+
+
+def test_last_verdict_reads_latest_transcript(tmp_path) -> None:
+    import json
+
+    from cosmos77_ex02.shared.config import Config
+
+    cfg_dir = tmp_path / "config"
+    cfg_dir.mkdir()
+    transcripts = tmp_path / "transcripts"
+    transcripts.mkdir()
+    (cfg_dir / "setup.json").write_text(
+        json.dumps({"version": "1.00", "orchestration": {"transcript_dir": str(transcripts)}})
+    )
+    (transcripts / "session_001.json").write_text(json.dumps({"verdict": {"winner": "con"}}))
+    (transcripts / "session_002.json").write_text(
+        json.dumps({"verdict": {"winner": "pro", "pro_score": 81, "con_score": 70}})
+    )
+    verdict = SDK(Config(cfg_dir)).last_verdict()
+    assert verdict["winner"] == "pro"  # reads the latest session
+
+
+def test_last_verdict_raises_when_no_transcript(tmp_path) -> None:
+    import json
+
+    from cosmos77_ex02.shared.config import Config
+
+    cfg_dir = tmp_path / "config"
+    cfg_dir.mkdir()
+    (cfg_dir / "setup.json").write_text(
+        json.dumps({"version": "1.00", "orchestration": {"transcript_dir": str(tmp_path / "none")}})
+    )
+    with pytest.raises(FileNotFoundError, match="no transcript"):
+        SDK(Config(cfg_dir)).last_verdict()
 
 
 def test_run_debate_delegates_to_orchestrator(mocker) -> None:
