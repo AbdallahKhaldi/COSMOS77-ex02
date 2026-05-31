@@ -49,6 +49,7 @@ ignore = ["E501"]
 "tests/**/*.py" = ["B008", "N802", "N806", "SIM300"]
 "scripts/**/*.py" = ["N802"]
 "src/cosmos77_ex02/shared/gatekeeper.py" = ["N818"]
+"src/cosmos77_ex02/runtime/claude_cli.py" = ["N818"]
 
 [tool.coverage.run]
 source = ["src"]
