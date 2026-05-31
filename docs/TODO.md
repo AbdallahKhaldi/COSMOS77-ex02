@@ -461,45 +461,45 @@ T-0428 | P6 | orchestration | update TODO; save docs/prompts/006; commit (>=5); 
 
 ## Phase 7 — Judge logic
 
-T-0429 | P7 | judge | design agents/judge.py (enforce) public interface and signatures | interface documented in PRD/PLAN; reviewed | todo
-T-0430 | P7 | judge | test(judge): happy-path for reject citation-less/over-length/non-rebutting/agreeing turns | failing test written first (red) | todo
-T-0431 | P7 | judge | test(judge): error-path for reject citation-less/over-length/non-rebutting/agreeing turns | raises/handles the error path; test green | todo
-T-0432 | P7 | judge | test(judge): edge-case/property test for agents/judge.py (enforce) | boundary inputs covered | todo
-T-0433 | P7 | judge | implement agents/judge.py (enforce): reject citation-less/over-length/non-rebutting/agreeing turns | smallest impl that passes tests (green) | todo
-T-0434 | P7 | judge | docstrings on agents/judge.py (enforce) public API (why, not what) | every public symbol documented | todo
-T-0435 | P7 | judge | type hints on agents/judge.py (enforce) public signatures (no bare Any) | mypy-clean signatures | todo
-T-0436 | P7 | judge | review agents/judge.py (enforce) for duplication (rule 3) | no copy-paste; shared helpers extracted | todo
-T-0437 | P7 | judge | keep agents/judge.py (enforce) <=150 lines; split helpers if needed | check_line_cap 0 offenders | todo
-T-0438 | P7 | judge | design agents/judge.py (score_turn) public interface and signatures | interface documented in PRD/PLAN; reviewed | todo
-T-0439 | P7 | judge | test(judge): happy-path for rubric scores clarity/evidence/rebuttal/rhetoric | failing test written first (red) | todo
-T-0440 | P7 | judge | test(judge): error-path for rubric scores clarity/evidence/rebuttal/rhetoric | raises/handles the error path; test green | todo
-T-0441 | P7 | judge | test(judge): edge-case/property test for agents/judge.py (score_turn) | boundary inputs covered | todo
-T-0442 | P7 | judge | implement agents/judge.py (score_turn): rubric scores clarity/evidence/rebuttal/rhetoric | smallest impl that passes tests (green) | todo
-T-0443 | P7 | judge | docstrings on agents/judge.py (score_turn) public API (why, not what) | every public symbol documented | todo
-T-0444 | P7 | judge | type hints on agents/judge.py (score_turn) public signatures (no bare Any) | mypy-clean signatures | todo
-T-0445 | P7 | judge | review agents/judge.py (score_turn) for duplication (rule 3) | no copy-paste; shared helpers extracted | todo
-T-0446 | P7 | judge | keep agents/judge.py (score_turn) <=150 lines; split helpers if needed | check_line_cap 0 offenders | todo
-T-0447 | P7 | judge | design agents/judge.py (verdict) public interface and signatures | interface documented in PRD/PLAN; reviewed | todo
-T-0448 | P7 | judge | test(judge): happy-path for aggregate scores, pick winner, differential score, justification | failing test written first (red) | todo
-T-0449 | P7 | judge | test(judge): error-path for aggregate scores, pick winner, differential score, justification | raises/handles the error path; test green | todo
-T-0450 | P7 | judge | test(judge): edge-case/property test for agents/judge.py (verdict) | boundary inputs covered | todo
-T-0451 | P7 | judge | implement agents/judge.py (verdict): aggregate scores, pick winner, differential score, justification | smallest impl that passes tests (green) | todo
-T-0452 | P7 | judge | docstrings on agents/judge.py (verdict) public API (why, not what) | every public symbol documented | todo
-T-0453 | P7 | judge | type hints on agents/judge.py (verdict) public signatures (no bare Any) | mypy-clean signatures | todo
-T-0454 | P7 | judge | review agents/judge.py (verdict) for duplication (rule 3) | no copy-paste; shared helpers extracted | todo
-T-0455 | P7 | judge | keep agents/judge.py (verdict) <=150 lines; split helpers if needed | check_line_cap 0 offenders | todo
-T-0456 | P7 | judge | enforce: citation-less turn rejected with redo request | task complete and tested | todo
-T-0457 | P7 | judge | enforce: over-length turn rejected | task complete and tested | todo
-T-0458 | P7 | judge | enforce: non-rebutting turn flagged | task complete and tested | todo
-T-0459 | P7 | judge | enforce: 'I agree with you' drift triggers intervention | task complete and tested | todo
-T-0460 | P7 | judge | score_turn: persuasion only (truth irrelevant; lies allowed) | task complete and tested | todo
-T-0461 | P7 | judge | verdict: winner always named with unequal scores | task complete and tested | todo
-T-0462 | P7 | judge | verdict: justification non-empty and references specific turns | task complete and tested | todo
-T-0463 | P7 | judge | verdict: close scores broken by rebuttal quality | task complete and tested | todo
-T-0464 | P7 | judge | Verdict validation rejects equal scores / 'tie' | task complete and tested | todo
-T-0465 | P7 | judge | SDK.last_verdict() reads the latest transcript verdict | task complete and tested | todo
-T-0466 | P7 | judge | coverage >=90% on judge/verdict | task complete and tested | todo
-T-0467 | P7 | judge | update TODO; save docs/prompts/007; commit (>=4); push; CI green | task complete and tested | todo
+T-0429 | P7 | judge | design agents/judge.py (enforce) public interface and signatures | interface documented in PRD/PLAN; reviewed | done 2026-05-31
+T-0430 | P7 | judge | test(judge): happy-path for reject citation-less/over-length/non-rebutting/agreeing turns | failing test written first (red) | done 2026-05-31
+T-0431 | P7 | judge | test(judge): error-path for reject citation-less/over-length/non-rebutting/agreeing turns | raises/handles the error path; test green | done 2026-05-31
+T-0432 | P7 | judge | test(judge): edge-case/property test for agents/judge.py (enforce) | boundary inputs covered | done 2026-05-31
+T-0433 | P7 | judge | implement agents/judge.py (enforce): reject citation-less/over-length/non-rebutting/agreeing turns | smallest impl that passes tests (green) | done 2026-05-31
+T-0434 | P7 | judge | docstrings on agents/judge.py (enforce) public API (why, not what) | every public symbol documented | done 2026-05-31
+T-0435 | P7 | judge | type hints on agents/judge.py (enforce) public signatures (no bare Any) | mypy-clean signatures | done 2026-05-31
+T-0436 | P7 | judge | review agents/judge.py (enforce) for duplication (rule 3) | no copy-paste; shared helpers extracted | done 2026-05-31
+T-0437 | P7 | judge | keep agents/judge.py (enforce) <=150 lines; split helpers if needed | check_line_cap 0 offenders | done 2026-05-31
+T-0438 | P7 | judge | design agents/judge.py (score_turn) public interface and signatures | interface documented in PRD/PLAN; reviewed | done 2026-05-31
+T-0439 | P7 | judge | test(judge): happy-path for rubric scores clarity/evidence/rebuttal/rhetoric | failing test written first (red) | done 2026-05-31
+T-0440 | P7 | judge | test(judge): error-path for rubric scores clarity/evidence/rebuttal/rhetoric | raises/handles the error path; test green | done 2026-05-31
+T-0441 | P7 | judge | test(judge): edge-case/property test for agents/judge.py (score_turn) | boundary inputs covered | done 2026-05-31
+T-0442 | P7 | judge | implement agents/judge.py (score_turn): rubric scores clarity/evidence/rebuttal/rhetoric | smallest impl that passes tests (green) | done 2026-05-31
+T-0443 | P7 | judge | docstrings on agents/judge.py (score_turn) public API (why, not what) | every public symbol documented | done 2026-05-31
+T-0444 | P7 | judge | type hints on agents/judge.py (score_turn) public signatures (no bare Any) | mypy-clean signatures | done 2026-05-31
+T-0445 | P7 | judge | review agents/judge.py (score_turn) for duplication (rule 3) | no copy-paste; shared helpers extracted | done 2026-05-31
+T-0446 | P7 | judge | keep agents/judge.py (score_turn) <=150 lines; split helpers if needed | check_line_cap 0 offenders | done 2026-05-31
+T-0447 | P7 | judge | design agents/judge.py (verdict) public interface and signatures | interface documented in PRD/PLAN; reviewed | done 2026-05-31
+T-0448 | P7 | judge | test(judge): happy-path for aggregate scores, pick winner, differential score, justification | failing test written first (red) | done 2026-05-31
+T-0449 | P7 | judge | test(judge): error-path for aggregate scores, pick winner, differential score, justification | raises/handles the error path; test green | done 2026-05-31
+T-0450 | P7 | judge | test(judge): edge-case/property test for agents/judge.py (verdict) | boundary inputs covered | done 2026-05-31
+T-0451 | P7 | judge | implement agents/judge.py (verdict): aggregate scores, pick winner, differential score, justification | smallest impl that passes tests (green) | done 2026-05-31
+T-0452 | P7 | judge | docstrings on agents/judge.py (verdict) public API (why, not what) | every public symbol documented | done 2026-05-31
+T-0453 | P7 | judge | type hints on agents/judge.py (verdict) public signatures (no bare Any) | mypy-clean signatures | done 2026-05-31
+T-0454 | P7 | judge | review agents/judge.py (verdict) for duplication (rule 3) | no copy-paste; shared helpers extracted | done 2026-05-31
+T-0455 | P7 | judge | keep agents/judge.py (verdict) <=150 lines; split helpers if needed | check_line_cap 0 offenders | done 2026-05-31
+T-0456 | P7 | judge | enforce: citation-less turn rejected with redo request | task complete and tested | done 2026-05-31
+T-0457 | P7 | judge | enforce: over-length turn rejected | task complete and tested | done 2026-05-31
+T-0458 | P7 | judge | enforce: non-rebutting turn flagged | task complete and tested | done 2026-05-31
+T-0459 | P7 | judge | enforce: 'I agree with you' drift triggers intervention | task complete and tested | done 2026-05-31
+T-0460 | P7 | judge | score_turn: persuasion only (truth irrelevant; lies allowed) | task complete and tested | done 2026-05-31
+T-0461 | P7 | judge | verdict: winner always named with unequal scores | task complete and tested | done 2026-05-31
+T-0462 | P7 | judge | verdict: justification non-empty and references specific turns | task complete and tested | done 2026-05-31
+T-0463 | P7 | judge | verdict: close scores broken by rebuttal quality | task complete and tested | done 2026-05-31
+T-0464 | P7 | judge | Verdict validation rejects equal scores / 'tie' | task complete and tested | done 2026-05-31
+T-0465 | P7 | judge | SDK.last_verdict() reads the latest transcript verdict | task complete and tested | done 2026-05-31
+T-0466 | P7 | judge | coverage >=90% on judge/verdict | task complete and tested | done 2026-05-31
+T-0467 | P7 | judge | update TODO; save docs/prompts/007; commit (>=4); push; CI green | task complete and tested | done 2026-05-31
 
 ## Phase 8 — Terminal menu + CLI
 
