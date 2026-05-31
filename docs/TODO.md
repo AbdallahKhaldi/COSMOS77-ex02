@@ -574,25 +574,25 @@ T-0532 | P9 | assets | update TODO; save docs/prompts/009; commit (>=4); push; C
 
 ## Phase 10 — README lab report
 
-T-0533 | P10 | readme | README: title + authors + course + date | README section complete | todo
-T-0534 | P10 | readme | README: abstract (topic, architecture, who won and why) | README section complete | todo
-T-0535 | P10 | readme | README: the debate task + link PRD + positions | README section complete | todo
-T-0536 | P10 | readme | README: architecture (embed architecture.png + sequence.png) | README section complete | todo
-T-0537 | P10 | readme | README: quickstart (uv, claude CLI Max login, no key) | README section complete | todo
-T-0538 | P10 | readme | README: usage (every menu option + CLI subcommand + screenshots) | README section complete | todo
-T-0539 | P10 | readme | README: configuration guide (every setup/gatekeeper key) | README section complete | todo
-T-0540 | P10 | readme | README: the Skills (Pro/Con/Judge descriptions; why they differ) | README section complete | todo
-T-0541 | P10 | readme | README: Session 1 full JSON dialogue + verdict + interpretation paragraph | README section complete | todo
-T-0542 | P10 | readme | README: engineering (watchdog, gatekeeper, FIFO logs, SDK, OOP, TDD, CI badge) | README section complete | todo
-T-0543 | P10 | readme | README: cost analysis (embed Phase-9 cost report) | README section complete | todo
-T-0544 | P10 | readme | README: how to extend (link PRD_extension_points) | README section complete | todo
-T-0545 | P10 | readme | README: how we used AI agents (docs/prompts pointer + vibe-coding narrative) | README section complete | todo
-T-0546 | P10 | readme | README: limitations & future work | README section complete | todo
-T-0547 | P10 | readme | README: testing & quality (pytest >=85%, ruff, line-cap, CI) | README section complete | todo
-T-0548 | P10 | readme | README: license + acknowledgements & citations | README section complete | todo
-T-0549 | P10 | readme | README: self-assessment vs 17 rules + A1-A15; recommend self-score 85 | README section complete | todo
-T-0550 | P10 | readme | README: >=250 lines, >=5 embedded images; update dates + repo URL | README section complete | todo
-T-0551 | P10 | readme | update TODO; save docs/prompts/010; commit (>=2); push; CI green | README section complete | todo
+T-0533 | P10 | readme | README: title + authors + course + date | README section complete | done 2026-05-31
+T-0534 | P10 | readme | README: abstract (topic, architecture, who won and why) | README section complete | done 2026-05-31
+T-0535 | P10 | readme | README: the debate task + link PRD + positions | README section complete | done 2026-05-31
+T-0536 | P10 | readme | README: architecture (embed architecture.png + sequence.png) | README section complete | done 2026-05-31
+T-0537 | P10 | readme | README: quickstart (uv, claude CLI Max login, no key) | README section complete | done 2026-05-31
+T-0538 | P10 | readme | README: usage (every menu option + CLI subcommand + screenshots) | README section complete | done 2026-05-31
+T-0539 | P10 | readme | README: configuration guide (every setup/gatekeeper key) | README section complete | done 2026-05-31
+T-0540 | P10 | readme | README: the Skills (Pro/Con/Judge descriptions; why they differ) | README section complete | done 2026-05-31
+T-0541 | P10 | readme | README: Session 1 full JSON dialogue + verdict + interpretation paragraph | README section complete | done 2026-05-31
+T-0542 | P10 | readme | README: engineering (watchdog, gatekeeper, FIFO logs, SDK, OOP, TDD, CI badge) | README section complete | done 2026-05-31
+T-0543 | P10 | readme | README: cost analysis (embed Phase-9 cost report) | README section complete | done 2026-05-31
+T-0544 | P10 | readme | README: how to extend (link PRD_extension_points) | README section complete | done 2026-05-31
+T-0545 | P10 | readme | README: how we used AI agents (docs/prompts pointer + vibe-coding narrative) | README section complete | done 2026-05-31
+T-0546 | P10 | readme | README: limitations & future work | README section complete | done 2026-05-31
+T-0547 | P10 | readme | README: testing & quality (pytest >=85%, ruff, line-cap, CI) | README section complete | done 2026-05-31
+T-0548 | P10 | readme | README: license + acknowledgements & citations | README section complete | done 2026-05-31
+T-0549 | P10 | readme | README: self-assessment vs 17 rules + A1-A15; recommend self-score 85 | README section complete | done 2026-05-31
+T-0550 | P10 | readme | README: >=250 lines, >=5 embedded images; update dates + repo URL | README section complete | done 2026-05-31
+T-0551 | P10 | readme | update TODO; save docs/prompts/010; commit (>=2); push; CI green | README section complete | done 2026-05-31
 
 ## Phase 11 — Final QA gauntlet
 
@@ -653,6 +653,6 @@ T-0602 | P9 | run | check mermaid CLI availability (npx @mermaid-js/mermaid-cli)
 T-0603 | P9 | run | validate session_001.json against the transcript schema | run artifact validated | done 2026-05-31
 T-0604 | P9 | run | assert exactly 10 pings per side in session_001.json | run artifact validated | done 2026-05-31
 T-0605 | P9 | run | confirm verdict winner + differential score present in transcript | run artifact validated | done 2026-05-31
-T-0606 | P10 | readme | embed BADGES.md badges at the top of README | README polish complete | todo
-T-0607 | P10 | readme | verify README image links resolve to assets/ files | README polish complete | todo
-T-0608 | P10 | readme | proofread README for English-only and PC language | README polish complete | todo
+T-0606 | P10 | readme | embed BADGES.md badges at the top of README | README polish complete | done 2026-05-31
+T-0607 | P10 | readme | verify README image links resolve to assets/ files | README polish complete | done 2026-05-31
+T-0608 | P10 | readme | proofread README for English-only and PC language | README polish complete | done 2026-05-31
