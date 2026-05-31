@@ -330,56 +330,56 @@ T-0303 | P4 | agents | update TODO; save docs/prompts/004; commit (>=5); push; C
 
 ## Phase 5 — JSON IPC protocol
 
-T-0304 | P5 | protocol | design protocol/message.py public interface and signatures | interface documented in PRD/PLAN; reviewed | todo
-T-0305 | P5 | protocol | test(protocol): happy-path for pydantic ProtocolMessage with validators | failing test written first (red) | todo
-T-0306 | P5 | protocol | test(protocol): error-path for pydantic ProtocolMessage with validators | raises/handles the error path; test green | todo
-T-0307 | P5 | protocol | test(protocol): edge-case/property test for protocol/message.py | boundary inputs covered | todo
-T-0308 | P5 | protocol | implement protocol/message.py: pydantic ProtocolMessage with validators | smallest impl that passes tests (green) | todo
-T-0309 | P5 | protocol | docstrings on protocol/message.py public API (why, not what) | every public symbol documented | todo
-T-0310 | P5 | protocol | type hints on protocol/message.py public signatures (no bare Any) | mypy-clean signatures | todo
-T-0311 | P5 | protocol | review protocol/message.py for duplication (rule 3) | no copy-paste; shared helpers extracted | todo
-T-0312 | P5 | protocol | keep protocol/message.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | todo
-T-0313 | P5 | protocol | integrate protocol/message.py with the SDK / its callers | SDK method or caller wired and tested | todo
-T-0314 | P5 | protocol | design protocol/routing.py public interface and signatures | interface documented in PRD/PLAN; reviewed | todo
-T-0315 | P5 | protocol | test(protocol): happy-path for validate_route + is_through_father audit | failing test written first (red) | todo
-T-0316 | P5 | protocol | test(protocol): error-path for validate_route + is_through_father audit | raises/handles the error path; test green | todo
-T-0317 | P5 | protocol | test(protocol): edge-case/property test for protocol/routing.py | boundary inputs covered | todo
-T-0318 | P5 | protocol | implement protocol/routing.py: validate_route + is_through_father audit | smallest impl that passes tests (green) | todo
-T-0319 | P5 | protocol | docstrings on protocol/routing.py public API (why, not what) | every public symbol documented | todo
-T-0320 | P5 | protocol | type hints on protocol/routing.py public signatures (no bare Any) | mypy-clean signatures | todo
-T-0321 | P5 | protocol | review protocol/routing.py for duplication (rule 3) | no copy-paste; shared helpers extracted | todo
-T-0322 | P5 | protocol | keep protocol/routing.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | todo
-T-0323 | P5 | protocol | integrate protocol/routing.py with the SDK / its callers | SDK method or caller wired and tested | todo
-T-0324 | P5 | protocol | design protocol/serialize.py public interface and signatures | interface documented in PRD/PLAN; reviewed | todo
-T-0325 | P5 | protocol | test(protocol): happy-path for to_json/from_json utf-8 helpers | failing test written first (red) | todo
-T-0326 | P5 | protocol | test(protocol): error-path for to_json/from_json utf-8 helpers | raises/handles the error path; test green | todo
-T-0327 | P5 | protocol | test(protocol): edge-case/property test for protocol/serialize.py | boundary inputs covered | todo
-T-0328 | P5 | protocol | implement protocol/serialize.py: to_json/from_json utf-8 helpers | smallest impl that passes tests (green) | todo
-T-0329 | P5 | protocol | docstrings on protocol/serialize.py public API (why, not what) | every public symbol documented | todo
-T-0330 | P5 | protocol | type hints on protocol/serialize.py public signatures (no bare Any) | mypy-clean signatures | todo
-T-0331 | P5 | protocol | review protocol/serialize.py for duplication (rule 3) | no copy-paste; shared helpers extracted | todo
-T-0332 | P5 | protocol | keep protocol/serialize.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | todo
-T-0333 | P5 | protocol | integrate protocol/serialize.py with the SDK / its callers | SDK method or caller wired and tested | todo
-T-0334 | P5 | protocol | design protocol/citation.py public interface and signatures | interface documented in PRD/PLAN; reviewed | todo
-T-0335 | P5 | protocol | test(protocol): happy-path for Citation model + citation-count validation | failing test written first (red) | todo
-T-0336 | P5 | protocol | test(protocol): error-path for Citation model + citation-count validation | raises/handles the error path; test green | todo
-T-0337 | P5 | protocol | test(protocol): edge-case/property test for protocol/citation.py | boundary inputs covered | todo
-T-0338 | P5 | protocol | implement protocol/citation.py: Citation model + citation-count validation | smallest impl that passes tests (green) | todo
-T-0339 | P5 | protocol | docstrings on protocol/citation.py public API (why, not what) | every public symbol documented | todo
-T-0340 | P5 | protocol | type hints on protocol/citation.py public signatures (no bare Any) | mypy-clean signatures | todo
-T-0341 | P5 | protocol | review protocol/citation.py for duplication (rule 3) | no copy-paste; shared helpers extracted | todo
-T-0342 | P5 | protocol | keep protocol/citation.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | todo
-T-0343 | P5 | protocol | integrate protocol/citation.py with the SDK / its callers | SDK method or caller wired and tested | todo
-T-0344 | P5 | protocol | valid message round-trips through JSON (serialize->deserialize->equal) | task complete and tested | todo
-T-0345 | P5 | protocol | missing required field raises a clear validation error | task complete and tested | todo
-T-0346 | P5 | protocol | over-length content fails validation | task complete and tested | todo
-T-0347 | P5 | protocol | empty citations[] fails when require_citation_per_turn is true | task complete and tested | todo
-T-0348 | P5 | protocol | sender/recipient must be valid roles | task complete and tested | todo
-T-0349 | P5 | protocol | child->child (bypassing judge) is rejected by the routing validator | task complete and tested | todo
-T-0350 | P5 | protocol | word_count validator matches content | task complete and tested | todo
-T-0351 | P5 | protocol | logs store the JSON message | task complete and tested | todo
-T-0352 | P5 | protocol | coverage >=90% on protocol/ | task complete and tested | todo
-T-0353 | P5 | protocol | update TODO; save docs/prompts/005; commit (>=3); push; CI green | task complete and tested | todo
+T-0304 | P5 | protocol | design protocol/message.py public interface and signatures | interface documented in PRD/PLAN; reviewed | done 2026-05-31
+T-0305 | P5 | protocol | test(protocol): happy-path for pydantic ProtocolMessage with validators | failing test written first (red) | done 2026-05-31
+T-0306 | P5 | protocol | test(protocol): error-path for pydantic ProtocolMessage with validators | raises/handles the error path; test green | done 2026-05-31
+T-0307 | P5 | protocol | test(protocol): edge-case/property test for protocol/message.py | boundary inputs covered | done 2026-05-31
+T-0308 | P5 | protocol | implement protocol/message.py: pydantic ProtocolMessage with validators | smallest impl that passes tests (green) | done 2026-05-31
+T-0309 | P5 | protocol | docstrings on protocol/message.py public API (why, not what) | every public symbol documented | done 2026-05-31
+T-0310 | P5 | protocol | type hints on protocol/message.py public signatures (no bare Any) | mypy-clean signatures | done 2026-05-31
+T-0311 | P5 | protocol | review protocol/message.py for duplication (rule 3) | no copy-paste; shared helpers extracted | done 2026-05-31
+T-0312 | P5 | protocol | keep protocol/message.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | done 2026-05-31
+T-0313 | P5 | protocol | integrate protocol/message.py with the SDK / its callers | SDK method or caller wired and tested | done 2026-05-31
+T-0314 | P5 | protocol | design protocol/routing.py public interface and signatures | interface documented in PRD/PLAN; reviewed | done 2026-05-31
+T-0315 | P5 | protocol | test(protocol): happy-path for validate_route + is_through_father audit | failing test written first (red) | done 2026-05-31
+T-0316 | P5 | protocol | test(protocol): error-path for validate_route + is_through_father audit | raises/handles the error path; test green | done 2026-05-31
+T-0317 | P5 | protocol | test(protocol): edge-case/property test for protocol/routing.py | boundary inputs covered | done 2026-05-31
+T-0318 | P5 | protocol | implement protocol/routing.py: validate_route + is_through_father audit | smallest impl that passes tests (green) | done 2026-05-31
+T-0319 | P5 | protocol | docstrings on protocol/routing.py public API (why, not what) | every public symbol documented | done 2026-05-31
+T-0320 | P5 | protocol | type hints on protocol/routing.py public signatures (no bare Any) | mypy-clean signatures | done 2026-05-31
+T-0321 | P5 | protocol | review protocol/routing.py for duplication (rule 3) | no copy-paste; shared helpers extracted | done 2026-05-31
+T-0322 | P5 | protocol | keep protocol/routing.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | done 2026-05-31
+T-0323 | P5 | protocol | integrate protocol/routing.py with the SDK / its callers | SDK method or caller wired and tested | done 2026-05-31
+T-0324 | P5 | protocol | design protocol/serialize.py public interface and signatures | interface documented in PRD/PLAN; reviewed | done 2026-05-31
+T-0325 | P5 | protocol | test(protocol): happy-path for to_json/from_json utf-8 helpers | failing test written first (red) | done 2026-05-31
+T-0326 | P5 | protocol | test(protocol): error-path for to_json/from_json utf-8 helpers | raises/handles the error path; test green | done 2026-05-31
+T-0327 | P5 | protocol | test(protocol): edge-case/property test for protocol/serialize.py | boundary inputs covered | done 2026-05-31
+T-0328 | P5 | protocol | implement protocol/serialize.py: to_json/from_json utf-8 helpers | smallest impl that passes tests (green) | done 2026-05-31
+T-0329 | P5 | protocol | docstrings on protocol/serialize.py public API (why, not what) | every public symbol documented | done 2026-05-31
+T-0330 | P5 | protocol | type hints on protocol/serialize.py public signatures (no bare Any) | mypy-clean signatures | done 2026-05-31
+T-0331 | P5 | protocol | review protocol/serialize.py for duplication (rule 3) | no copy-paste; shared helpers extracted | done 2026-05-31
+T-0332 | P5 | protocol | keep protocol/serialize.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | done 2026-05-31
+T-0333 | P5 | protocol | integrate protocol/serialize.py with the SDK / its callers | SDK method or caller wired and tested | done 2026-05-31
+T-0334 | P5 | protocol | design protocol/citation.py public interface and signatures | interface documented in PRD/PLAN; reviewed | done 2026-05-31
+T-0335 | P5 | protocol | test(protocol): happy-path for Citation model + citation-count validation | failing test written first (red) | done 2026-05-31
+T-0336 | P5 | protocol | test(protocol): error-path for Citation model + citation-count validation | raises/handles the error path; test green | done 2026-05-31
+T-0337 | P5 | protocol | test(protocol): edge-case/property test for protocol/citation.py | boundary inputs covered | done 2026-05-31
+T-0338 | P5 | protocol | implement protocol/citation.py: Citation model + citation-count validation | smallest impl that passes tests (green) | done 2026-05-31
+T-0339 | P5 | protocol | docstrings on protocol/citation.py public API (why, not what) | every public symbol documented | done 2026-05-31
+T-0340 | P5 | protocol | type hints on protocol/citation.py public signatures (no bare Any) | mypy-clean signatures | done 2026-05-31
+T-0341 | P5 | protocol | review protocol/citation.py for duplication (rule 3) | no copy-paste; shared helpers extracted | done 2026-05-31
+T-0342 | P5 | protocol | keep protocol/citation.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | done 2026-05-31
+T-0343 | P5 | protocol | integrate protocol/citation.py with the SDK / its callers | SDK method or caller wired and tested | done 2026-05-31
+T-0344 | P5 | protocol | valid message round-trips through JSON (serialize->deserialize->equal) | task complete and tested | done 2026-05-31
+T-0345 | P5 | protocol | missing required field raises a clear validation error | task complete and tested | done 2026-05-31
+T-0346 | P5 | protocol | over-length content fails validation | task complete and tested | done 2026-05-31
+T-0347 | P5 | protocol | empty citations[] fails when require_citation_per_turn is true | task complete and tested | done 2026-05-31
+T-0348 | P5 | protocol | sender/recipient must be valid roles | task complete and tested | done 2026-05-31
+T-0349 | P5 | protocol | child->child (bypassing judge) is rejected by the routing validator | task complete and tested | done 2026-05-31
+T-0350 | P5 | protocol | word_count validator matches content | task complete and tested | done 2026-05-31
+T-0351 | P5 | protocol | logs store the JSON message | task complete and tested | done 2026-05-31
+T-0352 | P5 | protocol | coverage >=90% on protocol/ | task complete and tested | done 2026-05-31
+T-0353 | P5 | protocol | update TODO; save docs/prompts/005; commit (>=3); push; CI green | task complete and tested | done 2026-05-31
 
 ## Phase 6 — Orchestrator + Watchdog
 
