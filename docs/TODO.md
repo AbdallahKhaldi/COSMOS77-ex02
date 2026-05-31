@@ -187,47 +187,47 @@ T-0166 | P2 | shared | update TODO; save docs/prompts/002; commit per module; pu
 
 ## Phase 3 — Claude CLI runtime
 
-T-0167 | P3 | runtime | design runtime/argv.py public interface and signatures | interface documented in PRD/PLAN; reviewed | todo
-T-0168 | P3 | runtime | test(runtime): happy-path for build claude -p argv (--output-format json, --append-system-prompt, --allowedTools, timeout) | failing test written first (red) | todo
-T-0169 | P3 | runtime | test(runtime): error-path for build claude -p argv (--output-format json, --append-system-prompt, --allowedTools, timeout) | raises/handles the error path; test green | todo
-T-0170 | P3 | runtime | test(runtime): edge-case/property test for runtime/argv.py | boundary inputs covered | todo
-T-0171 | P3 | runtime | implement runtime/argv.py: build claude -p argv (--output-format json, --append-system-prompt, --allowedTools, timeout) | smallest impl that passes tests (green) | todo
-T-0172 | P3 | runtime | docstrings on runtime/argv.py public API (why, not what) | every public symbol documented | todo
-T-0173 | P3 | runtime | type hints on runtime/argv.py public signatures (no bare Any) | mypy-clean signatures | todo
-T-0174 | P3 | runtime | review runtime/argv.py for duplication (rule 3) | no copy-paste; shared helpers extracted | todo
-T-0175 | P3 | runtime | keep runtime/argv.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | todo
-T-0176 | P3 | runtime | integrate runtime/argv.py with the SDK / its callers | SDK method or caller wired and tested | todo
-T-0177 | P3 | runtime | design runtime/parse.py public interface and signatures | interface documented in PRD/PLAN; reviewed | todo
-T-0178 | P3 | runtime | test(runtime): happy-path for parse claude -p JSON into LlmResult | failing test written first (red) | todo
-T-0179 | P3 | runtime | test(runtime): error-path for parse claude -p JSON into LlmResult | raises/handles the error path; test green | todo
-T-0180 | P3 | runtime | test(runtime): edge-case/property test for runtime/parse.py | boundary inputs covered | todo
-T-0181 | P3 | runtime | implement runtime/parse.py: parse claude -p JSON into LlmResult | smallest impl that passes tests (green) | todo
-T-0182 | P3 | runtime | docstrings on runtime/parse.py public API (why, not what) | every public symbol documented | todo
-T-0183 | P3 | runtime | type hints on runtime/parse.py public signatures (no bare Any) | mypy-clean signatures | todo
-T-0184 | P3 | runtime | review runtime/parse.py for duplication (rule 3) | no copy-paste; shared helpers extracted | todo
-T-0185 | P3 | runtime | keep runtime/parse.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | todo
-T-0186 | P3 | runtime | integrate runtime/parse.py with the SDK / its callers | SDK method or caller wired and tested | todo
-T-0187 | P3 | runtime | design runtime/claude_cli.py public interface and signatures | interface documented in PRD/PLAN; reviewed | todo
-T-0188 | P3 | runtime | test(runtime): happy-path for ClaudeCliRuntime.invoke via subprocess.run with timeout | failing test written first (red) | todo
-T-0189 | P3 | runtime | test(runtime): error-path for ClaudeCliRuntime.invoke via subprocess.run with timeout | raises/handles the error path; test green | todo
-T-0190 | P3 | runtime | test(runtime): edge-case/property test for runtime/claude_cli.py | boundary inputs covered | todo
-T-0191 | P3 | runtime | implement runtime/claude_cli.py: ClaudeCliRuntime.invoke via subprocess.run with timeout | smallest impl that passes tests (green) | todo
-T-0192 | P3 | runtime | docstrings on runtime/claude_cli.py public API (why, not what) | every public symbol documented | todo
-T-0193 | P3 | runtime | type hints on runtime/claude_cli.py public signatures (no bare Any) | mypy-clean signatures | todo
-T-0194 | P3 | runtime | review runtime/claude_cli.py for duplication (rule 3) | no copy-paste; shared helpers extracted | todo
-T-0195 | P3 | runtime | keep runtime/claude_cli.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | todo
-T-0196 | P3 | runtime | integrate runtime/claude_cli.py with the SDK / its callers | SDK method or caller wired and tested | todo
-T-0197 | P3 | runtime | LlmResult dataclass: text, cost_usd, input_tokens, output_tokens, session_id, is_error, raw | task complete and tested | todo
-T-0198 | P3 | runtime | build correct argv from Config defaults | task complete and tested | todo
-T-0199 | P3 | runtime | parse result text + total_cost_usd + usage + session_id | task complete and tested | todo
-T-0200 | P3 | runtime | raise RuntimeTimeout when subprocess exceeds per_call_timeout_seconds | task complete and tested | todo
-T-0201 | P3 | runtime | raise RuntimeError on is_error or non-zero exit | task complete and tested | todo
-T-0202 | P3 | runtime | malformed JSON -> informative error | task complete and tested | todo
-T-0203 | P3 | runtime | missing cost field -> default 0 + warning | task complete and tested | todo
-T-0204 | P3 | runtime | mock subprocess in ALL tests (never call real claude) | task complete and tested | todo
-T-0205 | P3 | runtime | verify no live LLM call in the suite (marker live excluded) | task complete and tested | todo
-T-0206 | P3 | runtime | coverage >=90% on runtime/ | task complete and tested | todo
-T-0207 | P3 | runtime | update TODO; save docs/prompts/003; commit (>=3); push; CI green | task complete and tested | todo
+T-0167 | P3 | runtime | design runtime/argv.py public interface and signatures | interface documented in PRD/PLAN; reviewed | done 2026-05-31
+T-0168 | P3 | runtime | test(runtime): happy-path for build claude -p argv (--output-format json, --append-system-prompt, --allowedTools, timeout) | failing test written first (red) | done 2026-05-31
+T-0169 | P3 | runtime | test(runtime): error-path for build claude -p argv (--output-format json, --append-system-prompt, --allowedTools, timeout) | raises/handles the error path; test green | done 2026-05-31
+T-0170 | P3 | runtime | test(runtime): edge-case/property test for runtime/argv.py | boundary inputs covered | done 2026-05-31
+T-0171 | P3 | runtime | implement runtime/argv.py: build claude -p argv (--output-format json, --append-system-prompt, --allowedTools, timeout) | smallest impl that passes tests (green) | done 2026-05-31
+T-0172 | P3 | runtime | docstrings on runtime/argv.py public API (why, not what) | every public symbol documented | done 2026-05-31
+T-0173 | P3 | runtime | type hints on runtime/argv.py public signatures (no bare Any) | mypy-clean signatures | done 2026-05-31
+T-0174 | P3 | runtime | review runtime/argv.py for duplication (rule 3) | no copy-paste; shared helpers extracted | done 2026-05-31
+T-0175 | P3 | runtime | keep runtime/argv.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | done 2026-05-31
+T-0176 | P3 | runtime | integrate runtime/argv.py with the SDK / its callers | SDK method or caller wired and tested | done 2026-05-31
+T-0177 | P3 | runtime | design runtime/parse.py public interface and signatures | interface documented in PRD/PLAN; reviewed | done 2026-05-31
+T-0178 | P3 | runtime | test(runtime): happy-path for parse claude -p JSON into LlmResult | failing test written first (red) | done 2026-05-31
+T-0179 | P3 | runtime | test(runtime): error-path for parse claude -p JSON into LlmResult | raises/handles the error path; test green | done 2026-05-31
+T-0180 | P3 | runtime | test(runtime): edge-case/property test for runtime/parse.py | boundary inputs covered | done 2026-05-31
+T-0181 | P3 | runtime | implement runtime/parse.py: parse claude -p JSON into LlmResult | smallest impl that passes tests (green) | done 2026-05-31
+T-0182 | P3 | runtime | docstrings on runtime/parse.py public API (why, not what) | every public symbol documented | done 2026-05-31
+T-0183 | P3 | runtime | type hints on runtime/parse.py public signatures (no bare Any) | mypy-clean signatures | done 2026-05-31
+T-0184 | P3 | runtime | review runtime/parse.py for duplication (rule 3) | no copy-paste; shared helpers extracted | done 2026-05-31
+T-0185 | P3 | runtime | keep runtime/parse.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | done 2026-05-31
+T-0186 | P3 | runtime | integrate runtime/parse.py with the SDK / its callers | SDK method or caller wired and tested | done 2026-05-31
+T-0187 | P3 | runtime | design runtime/claude_cli.py public interface and signatures | interface documented in PRD/PLAN; reviewed | done 2026-05-31
+T-0188 | P3 | runtime | test(runtime): happy-path for ClaudeCliRuntime.invoke via subprocess.run with timeout | failing test written first (red) | done 2026-05-31
+T-0189 | P3 | runtime | test(runtime): error-path for ClaudeCliRuntime.invoke via subprocess.run with timeout | raises/handles the error path; test green | done 2026-05-31
+T-0190 | P3 | runtime | test(runtime): edge-case/property test for runtime/claude_cli.py | boundary inputs covered | done 2026-05-31
+T-0191 | P3 | runtime | implement runtime/claude_cli.py: ClaudeCliRuntime.invoke via subprocess.run with timeout | smallest impl that passes tests (green) | done 2026-05-31
+T-0192 | P3 | runtime | docstrings on runtime/claude_cli.py public API (why, not what) | every public symbol documented | done 2026-05-31
+T-0193 | P3 | runtime | type hints on runtime/claude_cli.py public signatures (no bare Any) | mypy-clean signatures | done 2026-05-31
+T-0194 | P3 | runtime | review runtime/claude_cli.py for duplication (rule 3) | no copy-paste; shared helpers extracted | done 2026-05-31
+T-0195 | P3 | runtime | keep runtime/claude_cli.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | done 2026-05-31
+T-0196 | P3 | runtime | integrate runtime/claude_cli.py with the SDK / its callers | SDK method or caller wired and tested | done 2026-05-31
+T-0197 | P3 | runtime | LlmResult dataclass: text, cost_usd, input_tokens, output_tokens, session_id, is_error, raw | task complete and tested | done 2026-05-31
+T-0198 | P3 | runtime | build correct argv from Config defaults | task complete and tested | done 2026-05-31
+T-0199 | P3 | runtime | parse result text + total_cost_usd + usage + session_id | task complete and tested | done 2026-05-31
+T-0200 | P3 | runtime | raise RuntimeTimeout when subprocess exceeds per_call_timeout_seconds | task complete and tested | done 2026-05-31
+T-0201 | P3 | runtime | raise RuntimeError on is_error or non-zero exit | task complete and tested | done 2026-05-31
+T-0202 | P3 | runtime | malformed JSON -> informative error | task complete and tested | done 2026-05-31
+T-0203 | P3 | runtime | missing cost field -> default 0 + warning | task complete and tested | done 2026-05-31
+T-0204 | P3 | runtime | mock subprocess in ALL tests (never call real claude) | task complete and tested | done 2026-05-31
+T-0205 | P3 | runtime | verify no live LLM call in the suite (marker live excluded) | task complete and tested | done 2026-05-31
+T-0206 | P3 | runtime | coverage >=90% on runtime/ | task complete and tested | done 2026-05-31
+T-0207 | P3 | runtime | update TODO; save docs/prompts/003; commit (>=3); push; CI green | task complete and tested | done 2026-05-31
 
 ## Phase 4 — Agent hierarchy + Skills
 
