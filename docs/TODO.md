@@ -99,91 +99,91 @@ T-0081 | P1 | docs | commit docs in batches and push; confirm CI green | Phase 1
 
 ## Phase 2 — Shared infrastructure
 
-T-0082 | P2 | shared | design shared/version.py public interface and signatures | interface documented in PRD/PLAN; reviewed | todo
-T-0083 | P2 | shared | test(shared): happy-path for VERSION=1.00 + validate_config_version | failing test written first (red) | todo
-T-0084 | P2 | shared | test(shared): error-path for VERSION=1.00 + validate_config_version | raises/handles the error path; test green | todo
-T-0085 | P2 | shared | test(shared): edge-case/property test for shared/version.py | boundary inputs covered | todo
-T-0086 | P2 | shared | implement shared/version.py: VERSION=1.00 + validate_config_version | smallest impl that passes tests (green) | todo
-T-0087 | P2 | shared | docstrings on shared/version.py public API (why, not what) | every public symbol documented | todo
-T-0088 | P2 | shared | type hints on shared/version.py public signatures (no bare Any) | mypy-clean signatures | todo
-T-0089 | P2 | shared | review shared/version.py for duplication (rule 3) | no copy-paste; shared helpers extracted | todo
-T-0090 | P2 | shared | keep shared/version.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | todo
-T-0091 | P2 | shared | integrate shared/version.py with the SDK / its callers | SDK method or caller wired and tested | todo
-T-0092 | P2 | shared | design shared/config.py public interface and signatures | interface documented in PRD/PLAN; reviewed | todo
-T-0093 | P2 | shared | test(shared): happy-path for Config loader dot-path access + .env + version validation | failing test written first (red) | todo
-T-0094 | P2 | shared | test(shared): error-path for Config loader dot-path access + .env + version validation | raises/handles the error path; test green | todo
-T-0095 | P2 | shared | test(shared): edge-case/property test for shared/config.py | boundary inputs covered | todo
-T-0096 | P2 | shared | implement shared/config.py: Config loader dot-path access + .env + version validation | smallest impl that passes tests (green) | todo
-T-0097 | P2 | shared | docstrings on shared/config.py public API (why, not what) | every public symbol documented | todo
-T-0098 | P2 | shared | type hints on shared/config.py public signatures (no bare Any) | mypy-clean signatures | todo
-T-0099 | P2 | shared | review shared/config.py for duplication (rule 3) | no copy-paste; shared helpers extracted | todo
-T-0100 | P2 | shared | keep shared/config.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | todo
-T-0101 | P2 | shared | integrate shared/config.py with the SDK / its callers | SDK method or caller wired and tested | todo
-T-0102 | P2 | shared | design shared/logging_setup.py public interface and signatures | interface documented in PRD/PLAN; reviewed | todo
-T-0103 | P2 | shared | test(shared): happy-path for initialize logging from logging_config.json | failing test written first (red) | todo
-T-0104 | P2 | shared | test(shared): error-path for initialize logging from logging_config.json | raises/handles the error path; test green | todo
-T-0105 | P2 | shared | test(shared): edge-case/property test for shared/logging_setup.py | boundary inputs covered | todo
-T-0106 | P2 | shared | implement shared/logging_setup.py: initialize logging from logging_config.json | smallest impl that passes tests (green) | todo
-T-0107 | P2 | shared | docstrings on shared/logging_setup.py public API (why, not what) | every public symbol documented | todo
-T-0108 | P2 | shared | type hints on shared/logging_setup.py public signatures (no bare Any) | mypy-clean signatures | todo
-T-0109 | P2 | shared | review shared/logging_setup.py for duplication (rule 3) | no copy-paste; shared helpers extracted | todo
-T-0110 | P2 | shared | keep shared/logging_setup.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | todo
-T-0111 | P2 | shared | integrate shared/logging_setup.py with the SDK / its callers | SDK method or caller wired and tested | todo
-T-0112 | P2 | shared | design shared/fifo_handler.py public interface and signatures | interface documented in PRD/PLAN; reviewed | todo
-T-0113 | P2 | shared | test(shared): happy-path for FifoLineRotatingHandler 20 files x 500 lines | failing test written first (red) | todo
-T-0114 | P2 | shared | test(shared): error-path for FifoLineRotatingHandler 20 files x 500 lines | raises/handles the error path; test green | todo
-T-0115 | P2 | shared | test(shared): edge-case/property test for shared/fifo_handler.py | boundary inputs covered | todo
-T-0116 | P2 | shared | implement shared/fifo_handler.py: FifoLineRotatingHandler 20 files x 500 lines | smallest impl that passes tests (green) | todo
-T-0117 | P2 | shared | docstrings on shared/fifo_handler.py public API (why, not what) | every public symbol documented | todo
-T-0118 | P2 | shared | type hints on shared/fifo_handler.py public signatures (no bare Any) | mypy-clean signatures | todo
-T-0119 | P2 | shared | review shared/fifo_handler.py for duplication (rule 3) | no copy-paste; shared helpers extracted | todo
-T-0120 | P2 | shared | keep shared/fifo_handler.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | todo
-T-0121 | P2 | shared | integrate shared/fifo_handler.py with the SDK / its callers | SDK method or caller wired and tested | todo
-T-0122 | P2 | shared | design shared/gatekeeper.py public interface and signatures | interface documented in PRD/PLAN; reviewed | todo
-T-0123 | P2 | shared | test(shared): happy-path for cost meter: account/check_budget/guard/scrub + BudgetExceeded | failing test written first (red) | todo
-T-0124 | P2 | shared | test(shared): error-path for cost meter: account/check_budget/guard/scrub + BudgetExceeded | raises/handles the error path; test green | todo
-T-0125 | P2 | shared | test(shared): edge-case/property test for shared/gatekeeper.py | boundary inputs covered | todo
-T-0126 | P2 | shared | implement shared/gatekeeper.py: cost meter: account/check_budget/guard/scrub + BudgetExceeded | smallest impl that passes tests (green) | todo
-T-0127 | P2 | shared | docstrings on shared/gatekeeper.py public API (why, not what) | every public symbol documented | todo
-T-0128 | P2 | shared | type hints on shared/gatekeeper.py public signatures (no bare Any) | mypy-clean signatures | todo
-T-0129 | P2 | shared | review shared/gatekeeper.py for duplication (rule 3) | no copy-paste; shared helpers extracted | todo
-T-0130 | P2 | shared | keep shared/gatekeeper.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | todo
-T-0131 | P2 | shared | integrate shared/gatekeeper.py with the SDK / its callers | SDK method or caller wired and tested | todo
-T-0132 | P2 | shared | design shared/errors.py public interface and signatures | interface documented in PRD/PLAN; reviewed | todo
-T-0133 | P2 | shared | test(shared): happy-path for shared exception types (BudgetExceeded, RuntimeTimeout, ConfigError) | failing test written first (red) | todo
-T-0134 | P2 | shared | test(shared): error-path for shared exception types (BudgetExceeded, RuntimeTimeout, ConfigError) | raises/handles the error path; test green | todo
-T-0135 | P2 | shared | test(shared): edge-case/property test for shared/errors.py | boundary inputs covered | todo
-T-0136 | P2 | shared | implement shared/errors.py: shared exception types (BudgetExceeded, RuntimeTimeout, ConfigError) | smallest impl that passes tests (green) | todo
-T-0137 | P2 | shared | docstrings on shared/errors.py public API (why, not what) | every public symbol documented | todo
-T-0138 | P2 | shared | type hints on shared/errors.py public signatures (no bare Any) | mypy-clean signatures | todo
-T-0139 | P2 | shared | review shared/errors.py for duplication (rule 3) | no copy-paste; shared helpers extracted | todo
-T-0140 | P2 | shared | keep shared/errors.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | todo
-T-0141 | P2 | shared | integrate shared/errors.py with the SDK / its callers | SDK method or caller wired and tested | todo
-T-0142 | P2 | shared | design sdk/sdk.py public interface and signatures | interface documented in PRD/PLAN; reviewed | todo
-T-0143 | P2 | shared | test(shared): happy-path for SDK skeleton with stubbed public methods | failing test written first (red) | todo
-T-0144 | P2 | shared | test(shared): error-path for SDK skeleton with stubbed public methods | raises/handles the error path; test green | todo
-T-0145 | P2 | shared | test(shared): edge-case/property test for sdk/sdk.py | boundary inputs covered | todo
-T-0146 | P2 | shared | implement sdk/sdk.py: SDK skeleton with stubbed public methods | smallest impl that passes tests (green) | todo
-T-0147 | P2 | shared | docstrings on sdk/sdk.py public API (why, not what) | every public symbol documented | todo
-T-0148 | P2 | shared | type hints on sdk/sdk.py public signatures (no bare Any) | mypy-clean signatures | todo
-T-0149 | P2 | shared | review sdk/sdk.py for duplication (rule 3) | no copy-paste; shared helpers extracted | todo
-T-0150 | P2 | shared | keep sdk/sdk.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | todo
-T-0151 | P2 | shared | integrate sdk/sdk.py with the SDK / its callers | SDK method or caller wired and tested | todo
-T-0152 | P2 | shared | Config: dot-path access cfg.get('debate.pings_per_side') | task complete and tested | todo
-T-0153 | P2 | shared | Config: missing-key returns default; missing-file raises clear error | task complete and tested | todo
-T-0154 | P2 | shared | Config: load .env via python-dotenv | task complete and tested | todo
-T-0155 | P2 | shared | version: validate_config_version mismatch raises | task complete and tested | todo
-T-0156 | P2 | shared | gatekeeper: accrue cost from a fake claude -p JSON result | task complete and tested | todo
-T-0157 | P2 | shared | gatekeeper: raise BudgetExceeded at budget_usd_max | task complete and tested | todo
-T-0158 | P2 | shared | gatekeeper: warn at warn_at_fraction (0.8) | task complete and tested | todo
-T-0159 | P2 | shared | gatekeeper: per_call_usd_max enforcement | task complete and tested | todo
-T-0160 | P2 | shared | gatekeeper: scrub() redacts a fake key/token | task complete and tested | todo
-T-0161 | P2 | shared | fifo: rotate at 500 lines; keep newest 20 files; drop oldest | task complete and tested | todo
-T-0162 | P2 | shared | fifo: JSON-lines event format | task complete and tested | todo
-T-0163 | P2 | shared | constants: confirm ROLES/TURN_TYPES from Phase 0 | task complete and tested | todo
-T-0164 | P2 | shared | SDK: run_debate/set_topic/last_verdict/cost_report/tail_logs raise NotImplementedError | task complete and tested | todo
-T-0165 | P2 | shared | tests under tests/unit/test_shared/ pass; coverage >=85% | task complete and tested | todo
-T-0166 | P2 | shared | update TODO; save docs/prompts/002; commit per module; push; CI green | task complete and tested | todo
+T-0082 | P2 | shared | design shared/version.py public interface and signatures | interface documented in PRD/PLAN; reviewed | done 2026-05-31
+T-0083 | P2 | shared | test(shared): happy-path for VERSION=1.00 + validate_config_version | failing test written first (red) | done 2026-05-31
+T-0084 | P2 | shared | test(shared): error-path for VERSION=1.00 + validate_config_version | raises/handles the error path; test green | done 2026-05-31
+T-0085 | P2 | shared | test(shared): edge-case/property test for shared/version.py | boundary inputs covered | done 2026-05-31
+T-0086 | P2 | shared | implement shared/version.py: VERSION=1.00 + validate_config_version | smallest impl that passes tests (green) | done 2026-05-31
+T-0087 | P2 | shared | docstrings on shared/version.py public API (why, not what) | every public symbol documented | done 2026-05-31
+T-0088 | P2 | shared | type hints on shared/version.py public signatures (no bare Any) | mypy-clean signatures | done 2026-05-31
+T-0089 | P2 | shared | review shared/version.py for duplication (rule 3) | no copy-paste; shared helpers extracted | done 2026-05-31
+T-0090 | P2 | shared | keep shared/version.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | done 2026-05-31
+T-0091 | P2 | shared | integrate shared/version.py with the SDK / its callers | SDK method or caller wired and tested | done 2026-05-31
+T-0092 | P2 | shared | design shared/config.py public interface and signatures | interface documented in PRD/PLAN; reviewed | done 2026-05-31
+T-0093 | P2 | shared | test(shared): happy-path for Config loader dot-path access + .env + version validation | failing test written first (red) | done 2026-05-31
+T-0094 | P2 | shared | test(shared): error-path for Config loader dot-path access + .env + version validation | raises/handles the error path; test green | done 2026-05-31
+T-0095 | P2 | shared | test(shared): edge-case/property test for shared/config.py | boundary inputs covered | done 2026-05-31
+T-0096 | P2 | shared | implement shared/config.py: Config loader dot-path access + .env + version validation | smallest impl that passes tests (green) | done 2026-05-31
+T-0097 | P2 | shared | docstrings on shared/config.py public API (why, not what) | every public symbol documented | done 2026-05-31
+T-0098 | P2 | shared | type hints on shared/config.py public signatures (no bare Any) | mypy-clean signatures | done 2026-05-31
+T-0099 | P2 | shared | review shared/config.py for duplication (rule 3) | no copy-paste; shared helpers extracted | done 2026-05-31
+T-0100 | P2 | shared | keep shared/config.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | done 2026-05-31
+T-0101 | P2 | shared | integrate shared/config.py with the SDK / its callers | SDK method or caller wired and tested | done 2026-05-31
+T-0102 | P2 | shared | design shared/logging_setup.py public interface and signatures | interface documented in PRD/PLAN; reviewed | done 2026-05-31
+T-0103 | P2 | shared | test(shared): happy-path for initialize logging from logging_config.json | failing test written first (red) | done 2026-05-31
+T-0104 | P2 | shared | test(shared): error-path for initialize logging from logging_config.json | raises/handles the error path; test green | done 2026-05-31
+T-0105 | P2 | shared | test(shared): edge-case/property test for shared/logging_setup.py | boundary inputs covered | done 2026-05-31
+T-0106 | P2 | shared | implement shared/logging_setup.py: initialize logging from logging_config.json | smallest impl that passes tests (green) | done 2026-05-31
+T-0107 | P2 | shared | docstrings on shared/logging_setup.py public API (why, not what) | every public symbol documented | done 2026-05-31
+T-0108 | P2 | shared | type hints on shared/logging_setup.py public signatures (no bare Any) | mypy-clean signatures | done 2026-05-31
+T-0109 | P2 | shared | review shared/logging_setup.py for duplication (rule 3) | no copy-paste; shared helpers extracted | done 2026-05-31
+T-0110 | P2 | shared | keep shared/logging_setup.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | done 2026-05-31
+T-0111 | P2 | shared | integrate shared/logging_setup.py with the SDK / its callers | SDK method or caller wired and tested | done 2026-05-31
+T-0112 | P2 | shared | design shared/fifo_handler.py public interface and signatures | interface documented in PRD/PLAN; reviewed | done 2026-05-31
+T-0113 | P2 | shared | test(shared): happy-path for FifoLineRotatingHandler 20 files x 500 lines | failing test written first (red) | done 2026-05-31
+T-0114 | P2 | shared | test(shared): error-path for FifoLineRotatingHandler 20 files x 500 lines | raises/handles the error path; test green | done 2026-05-31
+T-0115 | P2 | shared | test(shared): edge-case/property test for shared/fifo_handler.py | boundary inputs covered | done 2026-05-31
+T-0116 | P2 | shared | implement shared/fifo_handler.py: FifoLineRotatingHandler 20 files x 500 lines | smallest impl that passes tests (green) | done 2026-05-31
+T-0117 | P2 | shared | docstrings on shared/fifo_handler.py public API (why, not what) | every public symbol documented | done 2026-05-31
+T-0118 | P2 | shared | type hints on shared/fifo_handler.py public signatures (no bare Any) | mypy-clean signatures | done 2026-05-31
+T-0119 | P2 | shared | review shared/fifo_handler.py for duplication (rule 3) | no copy-paste; shared helpers extracted | done 2026-05-31
+T-0120 | P2 | shared | keep shared/fifo_handler.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | done 2026-05-31
+T-0121 | P2 | shared | integrate shared/fifo_handler.py with the SDK / its callers | SDK method or caller wired and tested | done 2026-05-31
+T-0122 | P2 | shared | design shared/gatekeeper.py public interface and signatures | interface documented in PRD/PLAN; reviewed | done 2026-05-31
+T-0123 | P2 | shared | test(shared): happy-path for cost meter: account/check_budget/guard/scrub + BudgetExceeded | failing test written first (red) | done 2026-05-31
+T-0124 | P2 | shared | test(shared): error-path for cost meter: account/check_budget/guard/scrub + BudgetExceeded | raises/handles the error path; test green | done 2026-05-31
+T-0125 | P2 | shared | test(shared): edge-case/property test for shared/gatekeeper.py | boundary inputs covered | done 2026-05-31
+T-0126 | P2 | shared | implement shared/gatekeeper.py: cost meter: account/check_budget/guard/scrub + BudgetExceeded | smallest impl that passes tests (green) | done 2026-05-31
+T-0127 | P2 | shared | docstrings on shared/gatekeeper.py public API (why, not what) | every public symbol documented | done 2026-05-31
+T-0128 | P2 | shared | type hints on shared/gatekeeper.py public signatures (no bare Any) | mypy-clean signatures | done 2026-05-31
+T-0129 | P2 | shared | review shared/gatekeeper.py for duplication (rule 3) | no copy-paste; shared helpers extracted | done 2026-05-31
+T-0130 | P2 | shared | keep shared/gatekeeper.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | done 2026-05-31
+T-0131 | P2 | shared | integrate shared/gatekeeper.py with the SDK / its callers | SDK method or caller wired and tested | done 2026-05-31
+T-0132 | P2 | shared | design shared/errors.py public interface and signatures | interface documented in PRD/PLAN; reviewed | done 2026-05-31
+T-0133 | P2 | shared | test(shared): happy-path for shared exception types (BudgetExceeded, RuntimeTimeout, ConfigError) | failing test written first (red) | done 2026-05-31
+T-0134 | P2 | shared | test(shared): error-path for shared exception types (BudgetExceeded, RuntimeTimeout, ConfigError) | raises/handles the error path; test green | done 2026-05-31
+T-0135 | P2 | shared | test(shared): edge-case/property test for shared/errors.py | boundary inputs covered | done 2026-05-31
+T-0136 | P2 | shared | implement shared/errors.py: shared exception types (BudgetExceeded, RuntimeTimeout, ConfigError) | smallest impl that passes tests (green) | done 2026-05-31
+T-0137 | P2 | shared | docstrings on shared/errors.py public API (why, not what) | every public symbol documented | done 2026-05-31
+T-0138 | P2 | shared | type hints on shared/errors.py public signatures (no bare Any) | mypy-clean signatures | done 2026-05-31
+T-0139 | P2 | shared | review shared/errors.py for duplication (rule 3) | no copy-paste; shared helpers extracted | done 2026-05-31
+T-0140 | P2 | shared | keep shared/errors.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | done 2026-05-31
+T-0141 | P2 | shared | integrate shared/errors.py with the SDK / its callers | SDK method or caller wired and tested | done 2026-05-31
+T-0142 | P2 | shared | design sdk/sdk.py public interface and signatures | interface documented in PRD/PLAN; reviewed | done 2026-05-31
+T-0143 | P2 | shared | test(shared): happy-path for SDK skeleton with stubbed public methods | failing test written first (red) | done 2026-05-31
+T-0144 | P2 | shared | test(shared): error-path for SDK skeleton with stubbed public methods | raises/handles the error path; test green | done 2026-05-31
+T-0145 | P2 | shared | test(shared): edge-case/property test for sdk/sdk.py | boundary inputs covered | done 2026-05-31
+T-0146 | P2 | shared | implement sdk/sdk.py: SDK skeleton with stubbed public methods | smallest impl that passes tests (green) | done 2026-05-31
+T-0147 | P2 | shared | docstrings on sdk/sdk.py public API (why, not what) | every public symbol documented | done 2026-05-31
+T-0148 | P2 | shared | type hints on sdk/sdk.py public signatures (no bare Any) | mypy-clean signatures | done 2026-05-31
+T-0149 | P2 | shared | review sdk/sdk.py for duplication (rule 3) | no copy-paste; shared helpers extracted | done 2026-05-31
+T-0150 | P2 | shared | keep sdk/sdk.py <=150 lines; split helpers if needed | check_line_cap 0 offenders | done 2026-05-31
+T-0151 | P2 | shared | integrate sdk/sdk.py with the SDK / its callers | SDK method or caller wired and tested | done 2026-05-31
+T-0152 | P2 | shared | Config: dot-path access cfg.get('debate.pings_per_side') | task complete and tested | done 2026-05-31
+T-0153 | P2 | shared | Config: missing-key returns default; missing-file raises clear error | task complete and tested | done 2026-05-31
+T-0154 | P2 | shared | Config: load .env via python-dotenv | task complete and tested | done 2026-05-31
+T-0155 | P2 | shared | version: validate_config_version mismatch raises | task complete and tested | done 2026-05-31
+T-0156 | P2 | shared | gatekeeper: accrue cost from a fake claude -p JSON result | task complete and tested | done 2026-05-31
+T-0157 | P2 | shared | gatekeeper: raise BudgetExceeded at budget_usd_max | task complete and tested | done 2026-05-31
+T-0158 | P2 | shared | gatekeeper: warn at warn_at_fraction (0.8) | task complete and tested | done 2026-05-31
+T-0159 | P2 | shared | gatekeeper: per_call_usd_max enforcement | task complete and tested | done 2026-05-31
+T-0160 | P2 | shared | gatekeeper: scrub() redacts a fake key/token | task complete and tested | done 2026-05-31
+T-0161 | P2 | shared | fifo: rotate at 500 lines; keep newest 20 files; drop oldest | task complete and tested | done 2026-05-31
+T-0162 | P2 | shared | fifo: JSON-lines event format | task complete and tested | done 2026-05-31
+T-0163 | P2 | shared | constants: confirm ROLES/TURN_TYPES from Phase 0 | task complete and tested | done 2026-05-31
+T-0164 | P2 | shared | SDK: run_debate/set_topic/last_verdict/cost_report/tail_logs raise NotImplementedError | task complete and tested | done 2026-05-31
+T-0165 | P2 | shared | tests under tests/unit/test_shared/ pass; coverage >=85% | task complete and tested | done 2026-05-31
+T-0166 | P2 | shared | update TODO; save docs/prompts/002; commit per module; push; CI green | task complete and tested | done 2026-05-31
 
 ## Phase 3 — Claude CLI runtime
 
